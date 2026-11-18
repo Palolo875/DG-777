@@ -35,6 +35,8 @@ body{margin:0;background:var(--paper);color:var(--ink);font:400 14px/1.4 "IBM Pl
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:none;box-shadow:var(--focus)}
+.cell:focus-visible,.mrow:focus-visible,.cellbtn:focus-visible{outline:2px solid var(--blue);outline-offset:1px;z-index:6}
+.cell.appt.here:focus-visible{outline-color:var(--blue);outline-offset:2px}
 .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 svg.i{width:16px;height:16px;flex:none;stroke-width:1.75}
 h1,h2,h3{margin:0;font-weight:600;text-wrap:balance}
@@ -42,7 +44,7 @@ h1,h2,h3{margin:0;font-weight:600;text-wrap:balance}
 /* ---------- En-tête ---------- */
 .top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:16px;height:60px;padding:0 24px;background:var(--sheet);border-bottom:1px solid var(--rule)}
 .brand{display:flex;flex-direction:column;line-height:1.15;min-width:0}
-.brand b{font-weight:600;font-size:15px}
+.brand b{font-weight:600;font-size:16px}
 .brand span{font-size:12.5px;color:var(--ink-3)}
 .demo{font-size:12px;font-weight:500;color:var(--ink-2);background:var(--sheet-2);border:1px solid var(--rule);border-radius:999px;padding:3px 10px;white-space:nowrap}
 .search{position:relative;margin-left:auto;width:340px}
@@ -90,7 +92,7 @@ h1,h2,h3{margin:0;font-weight:600;text-wrap:balance}
 .map thead th .dn{font-size:13px}
 .map tbody th{width:124px;font-weight:500;color:var(--ink);font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:2px}
 .map td{padding:2px 4px}
-.map col.past{width:11%}
+@media (min-width:1100px){.map col.past{width:11%}}
 .cellbtn{display:block;width:100%;min-width:0;overflow:hidden;border:1px solid transparent;background:none;padding:4px 5px 3px;border-radius:var(--r-in);text-align:left}
 .cellbtn:hover{background:var(--sheet-2)}
 .cellbtn.sel{background:var(--blue-wash);border-color:var(--blue-line)}
@@ -178,7 +180,7 @@ h1,h2,h3{margin:0;font-weight:600;text-wrap:balance}
 .rail{padding:0}
 .railsec{padding:14px 16px;border-bottom:1px solid var(--rule)}
 .railsec:last-child{border-bottom:0}
-.railsec h2{font-size:15px;display:flex;align-items:center;gap:8px}
+.railsec h2{font-size:16px;display:flex;align-items:center;gap:8px}
 .railsec h2 .count{font-size:12.5px;font-weight:500;color:var(--ink-3)}
 .railsec p.lead{margin:4px 0 0;font-size:13px;color:var(--ink-2)}
 .gap{margin-top:12px;border:1px solid var(--rule);border-radius:var(--r-panel);overflow:hidden;background:var(--sheet)}
@@ -254,13 +256,15 @@ fieldset{border:0;margin:0;padding:0;display:grid;gap:6px}
   .weekbar{order:1;flex-wrap:wrap} #mapPanel{order:2;margin-bottom:0} .rail{order:3} #dayPanel{order:4}
   .rail{position:static;max-height:none}
   .rail[data-view]:not([data-view=home]){position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);max-height:none;z-index:50;border-radius:0;box-shadow:-12px 0 40px rgba(28,34,50,.18)}
-  .search{width:260px}
-  .who{display:none}
+  .search{width:220px}
+  .who,.brand span{display:none}
+  .cellmeta{white-space:normal}
 }
 @media (max-width:760px){
   body{font-size:15px}
   .top{height:56px;padding:0 16px;gap:10px}
-  .brand span,.search,.top .btn.primary,.who{display:none}
+  .brand span,.search,.top .btn.primary,.who,.demo .dx{display:none}
+  .brand b{white-space:nowrap}
   .top .demo{margin-left:auto}
   .layout{display:none}
   .mob{display:block;padding:12px 16px 32px}
@@ -281,13 +285,13 @@ fieldset{border:0;margin:0;padding:0;display:grid;gap:6px}
 .next .k{font-size:13px;color:var(--ink-3)}
 .next .t{display:flex;align-items:baseline;gap:10px;margin:2px 0 4px}
 .next .t b{font-size:34px;line-height:1;font-weight:600;letter-spacing:-.01em}
-.next .t span{font-size:14px;color:var(--ink-2)}
-.next .p{font-size:17px;font-weight:600}
-.next .m{font-size:14px;color:var(--ink-2)}
+.next .t span{font-size:13px;color:var(--ink-2)}
+.next .p{font-size:16px;font-weight:600}
+.next .m{font-size:13px;color:var(--ink-2)}
 .changes{padding:12px 16px;margin-bottom:12px}
-.changes h2,.mlist h2{font-size:15px;margin-bottom:6px}
+.changes h2,.mlist h2{font-size:16px;margin-bottom:6px}
 .changes ul{list-style:none;margin:0;padding:0}
-.changes li{display:grid;grid-template-columns:52px 1fr;gap:8px;padding:7px 0;border-top:1px solid var(--rule);font-size:14px}
+.changes li{display:grid;grid-template-columns:52px 1fr;gap:8px;padding:7px 0;border-top:1px solid var(--rule);font-size:15px}
 .changes li:first-child{border-top:0}
 .changes li time{color:var(--ink-3);font-size:13px}
 .changes .what{font-weight:600}
@@ -333,7 +337,7 @@ fieldset{border:0;margin:0;padding:0;display:grid;gap:6px}
 
 <header class="top">
   <div class="brand"><b>Cabinet des Tanneurs</b><span>Kinésithérapie · 6 praticiens</span></div>
-  <span class="demo" title="Cabinet, praticiens, patients et numéros sont fictifs">Données d’exemple · heure figée mer. 10:42</span>
+  <span class="demo" title="Cabinet, praticiens, patients et numéros sont fictifs">Données d’exemple<span class="dx"> · heure figée mer. 10:42</span></span>
   <div class="search" role="search">
     <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
     <label for="q" class="vh">Rechercher un patient</label>
@@ -519,7 +523,7 @@ function waitFits(w,pr,day,s){if(w.pr&&w.pr!==pr)return false;
 function candidates(f){return WAIT.filter(w=>w.pat!==f.who&&waitFits(w,f.pr,f.day,f.start))
   .sort((a,b)=>(b.prio-a.prio)||(b.since-a.since));}
 function minutesUntil(day,s){return (day-NOW.day)*24*60 + slotMin(s)-NOW.min;}
-function ago(f){const m=(NOW.day-f.atDay)*24*60+NOW.min-f.atMin; if(m<60)return "il y a "+m+" min"; if(m<24*60)return "il y a "+Math.floor(m/60)+" h"+(m%60?" "+String(m%60).padStart(2,"0"):""); return "hier "+hhmm(f.atMin);}
+function ago(f){const m=(NOW.day-f.atDay)*24*60+NOW.min-f.atMin; if(m<1)return "à l’instant"; if(m<60)return "il y a "+m+" min"; if(m<24*60)return "il y a "+Math.floor(m/60)+" h"+(m%60?" "+String(m%60).padStart(2,"0"):""); return "hier "+hhmm(f.atMin);}
 function snapshot(){return JSON.stringify({APPTS,FREED,WAIT,LOG});}
 function restore(j){const o=JSON.parse(j);APPTS=o.APPTS;FREED=o.FREED;WAIT=o.WAIT;LOG=o.LOG;}
 
@@ -613,7 +617,7 @@ function renderAgenda(){
         const lead={cur:"En séance",tbc:"À confirmer",here:"Arrivé",absent:"Absent"}[a.status];
         const sub = `<span class="mo">${lead?`<span class="tag">${lead}</span>, `:""}${esc(a.motif)}</span>${lead?"":`<span class="sq">${a.seance}</span>`}`;
         const drag = (a.status==="ok"||a.status==="tbc")?' draggable="true"':"";
-        html+=`<button class="cell appt${cls}${S.sel===a.id?" sel":""}${S.move&&S.move.id===a.id?" moving":""}" data-appt="${a.id}" data-pr="${p.id}" data-s="${s}"${drag} style="grid-row:${s+1} / span ${a.len}" aria-label="${esc(cellLabel(p,d,s,a))}"><span class="n">${nameHTML(P(a.pat).name)}</span><span class="m">${sub}</span></button>`;
+        html+=`<button class="cell appt${cls}${S.sel===a.id?" sel":""}${S.move&&S.move.id===a.id?" moving":""}" data-appt="${a.id}" data-pr="${p.id}" data-s="${s}" title="${esc(P(a.pat).name+" · "+a.motif+" · séance "+a.seance)}"${drag} style="grid-row:${s+1} / span ${a.len}" aria-label="${esc(cellLabel(p,d,s,a))}"><span class="n">${nameHTML(P(a.pat).name)}</span><span class="m">${sub}</span></button>`;
         s=a.start+a.len;continue;
       }
       if(isPast(d,s)){html+=`<div class="cell pastfree" style="grid-row:${s+1}"></div>`;s++;continue;}
@@ -719,7 +723,7 @@ const VIEWS = {
     `<form class="sheetbody" id="cancelForm" novalidate>
       ${lm?`<div class="warn">${ico("alert")}<span><b>Dernière minute :</b> la séance a lieu dans moins de 24 h. Le créneau sera surligné et proposé à la liste d’attente.</span></div>`:""}
       <fieldset><legend>Qui annule ?</legend>
-        <label class="radio"><input type="radio" name="why" value="malade" checked> Le patient (malade ou empêché)</label>
+        <label class="radio"><input type="radio" name="why" value="malade ou empêché" checked> Le patient (malade ou empêché)</label>
         <label class="radio"><input type="radio" name="why" value="annulé par le cabinet"> Le cabinet (praticien indisponible)</label>
         <label class="radio"><input type="radio" name="why" value="autre motif"> Autre motif</label></fieldset>
       <div class="actions"><button class="btn danger" type="submit">Confirmer l’annulation</button><button class="btn" type="button" data-back>Garder la séance</button></div>
@@ -748,7 +752,7 @@ const VIEWS = {
   moveConfirm(){
     const m=S.move, a=APPTS.find(x=>x.id===m.id), p=P(a.pat), t=m.target, chg=t.pr!==a.pr;
     return head("Déplacer la séance", esc(p.name))+
-    `<div class="sheetbody"><div class="recap"><div class="k">Aujourd’hui prévue</div><div>${cap(dayShort(a.day))} · <b>${range(a.start,a.len)}</b> · ${esc(PRo(a.pr).name)}</div>
+    `<div class="sheetbody"><div class="recap"><div class="k">Prévue</div><div>${cap(dayShort(a.day))} · <b>${range(a.start,a.len)}</b> · ${esc(PRo(a.pr).name)}</div>
       <div class="arrow">${ico("arrow")} devient</div><div><b>${cap(dayShort(t.day))} · ${range(t.start,a.len)}</b> · <b>${esc(PRo(t.pr).name)}</b></div></div>
       ${chg?`<div class="warn">${ico("alert")}<span><b>Changement de praticien.</b> Vérifiez que le patient accepte d’être vu par ${esc(PRo(t.pr).name)}.</span></div>`:""}
       ${t.day===a.day&&t.start===a.start&&!chg?`<div class="warn red">${ico("alert")}<span>C’est le même créneau.</span></div>`:""}
@@ -797,6 +801,7 @@ VIEWS.book.after = function(){
 };
 function bookSlot(){const c=S.ctx;return c.day!=null?{pr:c.pr,day:c.day,start:c.start}:(c.pickPr?{pr:c.pickPr,day:c.pickDay,start:c.pickStart}:null);}
 function check(quiet,submit){
+  if(!S.ctx||S.view!=="book"||!$("#bookForm"))return false;
   const c=S.ctx, len=+(document.querySelector("input[name=dur]:checked")||{value:1}).value, slot=bookSlot();
   let ok=true; const pe=$("#patErr"), de=$("#durErr"), se=$("#slotErr");
   pe.innerHTML="";de.innerHTML="";if(se)se.innerHTML="";$("#fPat").classList.remove("bad");
@@ -911,7 +916,7 @@ document.addEventListener("click",e=>{
   const t=e.target.closest("button,a,[data-pp]"); if(!t)return;
   const ds=t.dataset;
   if(ds.undo!==undefined){undo();return;}
-  if(ds.close!==undefined){if(S.view==="moveConfirm"){S.move.target=null;}closeSheet();return;}
+  if(ds.close!==undefined){const wasMove=S.view==="moveConfirm";closeSheet();if(wasMove)endMove();return;}
   if(ds.back!==undefined){openSheet("detail",{id:S.ctx.id},S.lastFocus);return;}
   if(ds.endmove!==undefined){endMove();return;}
   if(ds.today!==undefined||t.id==="todayBtn"){S.week=0;S.day=NOW.day;$("#weekTitle").textContent="Semaine du 16 au 21 novembre 2026";renderAll();return;}
@@ -946,7 +951,7 @@ document.addEventListener("click",e=>{
   if(ds.cancel){openSheet("cancel",{id:+ds.cancel},S.lastFocus);return;}
   if(ds.confirmAppt){const before=snapshot();const a=APPTS.find(x=>x.id===+ds.confirmAppt);a.status="ok";closeSheet(true);renderAll();toast(`Séance de ${P(a.pat).name} marquée confirmée.`,before);return;}
   if(ds.domove!==undefined){doMove();return;}
-  if(ds.repick!==undefined){S.move.target=null;S.view="home";renderRail();const c=document.querySelector("#agGrid .cell.free");c&&c.focus();return;}
+  if(ds.repick!==undefined){const id=S.move.id;S.view="home";renderRail();startMove(id);return;}
 });
 document.addEventListener("submit",e=>{if(e.target.id==="cancelForm"){e.preventDefault();doCancel(e.target.why.value);}});
 document.addEventListener("change",e=>{if(e.target.id==="mobPr"){S.mobPr=e.target.value;renderMob();}});
@@ -954,7 +959,7 @@ document.addEventListener("keydown",e=>{
   const inField=/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName);
   if(e.key==="Escape"){
     if(!$("#qres").hidden){$("#qres").hidden=true;$("#q").setAttribute("aria-expanded","false");return;}
-    if(S.view!=="home"){if(S.view==="moveConfirm"){S.move.target=null;}closeSheet();return;}
+    if(S.view!=="home"){const wasMove=S.view==="moveConfirm";closeSheet();if(wasMove)endMove();return;}
     if(S.move){endMove();return;}
   }
   if(!inField&&e.key==="/"){e.preventDefault();$("#q").focus();return;}
