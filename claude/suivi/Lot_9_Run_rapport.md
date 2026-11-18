@@ -58,3 +58,18 @@ Ce verdict vaut pour les deux runs. **Le système ne produit pas encore un nivea
 ## 5. Suite
 
 Les propositions du lot 9b porteront d'abord sur B (le niveau des références) et sur A (le gadget et le générique), puis sur C et D.
+
+## 6. Runs 11 à 14 : verdict de Junior
+
+Quatre runs de plus, pour varier les objets : data viz (11), identité et affiche (12), interface d'application (13), fiche produit haut de gamme (14). Détail dans `Registre_des_runs.md`.
+
+> Junior partage l'avis de Claude : classement 12 > 13 > 11 > 14, puis les runs 9 et 10.
+
+Constats ajoutés, sur ces quatre runs :
+
+- **A-3 établi.** Le diagramme sert de héros dans trois runs sur six (9, 10, 14). Quand une image manque, l'agent dessine un objet technique à la place.
+- **A-4. Le plafond vient des briefs qui vivent de l'image.** Les objets sans photo (identité, outil, données) donnent les meilleurs rendus. Le festival et la céramique plafonnent.
+- **B-5. Pas de calibration en `STANDARD` (certain).** Les runs 11 et 13 n'ont capturé aucune référence, et leur esthétique est la plus générique. L'exigence d'ancre ne vise que les surfaces `DIRECTION`.
+- **E-1. La voix du designer passe dans la page (nouveau).** L'agent écrit son raisonnement dans le produit : « Le 3 avril 2027 tombe un samedi », « Le dessin est fixé. Vos pièces restent à tourner. »
+- **E-2. Polices libres, sûres et à la mode**, jamais distinctives : Bricolage, Barlow, Big Shoulders, Plex, Young Serif.
+- **Méthode.** Les runs 12, 13 et 14 ont été interrompus par la limite d'usage, puis repris par le même agent.

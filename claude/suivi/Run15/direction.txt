@@ -1,0 +1,9 @@
+DIRECTION — L'écran du verger
+VISION — Avant de lire, on voit le soir du festival : un écran tendu entre les pommiers, et le nom des Lueurs projeté dessus ; à côté, les dates et le chemin.
+REGISTRE — affiche de village imprimée en deux encres (estampe risographiée bleu nuit et rouge pomme sur papier crème) × carton de titre de cinéma (le nom projeté sur l'écran) ; marqueurs : la trame et le décalage des deux encres, le titre posé dans le rectangle blanc de l'écran.
+NIVEAU — qu'on la prenne pour la page d'un festival qui a commandé son affiche de l'année à un illustrateur, au niveau de Clermont-Ferrand en plus petit.
+ASSET — estampe générée dirigée (Figma, gpt-image-2.5-flare), 1536×864 : sous 2× à 1440 px, plafond déclaré ; elle revient trois fois (scène entière, détail des couvertures, écran seul pour la fin).
+COMPOSANT — boutons rectangulaires à encre pleine, liens soulignés, liste de films en table typographique (titre, pays, durée), jours en onglets seulement sur téléphone.
+FINITION — aucun rayon, aucune ombre, filets d'un pixel bleu, deux encres et le papier, chiffres alignés dans les durées, pas d'icône.
+MOUVEMENT — le projecteur s'allume : le nom apparaît sur l'écran en trois battements (1,2 s) à l'arrivée ; rien d'autre ; coupé en mouvement réduit.
+MOBILE — l'image se recadre sur l'écran, le nom reste projeté dessus ; dates et boutons passent dessous, sur le papier.
