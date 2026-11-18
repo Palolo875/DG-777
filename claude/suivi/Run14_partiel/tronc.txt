@@ -1,0 +1,266 @@
+TRONC — DIRECTION ; source : DIRECTION/CHARGE ; budget 35000 caractères
+Le reste de la ligne du mode se lit quand son signal apparaît : python3 scripts/read_route.py --mode DIRECTION
+
+LIGNE DU MODE (DIRECTION/CHARGE) — ce qui se charge selon le signal
+| Mode | Charger d’abord | Ajouter seulement si cela change la décision |
+|---|---|---|
+| **DIRECTION** | **Tronc, avant le premier objet** : `ACTION/RUN-DIRECTION` pour le lancement et les préconditions, `DIRECTION/CREATIVE-BOOT`, `DIRECTION/VISUAL_TARGET`, `DIRECTION/FIRST-OBJECT`, `SAVOIR/TYPE` (voix comparées sur le vrai titre), `ACTION/FIRST-RENDER`, `ACTION/GATE-A/CONTROLES` (contrôles applicables) et `BIBLIOTHEQUE/SEQUENCE` (la page entière : la séquence s’écrit avant de construire la suite). **Avant le premier objet, selon le signal** : `DIRECTION/EXTERNAL-START` si le brief est vague, `ACTION/UI-UX-REALITY` si la surface UI/UX est nouvelle ou substantiellement modifiée. **Pendant la fabrication et l’observation** : les contrôles A applicables ; `ACTION/GATE-C` quand la revue sur capture révèle une faiblesse de craft ; `ACTION/PIPELINE-DIRECTION` et `ACTION/VISUAL_PROOF` en trace complète, ou quand leur ligne de la table des signaux apparaît. **À la sortie, en trace complète (`ACTION/HANDOFF`)** : `ACTION/GATE-B`, `ACTION/RUN_CARD`, `DIRECTION/ANCHOR-RESERVE` si l’ancre est seulement générée et l’enjeu identitaire élevé, et `ACTION/CLOSE-PACKAGE`. Une précondition ou un risque critique avance la lecture qui le protège ; ces étapes ne dispensent d’aucune preuve applicable. | Active une route lorsque son déclencheur apparaît ; garde son rôle ou une exclusion qui change la décision dans la trace existante, sans inventaire anticipé de toutes les exclusions. `DIRECTION/DOUBLE-LOOP`, `ACTION/ROUTING` ou `SAVOIR/CRAFT/CFT-00` si la décision l’exige (la boucle commune est dans le noyau ; les gestes se lisent dans `SAVOIR/STATE`) ; `DIRECTION/DIRECTION-ATELIER` si la tension, le geste produit ou un anti-choix peuvent modifier la première scène ; `SAVOIR/FRAME`, `SAVOIR/CRAFT`, `SAVOIR/SOURCE` et `BIBLIOTHEQUE/SELECT` si nécessaires ; `DIRECTION/DOMAIN-FRAME` si la demande est nouvelle, ambiguë ou multi-domaines et que le domaine peut changer la structure, l’expression ou la preuve. Charge `SAVOIR/STYLE` seulement si le choix de style peut modifier une décision de composition, de voix, de matière, de contraste ou de relation produit ; jamais comme catalogue automatique. `SAVOIR/CRAFT/CFT-03`, `SAVOIR/STATE` ou `SAVOIR/INTEGRITY` si un détail final peut modifier le caractère, un état, la hiérarchie, la densité ou la robustesse ; `SAVOIR/INTEGRITY` avant un verdict (trace complète). |
+
+======== ACTION/RUN-DIRECTION (2065 caractères)
+### `ACTION/RUN-DIRECTION`
+
+**Entrée.** Identité, surface de marque, premier contact ou hypothèse de direction autonome.
+
+**Faire.** Exécuter le pipeline `ACTION/PIPELINE-DIRECTION` : divergence sur image pour un premier écran ouvert (`DIRECTION/DIVERGENCE`), ailleurs alternative située lorsque nécessaire, ancre utile, `DIRECTION/VISUAL_TARGET`, spec, checkpoint si nécessaire, build de la première scène significative, `ACTION/VISUAL_PROOF`, capture et comparaison. La première scène significative doit être présentable par défaut : elle porte déjà la direction, la hiérarchie, la typographie, la composition, la palette, la matière ou l’asset pertinent, les composants authored nécessaires et un niveau de finition suffisant pour juger la proposition comme un objet réel plutôt qu’un wireframe générique. Les détails sans rôle produit restent exclus. Lorsque la direction est nouvelle, ambiguë ou exposée à la convergence générique, le sourcing Web ou documentaire est recommandé ; s’il soutient un claim, une tendance, une provenance ou une décision non fondée en mémoire, il devient une ancre à ouvrir, dater, borner et transformer.
+
+**Sortie.** Paquet `DIRECTION` d’`ACTION/CLOSE-PACKAGE`. En trace légère (`ACTION/HANDOFF`), la réponse visible et la trace légère en tiennent lieu. Pour chaque ancrage mobilisé, distinguer si nécessaire son rôle de direction, de production ou de vérification, les attributs retenus et rejetés, la transformation effectuée et les limites de transfert ; une référence Web n’est ni une preuve de réussite, ni une autorisation de copie.
+
+**Clôture.** En trace complète, passer à `DECIDED`, puis `CLOSED` lorsque l’artefact et la trace sont persistés : `CLOSED` ne dit pas que la direction est tenue (`ACTION/STATUS`). Le résultat se déclare à part : une direction tenue, preuves applicables déclarées, peut recevoir un verdict accepté ; sinon, l’issue est `RETURNED`, `EXPLORATORY`, `FAIL-ASSUMED` (échec connu) ou `ESCALATED`, avec le verdict `RETURN-DIRECTION` si la direction doit être reprise, selon la preuve et le risque.
+
+
+======== DIRECTION/CREATIVE-BOOT (2490 caractères)
+## DIRECTION/CREATIVE-BOOT — activer la boucle avant le premier pixel
+
+Pour une décision visuelle ouverte, active avant le build un **Creative Boot** court.
+
+Le boot est un sous-ensemble de la cible (`DIRECTION/CADRES`) ; il tient au maximum les décisions suivantes :
+
+```text
+DECISION: décision que le premier rendu doit permettre de prendre
+PROMISE: promesse à rendre perceptible
+PROOF-OBJECT: objet, état, donnée ou relation qui rend la promesse crédible
+GESTURE: premier geste ou action attendu
+MODAL: ce que n’importe quelle IA produirait ici (structure, palette, typo, assets) ; se nomme avec les marqueurs de vague datés de `SAVOIR/TOOLS`, que `regard.py` relève sur le rendu
+PARTI: garder ou s’écarter — où et pourquoi au regard de la thèse ; projeté dans `direction.parti` (le modal dans `direction.modal`)
+STRUCTURAL-TENSION: axe(s) de tension selon BIBLIOTHEQUE (un ou deux, `BIBLIOTHEQUE/TENSION`)
+STRUCTURAL-SIGNATURE: relation que cette structure rend possible au-delà de l’héritage
+CFT-TARGETS: jusqu’à trois qualités créatives prioritaires pour la construction
+FABRICATION: moyens réels (assets, marque, polices, composants, génération, sources, contenu) → essai de la route disponible pour chaque couche qui porte la thèse → plafond par couche (structure, typo, couleur, assets, contenu) → construire, construire avec plafond déclaré, demander X ou changer de route ; inclut la base de l’ancre et ce qu’elle ne permet pas d’affirmer
+FIRST-OBJECT: artefact complet construit pour rendre les choix jugeables
+DOMINANT-DEFECT: défaut perceptuel ou structurel recherché en premier
+```
+
+`DIRECTION` possède la promesse, l’objet, le geste, `MODAL`/`PARTI` et `FABRICATION` ; `BIBLIOTHEQUE` possède la tension et la signature structurelles ; `SAVOIR/CRAFT` possède le jugement des qualités de présence et de fabrication ; `ACTION` possède l’observation, la preuve, la correction et la clôture. Les `CFT-TARGETS` sont un foyer de construction, pas un score : les autres dimensions restent applicables lorsqu’un risque ou une décision les active et ne deviennent `N/A-JUSTIFIED` que si elles sont réellement hors périmètre.
+
+> [Déjà dans le noyau de la skill, section « 3. Avant de construire — contenu réel et premier objet » : « Avant le premier rendu, le boot doit conduire à un artefact complet, c… » — --complet pour l'afficher ici]
+
+Sa valeur se juge à sa conséquence sur le premier objet, non à la complétude du formulaire ; il peut être omis pour un delta strictement local.
+
+
+======== DIRECTION/VISUAL_TARGET (5944 caractères)
+## DIRECTION/VISUAL_TARGET — rendre la direction pilotable
+
+Sur une surface `DIRECTION`, la cible visuelle rassemble les décisions nécessaires avant le build. Elle ne remplace ni la spec détaillée ni les preuves d’ACTION. Elle empêche de commencer avec un adjectif, une palette ou une liste de composants.
+
+| Champ | Décision à déclarer avant le build |
+|---|---|
+| **Thèse** | Quel monde, quel public et quelle promesse la surface doit-elle rendre crédibles ? |
+| **Conséquence observable** | Ce que l’utilisateur doit percevoir, comprendre ou pouvoir faire dans la première scène si la thèse est tenue. |
+| **Ancre** | `ANCHOR-GENERATED`, `ANCHOR-OBSERVED` ou `ANCHOR-PROVIDED` ; ce qui a été observé ; attributs retenus, rejetés et limites de transfert. |
+| **Silhouette** | Rapport vide/masses, foyer, axe, cadre ou circulation reconnaissable sans le contenu fin. |
+| **Relations de plans** | Relation entre premier plan, contexte, asset, preuve et action ; ne pas confondre profondeur décorative et hiérarchie de lecture. |
+| **Opération visuelle dominante** | Relation par laquelle un contenu, une preuve ou une donnée rend la promesse perceptible. |
+| **Matière / asset** | Rôle dans la promesse, route de production initiale, cadrage, zone sûre, contraste, mobile, fallback et condition de retrait. Une matière native au code — règle, trame d’impression, masque, gradient, typographie, SVG ou composition procédurale — est un choix complet lorsqu’elle porte mieux la relation qu’un asset externe. |
+| **Typographie** | Rôle du display, du corps, des données et de l’action ; mesure, cadence et contre-indication. |
+| **Objet de preuve** | Objet, média, état ou fenêtre produit qui répond directement à la promesse. |
+| **Modal / parti** | Le modal nommé (ce que n’importe quelle IA produirait ici) et le parti : garder ou s’écarter, où et pourquoi, avec raison produit ou perceptuelle. |
+| **Résolution initiale** | Quel niveau de contenu réel, d’état, de responsive, d’asset et de détail doit déjà tenir au premier rendu ? |
+
+Cette table est la seule représentation canonique de la cible. L’opération dominante peut être discrète : retenue, vide, séquence, contraste de densité ou émergence d’un signal critique. Elle ne prescrit ni texture, ni type géant, ni masque, ni palette, ni composant.
+
+> `DIRECTION/CADRES` : servi séparément
+### Compilation de la première proposition
+
+Pour une surface visuelle ouverte, ne traite pas les champs de `VISUAL_TARGET` comme une liste indépendante. Compile-les dans cet ordre : **contexte réel → promesse → tension → relation perceptible → objet de preuve → geste → composition → matière, typographie et asset → états et contraintes → premier rendu jugeable**. La sortie attendue est une relation visible dans l’artefact, pas un dossier complet autour d’un artefact générique. Cet ordre décide quoi construire ; la séquence de composition du noyau (intention → … → retenue) dit comment le construire, à partir de la relation compilée.
+
+Les décisions de compilation se lisent dans la table : promesse = thèse + conséquence observable ; relation = opération dominante + relations de plans ; composition = silhouette + relations de plans ; résolution initiale = ligne du même nom.
+
+La qualité ne vient pas d’une police, d’une image ou d’une texture ajoutées séparément, mais du renforcement mutuel de la composition, du contenu, du type, de l’objet de preuve, de la matière, des états et du comportement ; un élément sans relation visible est retiré ou sa limite nommée.
+
+Un registre naturel, organique, éditorial, architectural, tactile ou technique est une hypothèse située, non un preset. Il peut modifier la matière, la respiration, la profondeur, la typographie, la donnée ou le geste lorsque cette relation appartient au produit. Dans une surface de qualité, l’agent peut aussi composer un composant authored : un objet visible dont la silhouette, le contenu, la hiérarchie, la matière et le comportement sont pensés pour le contexte, sans rendre les primitives critiques inhabituelles par principe.
+
+**Qualifier la direction.** Une direction artistique est située lorsqu’elle relie un point de vue, un produit, un public, un contenu, un médium et une contrainte à un premier objet observable. Sa créativité se juge par la pertinence de l’écart ou de la relation produite, pas par la nouveauté seule ; son goût se lit dans la sélection, la proportion et la retenue des choix, pas dans une préférence universelle. Le craft et le polish du rendu construit restent jugés dans `SAVOIR` et vérifiés dans `ACTION` ; ils ne sont pas promis par la seule force de la thèse ou de la référence.
+
+### Test d’utilité de l’ancre
+
+Une ancre visuelle est suffisante seulement si elle apporte au moins :
+
+1. une décision qui change réellement la structure, la hiérarchie, la matière ou le rapport texte/preuve ;
+2. une contre-indication identifiable, c’est-à-dire un choix à ne pas transférer ;
+3. une liste d’attributs retenus, rejetés et non transférables.
+
+Une image jolie mais sans conséquence de décision est décorative et ne suffit pas comme ancre. Une référence ne prouve ni l’efficacité produit, ni le droit de réemploi, ni l’adéquation au public ; elle documente une relation observée ou une résolution de craft.
+
+> `DIRECTION/ASSET-ROUTE` : servi séparément
+> `DIRECTION/ANCHOR-RESERVE` : servi séparément
+### Prête à construire
+
+> **Passage à `SPECCED`.** Dans `ACTION/STATUS`, `SPECCED` signifie que la direction, la hiérarchie, le contrat ou l’ancre nécessaires sont disponibles ; cela ne signifie ni construit, ni observé, ni accepté. Une surface `DIRECTION` est prête à construire lorsque chaque champ de la table de `VISUAL_TARGET` est renseigné ou `N/A-JUSTIFIED` ; la route d’asset (`DIRECTION/ASSET-ROUTE`) seulement si nécessaire.
+
+La cible peut vivre dans la `RUN_CARD`, le ticket ou le manifeste local. Après le build, `ACTION/VISUAL_PROOF` vérifie le rendu réel contre cette cible.
+
+---
+
+
+======== DIRECTION/FIRST-OBJECT (5621 caractères)
+## DIRECTION/FIRST-OBJECT — compiler le brief et produire le premier objet
+
+Lorsque la priorité du run, la cible visuelle (`DIRECTION/VISUAL_TARGET`) ou l’atelier (`DIRECTION/DIRECTION-ATELIER`) peuvent modifier la première scène, rends retrouvables seulement **situation**, **tension**, **geste produit**, **objet de preuve**, **marquage de vérité**, **position/exclusion** et **contre-choix situé**.
+> [Déjà dans le noyau de la skill, section « 3. Avant de construire — contenu réel et premier objet » : « Sur une surface DIRECTION, convertis ensuite le brief vague avec la ch… » — --complet pour l'afficher ici]
+Au premier regard, l’objet ou le geste peut ouvrir, selon le contexte (`SAVOIR/CRAFT/CFT-04a`). Il est de préférence **codé** (composant, donnée, état ou interaction du produit), ou porté par une image fournie, photographiée ou trouvée quand elle rend le mécanisme plus crédible, avec ses droits et son rôle déclarés ; une illustration ne le porte que si elle est fournie, curatée ou générée dirigée. Toute démonstration générée ou hypothétique porte en trace `TRUTH/ILLUSTRATIVE`, avec `TRUTH/MECHANISM` pour un mécanisme, et à l’écran une mention en langage produit (`DIRECTION/DIRECTION-ATELIER`) ; un exemple ne devient jamais une preuve de client, de performance, de disponibilité, d’intégration, de sécurité ou de résultat réel.
+
+> [Déjà dans le noyau de la skill, section « 3. Avant de construire — contenu réel et premier objet » : « Les données d’exemple restent cohérentes entre elles : totaux, pourcen… » — --complet pour l'afficher ici]
+
+**Relier ce qui se voit à ce qui se fait.** Sur une interface, examine ensemble l’objet montré, l’action voisine et la conséquence annoncée : comprend-on ce que l’on peut modifier, choisir ou obtenir, et ce qui changera ensuite ? Une donnée pertinente, une variation de valeur ou un état nommé peut rendre ce lien plus concret qu’une promesse générale. Si le premier écran montre surtout un résultat fini, rends l’accès au geste compréhensible ; s’il expose un instrument, vérifie que sa densité n’empêche pas de comprendre le résultat. Un document en vitrine, un formulaire visible et une révélation progressive sont des choix situés, sans préférence universelle. Observe aussi le format étroit ; une explication cachée dans un autre état ne fait pas partie de ce que la capture nominale établit.
+
+Un CTA doit soit déclencher un comportement local réellement implémenté, soit mener à une action réellement disponible, soit déclarer sa limite. Un lien vide, une inscription fictive ou une démo qui simule une conséquence externe ne peut pas être présenté comme une action disponible. Une action principale dont la valeur manque (numéro, adresse, lien) reste présente avec une valeur d’exemple marquée (`CNT-01`) : c’est une limite déclarée, pas un retrait.
+
+### Contrat positif du premier objet
+
+Le premier objet est suffisant lorsqu’il permet de juger la direction comme une proposition réelle, et non comme une intention décorative. Pour chaque dimension, conserve l’observation ; sinon les valeurs de repli d’`ACTION/STATUS` s’appliquent : `N/A-JUSTIFIED` lorsque la dimension ne peut pas changer la décision, `NOT-OBSERVED` lorsqu’une conséquence attendue n’a pas été observée :
+
+| Dimension | Suffisant quand… | Retour si… | Dimension CFT-00 |
+|---|---|---|---|
+| **Présence** | La scène possède une entrée, une masse et une hiérarchie perceptibles dès le premier regard. | La proposition est plate, interchangeable ou sans foyer. | Présence |
+| **Foyer** | L’œil comprend ce qui compte maintenant et pourquoi. | Le texte, l’asset, le CTA et la preuve se concurrencent. | Composition |
+| **Signature** | Une décision de composition, de matière, de type ou de rythme rend la proposition située. | Le produit pourrait être remplacé sans modifier la scène. | Point de vue, Spécificité |
+| **Intégration** | L’asset, le composant ou l’absence d’asset sert la promesse, le geste et le support réel, et rend le mécanisme plus clair que le texte seul. | L’élément est décoratif, mal cadré, hors récit ou simplement disponible. | Spécificité, Retenue |
+| **Résolution** | Le contenu, les états, la typographie et les détails critiques sont assez aboutis pour juger l’objet. | Le rendu reporte la décision à une future passe de polish. | Résolution |
+| **Désirabilité située** | La beauté ou l’attrait provient d’une relation au produit, au contexte et au public, pas d’un adjectif. | « Premium », « moderne » ou « beau » remplace une décision observable. | Désirabilité |
+| **Vérité de scène** | Les claims, comportements, données et démonstrations sont observés ou marqués comme illustratifs. | Une hypothèse ressemble à une preuve de résultat, de client ou de disponibilité. | DIRECTION |
+| **Résilience visible** | La direction tient dans les transformations pertinentes pour le risque : mobile, contenu long, état critique, repli ou réduction d’effet. | Un changement de contenu, de largeur d’écran, d’asset ou d’état détruit le foyer ou la compréhension. | Résolution |
+
+Un retour déclenché par cette table renvoie à la décision responsable — cible, structure, asset, contenu, type, état ou build — et non à un score esthétique. La table complète le contrôle de premier objet d’ACTION.
+
+La vérité de scène relève de DIRECTION (marquage `TRUTH`, `DIRECTION/DIRECTION-ATELIER`). **Perte déclarée :** « Culture visuelle » n’a pas de seuil au premier objet ; elle est jugée par la revue créative (ce qui est culturellement transformé), et vaut `N/A-JUSTIFIED` sans référence.
+
+> `DIRECTION/GROUNDING` : servi séparément
+> `DIRECTION/REUSE` : servi séparément
+
+======== SAVOIR/TYPE (4497 caractères)
+# SAVOIR/TYPE — typographie et données
+
+> [Déjà dans le noyau de la skill, section « 6. En construisant — composition, typographie et couleur » : « [REQUIS PAR LE MODULE — lecture, ton, données, hiérarchie ou surface i… » — --complet pour l'afficher ici]
+
+Une famille fréquente n’est pas un problème en soi. Le problème est le réflexe sans alternative comparée, système existant interrogé ou raison formulée.
+
+Une ou deux voix expressives peuvent souvent suffire, mais cette heuristique reste `[À ADAPTER]`. Une famille mono-fonctionnelle pour données, version ou métadonnées ne constitue pas nécessairement une voix supplémentaire.
+
+Hiérarchie, longueur de ligne, interligne, figures tabulaires, justification, fallback et chargement font partie de la décision. Un texte justifié demande une colonne assez large et la césure (`hyphens: auto`, avec la langue du document déclarée) ; sans elles, il ouvre des lézardes : aligne à gauche. Les figures tabulaires (`tnum`) se réservent aux colonnes de chiffres : dans certaines familles, elles élargissent aussi la virgule, le point et les deux-points, et desserrent un prix ou une heure posés dans une phrase ou un titre.
+
+Une police variable peut devenir un système adaptatif : poids pour hiérarchie, largeur pour densité justifiée, taille optique pour rendu à l’échelle et grade lorsqu’il existe. N’utilise que les axes présents dans la famille livrée. Préfère les propriétés typographiques de haut niveau et évite les styles synthétiques non déclarés.
+
+Une signature typographique ne tient pas si zoom, reflow, locale ou ajustement d’espacement la transforment en défaut de lecture.
+
+> [Déjà dans le noyau de la skill, section « 6. En construisant — composition, typographie et couleur » : « Équilibre d’un titre. Quand un titre porte la scène (grand titre, accr… » — --complet pour l'afficher ici]
+
+**Longueur d’un titre.** Budget de longueur et formes d’un titre : `SAVOIR/CRAFT/CFT-06`.
+
+**Texte de lecture.** `[À ADAPTER]` Corps d’au moins 16 px sur écran, interligne d’environ 1,4 à 1,6 pour un texte courant, une mesure de 45 à 80 signes ; ces repères se vérifient sur la police livrée et le vrai texte, à 390 et 1440 px.
+
+**Réglage d’un grand texte.** `[À ADAPTER]` Points de départ, **non des mesures**, à essayer sur la police livrée et le vrai texte. Plus un texte grandit, plus il se resserre : au-delà d’environ 40 px, rapproche l’interligne de 1,0 (moins pour des capitales ou une police condensée) et rends l’approche légèrement négative, réglée par palier de taille, car une approche juste en très grand corps étouffe un titre moyen. Surveille les collisions entre jambages et accents d’une ligne à l’autre. Les capitales demandent au contraire une approche un peu ouverte. Une lettre ronde ou oblique en début de ligne peut demander un léger retrait optique pour paraître alignée. Pas de césure dans un titre ; laisse plus d’espace au-dessus d’un titre qu’en dessous, pour qu’il appartienne à ce qu’il annonce. Une ombre, un contour ou un dégradé sur un grand texte se juge par retrait (que perd le titre sans eux ?), non par interdit. Contre-indications : police déjà réglée pour l’affichage, écriture non latine ou à ligatures, marque qui impose ses valeurs, texte long. Preuve : capture à 390 et 1440 px sur le vrai titre (`COMP-TITRE`). Planche : `design/principes/grand-titre.png` (avant/après, à ouvrir comme image).
+
+> `SAVOIR/TYPE-VOIX` : servi séparément
+### Preuve typographique
+
+La preuve est documentée dans `ACTION/STRUCTURED-PROOF` lorsque la typographie peut changer la décision. Sépare, lorsque nécessaire :
+
+```text
+FORM-LEGIBILITY — reconnaissance des formes et caractères.
+TEXT-READABILITY — lecture du texte dans son contexte.
+HIERARCHY — distinction des rôles et priorités.
+PERSONALITY — tonalité ou individuation perçue.
+TASK-EFFECT — effet sur compréhension ou action lorsque pertinent.
+LIMIT
+```
+
+| Preuve | Cas |
+|---|---|
+| Spécimen de rôle | Display, corps, interface, données et légale sur contenu réel. |
+| Résilience | Texte long, locale, chiffres, zoom, ajustement d’espacement, reflow, petit corps, fallback et caractère absent. |
+| Rendu | Couple taille/interligne/mesure et axe variable si pertinent. |
+| Décision | Voix, lisibilité ou densité réellement améliorées ; contre-indication déclarée. |
+
+Une famille n’est jamais déclarée supérieure sur la seule base d’une impression de marque. Lorsque U est dominant, l’effet sur la tâche est prouvé par ACTION, pas inféré de la typographie seule.
+
+---
+
+======== ACTION/FIRST-RENDER (1879 caractères)
+## ACTION/FIRST-RENDER — qualité initiale attendue
+
+Le premier rendu n’est pas une simple ébauche destinée à être rendue présentable plus tard. Lorsqu’un run produit une surface, un composant, un flow ou une scène, le premier artefact doit déjà être **composé, crédible, spécifique au produit et suffisamment résolu pour être jugé comme un objet réel**, dans la proportion du mode et du risque. Le slop est un risque possible, mais la cible positive est la qualité : présence, hiérarchie, typographie, contenu, états, matière ou retenue, relation à la preuve et finition pertinente.
+
+| Mode | Qualité initiale attendue au premier rendu |
+|---|---|
+| `LITE` | Le delta est propre, lisible, cohérent avec le système et ne dégrade pas le rendu existant. |
+| `ITER` | Le delta est visible, intentionnel, fidèle à la direction retrouvable et inspectable dans les états touchés. |
+| `STANDARD` | La vue ou le flow est déjà composé : contenu crédible, hiérarchie, typographie, états pertinents, responsive applicable et finition suffisante pour juger la proposition. |
+| `DIRECTION` | La première scène porte déjà la présence, le point de vue, la composition, la typographie, la matière ou la retenue, l’objet de preuve et l’intégration d’asset nécessaires à la décision ; en divergence sur image, chaque esquisse tient ce niveau au premier écran bureau, et la direction gardée le tient à toutes ses largeurs. |
+| `SYSTÈME` | Le composant ou token est montré dans ses usages réels, avec baseline, états, consommateurs et risque de régression identifiables. |
+
+Un rendu peut rester `EXPLORATORY` lorsqu’une preuve manque, mais ce statut ne justifie pas un artefact volontairement creux lorsque les capacités nécessaires sont disponibles ; sinon, plafond déclaré avant le build (`FABRICATION`). La qualité initiale est une cible de construction, non un score et non un verdict esthétique.
+
+======== ACTION/GATE-A/CONTROLES (4557 caractères)
+### CONTROLES — contrôles applicables
+
+Cette sous-section est celle que les troncs servent (`ACTION/GATE-A/CONTROLES`). Le contrat de portée, les familles de méthodes et l’adéquation des preuves, plus haut dans `ACTION/GATE-A`, se lisent en trace complète, quand une acceptation est demandée, ou quand l’accessibilité ou la conformité est dans le périmètre.
+
+| Contrôle | `PASS` si… | Retour ou réserve si… |
+|---|---|---|
+| Contraste | Les cas représentatifs sont calculés selon la politique WCAG 2.2 AA du projet lorsqu’elle s’applique. | Estimé à l’œil, sous seuil ou non calculé lorsque requis. |
+| Sémantique et nom accessible | Interactifs et contenus essentiels ont une sémantique et un nom adaptés. | Rôle, nom, structure ou alternative absents. |
+| Focus clavier | Interactifs atteignables avec focus visible et testé. | Navigation ou focus indisponible. |
+| États pertinents | Interaction, sélection, contenu et erreurs sont vérifiés ; événement, conséquence et action suivante sont explicites. | État critique absent, implicite ou dépendant de la couleur seule. |
+| Contenu honnête | Pas de faux contenu, lorem ou promesse non étayée présenté comme réel. | Contenu de remplissage trompeur. |
+| Stabilité média | Dimensions, fallback et chargement évitent les déplacements pertinents. | Instabilité visible ou espace non réservé. |
+| Motion réduite | L’alternative sans mouvement est implémentée et vérifiée préférence activée, dans le runtime déclaré. Sans motion : `N/A-JUSTIFIED`. | Motion imposée ou alternative absente ; alternative seulement dessinée ou annoncée : `NOT-VERIFIED`. |
+| Cibles d’interaction | Taille adaptée au device et au contexte selon la politique du projet. | Cible trop petite sans alternative ni justification. |
+| Information non chromatique | L’information essentielle ne dépend pas de la couleur seule. | Statut ou action incompréhensible sans couleur. |
+| Focus non masqué | Le composant recevant le focus reste visible selon le contexte applicable. | Focus masqué par contenu ou interface auteur. |
+| Mouvement de glisser | Une alternative existe lorsque l’action de glisser n’est pas essentielle. | Action impossible autrement sans justification. |
+| Aide cohérente | L’aide répétée apparaît de façon cohérente lorsque le produit en fournit. | Aide déplacée ou incohérente dans le périmètre. |
+| Saisie redondante | L’utilisateur ne doit pas ressaisir inutilement une information déjà fournie dans le même processus. | Répétition évitable sans raison. |
+| Authentification accessible | Le processus n’impose pas une charge cognitive ou sensorielle évitable. | Mémoire, perception ou interaction imposée sans alternative. |
+
+**Profils de surface.** Commence par les contrôles d’office du profil ; un contrôle hors profil devient applicable dès que la surface porte l’élément concerné (formulaire, glisser, motion, connexion). Ce que le médium ne porte pas est `N/A-JUSTIFIED`.
+
+| Profil | Contrôles d’office | Selon le contenu |
+|---|---|---|
+| Page vitrine, éditoriale ou portfolio | Contraste, sémantique et nom accessible, focus clavier, information non chromatique, cibles d’interaction, contenu honnête, stabilité média. | États (formulaire, commande), motion réduite, mouvement de glisser, focus non masqué. |
+| Application, formulaire ou flow | Tous les contrôles d’interface : contraste, sémantique, focus clavier et non masqué, états, cibles, information non chromatique, saisie redondante, aide cohérente, contenu honnête. | Authentification accessible (connexion), motion réduite, mouvement de glisser, stabilité média. |
+| Scène, motion ou 3D | Motion réduite, contraste, information non chromatique, stabilité média, contenu honnête. | Focus clavier et cibles si la scène est interactive. |
+| Hors Web (imprimé, affiche, écran fixe) | Contraste ou lisibilité d’encre, information non chromatique, contenu honnête. | Référentiel du médium, déclaré dans `CONFORMANCE-TARGET`. |
+
+**Recette automatisée.** Les scripts et recettes sont des ressources versionnées. Une recette exécutée ne suffit pas à valider un résultat visuel, produit ou utilisateur : elle attrape des fautes mécaniques et ne juge ni la direction, ni le goût, ni l’usage. Pour un rendu HTML, la recette `AUTOMATED` du paquet est `scripts/check_render.py` ; son périmètre, ses statuts, ses options et ses limites sont dans `ACTION/RECETTE-RENDU`, à lire avant de l’exécuter ou d’en citer un résultat. Un `PASS` de la recette ne vaut que pour le contrôle qu’elle mesure ; ces limites n’allègent pas les contrôles applicables du gate.
+
+---
+
+
+======== BIBLIOTHEQUE/SEQUENCE (4345 caractères)
+## BIBLIOTHEQUE/SEQUENCE — comment la page s’enchaîne
+
+Une page de plusieurs sections est une séquence de scènes. La scène règle chaque moment ; la séquence règle leur ordre, leur rythme et leur fin. Une surface d’un seul écran n’en a pas besoin.
+
+**Question de séquence.** Que fait avancer chaque section : comprendre, croire, choisir ou agir ? Une section qui ne fait rien avancer se fond dans une autre ou disparaît.
+
+| Opération | Choisir lorsque | Éviter lorsque | Preuve |
+|---|---|---|---|
+| **Arc** : entrée, développement, moment fort, fin | la page porte une décision d’une section à l’autre | la surface sert une tâche unique et répétée (outil, tableau de bord) | la page entière réduite montre un foyer par section et un moment plus fort que les autres |
+| **Série** : constantes (repères, numérotation, bande basse, place du titre) et variables (position, échelle, côté de l’objet) | plusieurs sections de même nature se suivent | la variation ferait perdre un repère nécessaire à la comparaison | deux sections voisines diffèrent par une variable déclarée et partagent les constantes |
+| **Moment de champ** : une section en grand, portée par une seule opération | la thèse gagne à être vue en grand une fois dans la page | contexte critique ou tâche urgente | la section se résume en une phrase et n’a qu’un foyer |
+| **Transition** : le passage d’une section à la suivante a une forme | le bord vient d’une forme que le produit ou le domaine porte déjà | le bord est décoratif ou repris d’un gabarit | retirer la transition affaiblit la lecture, pas seulement l’ornement |
+| **Fil** : un motif ou un objet revient et relie l’entrée au reste | un objet du produit peut changer d’état d’une section à l’autre | le motif n’a aucun lien avec le produit | le motif change d’état ou de rôle entre ses apparitions |
+| **Fin** : une dernière scène (phrase de clôture, action), puis un colophon (marque, navigation, mentions) | la page a plusieurs sections | la surface est une vue d’application sans fin de lecture | la fin reprend la thèse de l’entrée ; le pied de page n’est pas qu’une liste de liens |
+
+**Trame sur toute la page.** Le test de trame de `BIBLIOTHEQUE/SELECT` s’applique au milieu et au bas de la page, pas seulement au premier écran : une page qui rompt la trame en haut puis empile des sections de même poids, des cartes, des tarifs et des questions y retombe. Écris la séquence en une ligne avant le build, puis vérifie-la sur la page entière réduite. Section par section, la forme réflexe et ses leviers : `BIBLIOTHEQUE/SECTIONS`.
+
+**Cartes.** Une carte marque un objet séparable : à comparer, choisir ou collectionner. Pour des fonctionnalités ou des arguments, préfère une liste, un texte, un objet unique ou des onglets qui montrent une fonctionnalité à la fois avec sa vraie vue produit et ses états.
+
+### Structure mobile
+
+Sur petit écran, la séquence se recompose au lieu de se comprimer (`SAVOIR/CONTEXT`). Pour un parcours guidé (inscription, paiement, réglage pas à pas), une décision par écran : un champ, un choix ou une action, l’action principale dans la zone du pouce. Un formulaire court, une comparaison ou un outil dense gardent ensemble ce qui se décide ensemble, avec une priorité lisible ; une feuille posée sur le contexte garde l’objet visible au-dessus. Une relation entre plans (mot devant ou dans l’image, élément qui chevauche deux sections) se recompose aussi : vérifie sur capture mobile qu’elle ne coupe ni le texte ni l’objet.
+
+**Recomposer une idée.** Au bureau, tout se voit ensemble ; au téléphone, la lecture devient une suite. Décide ce qui arrive en premier, ce qui suit et ce qui disparaît, puis garde l’idée même quand son arrangement ne tient plus : change d’axe (des colonnes deviennent des bandes), recadre sur le détail qui porte la preuve, déplace l’objet de preuve plutôt que de tout réduire. Simplifie par décision, pas par compression : les repères qui portent la preuve restent (une échelle, une date, une unité), les ornements partent. Une section garde sa propre composition, deux colonnes ou une asymétrie comprises, si le contenu s’y prête ; une seule colonne pour toute la page aplatit le rythme. Entre deux contenus, une bande qui ne porte ni contenu ni idée est un trou de séquence. Sur une page longue, l’action principale reste atteignable sans remonter.
+
+---
+
