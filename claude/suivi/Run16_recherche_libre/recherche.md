@@ -18,3 +18,23 @@
 1. Une recherche « normale » ramène surtout des listes SEO et des concepts génériques. Le bon matériau vient d'archives spécialisées comme Fonts In Use, qu'il faut savoir viser.
 2. La skill ne dit pas où chercher le haut niveau (B-1, B-2). Une courte liste de sources de calibration par type d'objet aiderait : Fonts In Use, Letterform Archive, Standards Manual, les guides des plateformes (Apple Wallet)… À proposer au lot 9b, sans l'intégrer pour l'instant.
 3. Pour un billet, les meilleures références sont imprimées et anciennes ; le billet électronique de qualité se juge plutôt sur les conventions des plateformes. Le run peut tirer de l'imprimé la culture graphique, et de la plateforme la convention d'usage.
+
+## Google Images, recherche « billet de concert » (captures de Junior, 19 novembre 2026)
+Fichiers : `google-images-1.jpg`, `google-images-2.jpg`.
+
+- **Presque tout est du modèle à vendre** : Magnific (Freepik), Etsy, Canva, Shutterstock, Vecteezy. C'est la **modale observée** du genre, celle que le modèle a apprise.
+- **Ses marqueurs** :
+  - un billet horizontal avec un talon détaché ;
+  - des encoches et des bords dentelés ;
+  - un code-barres vertical sur le talon ;
+  - « ADMIT ONE » ;
+  - « SEAT / ROW / GATE » en étiquettes tournées ;
+  - la photo de l'artiste à gauche ;
+  - un titre condensé gras ;
+  - un fond sombre avec un néon ou un dégradé rose-violet ;
+  - une illustration de guitare ou de micro ;
+  - du faux texte (« Artist's Name », « Lorem ipsum »).
+- **Les seuls vrais billets** : AC/DC au Stade de France en 2015 (eBay), Carnaval 2023 (Fac Imprimeur) et « Pack Ndolo » (Cameroun). Ils ont un fond de sécurité, une grille de données dense en chasse fixe, des cases Porte / Tribune / Bloc / Rang / Place, des mentions légales et le numéro imprimé. Les modèles imitent ces signes d'authenticité sans leur fonction.
+- **Hors sujet par rapport au brief** : tous ces résultats sont des billets imprimés. Le brief demande un billet sur téléphone. Le billet « en forme de billet », avec encoches, dans un écran de téléphone est lui-même une modale (Dribbble).
+
+**Leçon pour la skill.** La recherche d'images ne sert pas à calibrer le niveau, mais elle montre très bien la modale. La skill demande de *nommer* la modale « que n'importe quelle IA produirait », de mémoire. L'observer en vrai, par une recherche d'images, la rendrait vérifiable. Il y aurait donc deux rôles distincts pour la recherche : **observer la modale** (ce qu'on évite) et **calibrer le niveau** (ce qu'on vise : archives, vrais objets, guides des plateformes). C'est une piste pour le lot 9b, pas encore une proposition.
