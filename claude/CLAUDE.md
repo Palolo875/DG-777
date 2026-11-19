@@ -57,13 +57,25 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Ajouter une règle** : suivre la section « Ajouter ou modifier une règle » de `maintenance/README.md`.
 - **Journal de mobilisation** : `DG_JOURNAL=run.jsonl` fait noter ce que les outils ont servi, et `scripts/journal_mobilisation.py` en tire une fiche.
 
-## État du chantier (18 novembre 2026)
+## État du chantier (19 novembre 2026)
 
 - **`master` est en `R2026-11-15k`**, au commit `c1fe44a`. Les lots S et 1 à 8b sont faits et livrés. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
-- **Le lot 9, le run de contrôle, a été exécuté.** Le brief portait sur la landing « Quote-part ». Les fichiers sont dans `.claude/suivi/Run9/`.
-- **Il manque le verdict de Junior sur le rendu**, avant d'écrire `Lot_9_Run_rapport.md`.
-- **Candidats au lot 9b**, à proposer et non à intégrer :
-  1. La fiche du journal range le tronc écrit avec `--fichier` sous « Manques », alors que c'est le chemin que prescrit le noyau. C'est une fausse alerte.
-  2. La trace légère du run a trois lignes de plus de 600 caractères. L'outil les signale, et l'agent ne les a pas raccourcies.
-  3. La réponse visible ne nomme pas les réserves restantes (contraste du texte, nom accessible des contrôles).
+- **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
+- **Lot 9, les runs de contrôle** :
+  - les runs 9 à 16 sont faits ;
+  - le registre est `suivi/Registre_des_runs.md` et le rapport `suivi/Lot_9_Run_rapport.md`, avec les verdicts de Junior ;
+  - le run 15 a été fait à la main par Claude (avec génération dirigée).
+- **En cours : la série « capacité esthétique »** :
+  - un run à la fois, un agent neuf, sur un petit objet entièrement en code ;
+  - Internet gratuit autorisé ; génération d'images, outils branchés et services payants interdits ;
+  - le premier objet a été le billet de concert (run 16) ; **on discute avant chaque run** (« Pas de run direct »).
+- **Constats principaux, en attente des propositions du lot 9b** :
+  - le diagramme comme objet principal (A-3), et le générique sous le premier écran (A-2) ;
+  - des références faibles ou non transformées (B-1 à B-6), et aucune référence en `STANDARD` (B-5) ;
+  - la voix du designer dans la page (E-1), des polices à la mode (E-2), une palette non justifiée (E-3), un accent incohérent (E-4) ;
+  - la fausse alerte du journal sur `--fichier` (C-1).
+- **Pistes à proposer, à ne pas intégrer** :
+  - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
+  - nommer le diagramme parmi les marqueurs de convergence ;
+  - obtenir l'accord pour la génération d'images quand personne n'est là.
 - **Décision tacite** : LIS-01 mesure le texte visible, sans les cibles de liens. Junior ne l'a pas contestée.

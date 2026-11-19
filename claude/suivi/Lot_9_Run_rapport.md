@@ -73,3 +73,36 @@ Constats ajoutés, sur ces quatre runs :
 - **E-1. La voix du designer passe dans la page (nouveau).** L'agent écrit son raisonnement dans le produit : « Le 3 avril 2027 tombe un samedi », « Le dessin est fixé. Vos pièces restent à tourner. »
 - **E-2. Polices libres, sûres et à la mode**, jamais distinctives : Bricolage, Barlow, Big Shoulders, Plex, Young Serif.
 - **Méthode.** Les runs 12, 13 et 14 ont été interrompus par la limite d'usage, puis repris par le même agent.
+
+## 7. Série « capacité esthétique » : run 16, le billet de concert
+
+Le protocole : un agent neuf par run, un petit objet entièrement en code, aucun mode imposé. Internet gratuit et sans compte est autorisé ; la génération d'images, les outils branchés et les services payants sont interdits. Le détail est dans `Registre_des_runs.md` et dans `Run16/`.
+
+> Junior reprend l'avis de Claude (« Ajoute »).
+
+**Verdict.** C'est le meilleur des runs sur la fonction, et un résultat moyen sur l'esthétique : la tenue d'un billet d'application bien fait, pas d'un objet qu'on a envie de garder.
+
+Ce qui tient :
+- la zone d'entrée (F / 12 / B, les heures, une grille à cases qui reprend la vraie convention Porte / Rang / Place) ;
+- des mentions crédibles et justes ;
+- aucun marqueur de modèle ;
+- une modale bien nommée (la carte Wallet sombre au dégradé violet) et bien évitée.
+
+Constats ajoutés :
+- **A-3 (quatrième fois).** Le plan de la salle sert d'objet principal. Il est justifié ici, parce qu'il répond à « où est ma place ? », mais le réflexe est installé. **Piste :** nommer le diagramme comme objet principal parmi les marqueurs de convergence.
+- **B-6. Les références ne sont pas transformées.** L'agent a regardé les billets Commodore et Printers' Fair (Fonts In Use), mais rien de leur culture (papier de couleur, trame de sécurité, caractère typographique, numérotation) n'est passé dans le billet. Une ligne « ce qu'elle change » ne suffit pas.
+- **E-3. La palette n'est pas justifiée.** Le fond vert d'eau couvre tout le billet, et la trace ne le justifie nulle part : la « Question de convergence » du noyau n'est pas appliquée, et rien ne bloque.
+- **E-4. L'accent suit une logique incohérente.** Le rouge marque le siège, une étape, le rang sur le plan et le sceau, au lieu de porter une seule information.
+- **E-2 (encore).** Unbounded est une police large très à la mode ; elle donne au billet un air de jeune marque.
+- **A-2 (encore).** Le bas du billet est fait de composants d'application standard : tableau, étapes en pastilles, liste à puces.
+- **Gadgets :** les demi-cercles de perforation dans un écran (la modale Dribbble) et le sceau en texte circulaire.
+- **La planche :** la piste « gaufrier BD », la plus située (Angoulême) et la plus vivante, a été écartée. Une combinaison était possible : la matière de la BD, avec la grille de place pour la fonction.
+
+Erreur du brief : le 14 mars 2027 est un dimanche. L'agent l'a relevée et a gardé le 14.
+
+## 8. Recherche libre et Google Images (19 novembre 2026)
+
+Détail dans `Run16_recherche_libre/recherche.md`.
+- **Une recherche web normale** ramène surtout des listes et des concepts génériques. Ce qui a de la valeur vient d'archives spécialisées (Fonts In Use) et des guides des plateformes (Apple Wallet).
+- **Google Images (captures de Junior)** montre presque uniquement des modèles à vendre : c'est la **modale observée** du genre. Les rares vrais billets portent les signes d'authenticité que les modèles imitent.
+- **Piste pour le lot 9b.** La recherche a deux rôles distincts. **Observer la modale** (ce qu'on évite), par une recherche d'images : aujourd'hui la skill la nomme de mémoire. **Calibrer le niveau** (ce qu'on vise), avec une courte liste de sources par type d'objet. Ces pistes ne sont pas encore des propositions.
