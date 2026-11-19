@@ -66,7 +66,7 @@ STATE est la route de savoir **la plus proposée** du paquet : la passe de finit
 
 ## 6. Pistes (non intégrées, règle 1)
 
-1. **Servir les lignes de STATE qui correspondent aux signaux relevés.** Quand `verifier` relève un signal, il afficherait directement le geste correspondant (une ligne de la table), au lieu de renvoyer à la route. C'est le même principe qu'un registre consultable.
+1. ~~Servir les lignes de STATE qui correspondent aux signaux relevés.~~ **Correction (lot 9b, §0)** : `verifier` le fait déjà (`geste_texte` lu à son lieu, l. 452 de `parcours.py`), et il a tourné dans les 8 runs. Les gestes ont donc été servis, et les rendus sont restés génériques : cela renforce le constat plancher / plafond.
 2. **Distinguer plancher et plafond dans le vocabulaire du système.** Finition et anti-slop forment le plancher ; direction, leviers de caractère et sélection forment le plafond. Cela éviterait qu'un rendu « sans tells » passe pour un rendu réussi. C'est une phrase de doctrine, à discuter.
 3. **Servir l'essai isolé de TECH dans la fiche `verifier`** quand le rendu contient une technique fragile (grain, trame, texte sur image). Le coût est faible.
 4. **Laisser le reste de TECH en l'état** : transitions, mobile et médiums non web sont hors de la série esthétique actuelle.

@@ -51,7 +51,7 @@ La question de départ : obtenir des rendus de haute qualité plus souvent, avec
 
 | Piste | Ce qu'elle fait | Notes |
 |---|---|---|
-| A1 | `verifier` sert les lignes au moment utile : ordre de composition, leviers et piège des pôles déclarés (READ), geste STATE du signal relevé, essai isolé (TECH) pour une technique fragile. | 12 à 14 |
+| A1 | Servir **avant le build** les lignes de direction : ordre de composition, leviers et piège des pôles déclarés (READ), essai isolé (TECH) pour une technique fragile. *Correction : le geste STATE du signal relevé est déjà servi par `verifier` (lot 9b, §0).* | 12 à 14 |
 | A2 | Une ligne en trace légère : « choix : auto-jugé / Junior / absent ». | 15 |
 | A3 | Ajouter le diagramme comme objet principal aux signaux de convergence (SELECT, ou un marqueur `regard`). | 13 |
 | A4 | Relever les mots creux sans conséquence (« premium », « moderne »…) dans la thèse. | 12 |
