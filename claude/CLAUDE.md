@@ -57,7 +57,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Ajouter une règle** : suivre la section « Ajouter ou modifier une règle » de `maintenance/README.md`.
 - **Journal de mobilisation** : `DG_JOURNAL=run.jsonl` fait noter ce que les outils ont servi, et `scripts/journal_mobilisation.py` en tire une fiche.
 
-## État du chantier (19 novembre 2026)
+## État du chantier (20 novembre 2026)
 
 - **`master` est en `R2026-11-15l`**, au commit `5d11ab9`. Les lots S, 1 à 8b et 9b sont faits et livrés. Le bundle et les archives de la `l` sont dans DG-777 (`claude/livraison/R2026-11-15l/` et la racine). Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
@@ -77,6 +77,5 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
   - la fausse alerte du journal sur `--fichier` (C-1).
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
-  - nommer le diagramme parmi les marqueurs de convergence ;
   - obtenir l'accord pour la génération d'images quand personne n'est là.
 - **Décision tacite** : LIS-01 mesure le texte visible, sans les cibles de liens. Junior ne l'a pas contestée.
