@@ -34,7 +34,15 @@ Sont aussi mis à jour : `maintenance/evolution.md` (ligne `DIRECTION/DIVERGENCE
 
 ## 3. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup.
+  - Tests : `parcours` 161 cas avec navigateur ; journal 19 ; `read_route` 106 ; `check_render` A, B et C ; `regard` 39.
+  - Validations complète et locale : PASSED.
+- **Avant la préparation** : une cellule de `maintenance/README.md` dépassait 500 signes (LIS-01). Je l'ai raccourcie.
+- **Commits** : `569494f` sur `lot-9c`, fusionné en `f9cf468` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit, comparés un à un.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15m.zip` (sha256 `c3127d81…6132`), à la racine de DG-777 ;
+  - dans `claude/livraison/R2026-11-15m/` : `Design_Governance_V1_LOCAL_R2026-11-15m.zip` (sha256 `153c938c…5f16`) et le bundle `--branches`, vérifié.
 
 ## 4. Ce que ce lot ne prouve pas
 
