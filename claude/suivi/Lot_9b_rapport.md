@@ -43,7 +43,17 @@ Les mutations ont été faites une à une. Chacune casse la propriété ; le tes
 
 ## 4. Préparation et livraison
 
-À compléter après la préparation complète.
+- **Première préparation : échouée.** Mon ajout à la fiche de version formait un paragraphe de 1 028 signes, au-delà de la limite de 900 (LIS-01). Je l'ai découpé en liste.
+- **Seconde préparation : réussie.** `python3 scripts/preparer_livraison.py --require-browser --empreintes`.
+  - Tests : `parcours` 159 cas, avec navigateur ; `check_render` A, B et C ; `regard` 39 ; `read_route` 106 ; régressions d'audit 155 ; budget du noyau 19.
+  - Validations complète et locale : PASSED.
+  - Le contrôle de l'export Local écarte le navigateur, comme prévu ; il garde donc ses mentions NOT-VERIFIED.
+- **Commits.** `9505f4a` sur `lot-9b`, fusionné en `5d11ab9` sur `master` (`--no-ff`).
+- **Archive GitHub.** Les 151 fichiers sont identiques au commit fusionné, comparés un à un. Aucun fichier n'est absent.
+- **Sortie** (dépôt DG-777, branche `claude/chat-session-bfv0no`) :
+  - `Design_Governance_V1_GITHUB_R2026-11-15l.zip` (sha256 `11ef26a3…275fb`), à la racine, à côté de la `k` ;
+  - `claude/livraison/R2026-11-15l/Design_Governance_V1_LOCAL_R2026-11-15l.zip` (sha256 `df6afe52…8baaec`) ;
+  - `claude/livraison/R2026-11-15l/design-governance_R2026-11-15l.bundle`, `--branches` : `master` et `lot-9b`, historique complet, vérifié.
 
 ## 5. Ce que ce lot ne prouve pas
 

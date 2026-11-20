@@ -59,7 +59,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 ## État du chantier (19 novembre 2026)
 
-- **`master` est en `R2026-11-15k`**, au commit `c1fe44a`. Les lots S et 1 à 8b sont faits et livrés. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-15l`**, au commit `5d11ab9`. Les lots S, 1 à 8b et 9b sont faits et livrés. Le bundle et les archives de la `l` sont dans DG-777 (`claude/livraison/R2026-11-15l/` et la racine). Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -69,7 +69,8 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
   - un run à la fois, un agent neuf, sur un petit objet entièrement en code ;
   - Internet gratuit autorisé ; génération d'images, outils branchés et services payants interdits ;
   - le premier objet a été le billet de concert (run 16) ; **on discute avant chaque run** (« Pas de run direct »).
-- **Constats principaux, en attente des propositions du lot 9b** :
+- **Lot 9b fait** (`Lot_9b_rapport.md`) : `parcours.py leviers`, diagramme parmi les convergences, « choisi par » en trace légère, D1, D2. **Prochaine étape : PILOT de 9b (P6)**, avec jugement par paires et carnet de goût (P4), à discuter avant de lancer.
+- **Constats du lot 9 (rappel)** :
   - le diagramme comme objet principal (A-3), et le générique sous le premier écran (A-2) ;
   - des références faibles ou non transformées (B-1 à B-6), et aucune référence en `STANDARD` (B-5) ;
   - la voix du designer dans la page (E-1), des polices à la mode (E-2), une palette non justifiée (E-3), un accent incohérent (E-4) ;
