@@ -60,3 +60,10 @@ Les mutations ont été faites une à une. Chacune casse la propriété ; le tes
 - Que les rendus seront meilleurs. C'est l'objet du PILOT (P6) : trois à cinq objets, deux agents neufs par objet, Junior juge sans connaître la condition.
 - Que les agents appelleront `leviers`. La phrase est au noyau, au point de déclaration ; le journal de mobilisation le dira au prochain run.
 - Que la question du diagramme sera suivie. Elle est servie, mais elle se juge sur capture.
+
+## 6. Conclusion du PILOT (20 novembre 2026)
+
+- **Jugement de Junior, à l'aveugle** : `R2026-11-15l` est préféré sur les deux objets. Le détail est dans `Pilot_9b/protocole.md` et `Carnet_de_gout.md`.
+- **Les nouveaux outils ont servi d'eux-mêmes** : les agents `l` ont appelé `leviers`, la question du diagramme leur a été servie, et leur trace dit qui a choisi.
+- **Décision** : le lot 9b reste en l'état. **Limite** : deux paires montrent une tendance, pas une preuve.
+- **Nouveau constat principal : la convergence.** Pour chaque objet, les deux agents ont eu la même idée, quel que soit le paquet. Les différences jugées tiennent à l'exécution. C'est la base du lot 9c.
