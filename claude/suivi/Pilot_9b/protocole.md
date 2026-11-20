@@ -36,3 +36,19 @@
 ## Limite
 
 Deux paires montrent une tendance ; elles ne prouvent pas un gain. Si les deux paires donnent des résultats opposés, on ne conclut rien.
+
+## Résultats (20 novembre 2026)
+
+| Run | Paquet | Mode | `leviers` | Question du diagramme servie | « Choisi par » | Coût |
+|---|---|---|---|---|---|---|
+| 17k | k | DIRECTION | — | — | non | ≈323 k jetons, 102 appels, 27 min |
+| 17l | l | DIRECTION | 3 appels | oui | oui | ≈310 k jetons, 102 appels, 22 min |
+| 18k | k | STANDARD | — | — | non | ≈257 k jetons, 71 appels, 14 min |
+| 18l | l | STANDARD | 2 appels | oui | oui | ≈319 k jetons, 101 appels, 21 min |
+
+- **Jugement de Junior** : `l` est préféré sur les deux objets. Le détail est dans le carnet de goût.
+- **Convergence** :
+  - sur l'objet 1, les deux agents ont trouvé la **même idée** : un émail céladon qui coule et s'arrête sur le grès nu, la pratique écrite sous l'émail ;
+  - sur l'objet 2, la **même structure** : le créneau en tête, la courbe avec la ligne du seuil, le phare de Ploumanac'h en fond d'écran.
+  - Les différences jugées tiennent à l'exécution (structure, lisibilité, cas limites), pas à la direction.
+- **Erreur de brief** : la rue des Tanneurs est dans le 9e arrondissement de Lyon, pas dans le 1er. Les deux runs ont reçu le même brief.
