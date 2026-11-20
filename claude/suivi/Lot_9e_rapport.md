@@ -35,7 +35,15 @@ A-1, A-2, A-3, A-4, B-6, C-3, C-4, D-1, E-3 et E-4 sont clos pour les raisons do
 
 ## 4. Préparation et livraison
 
-À compléter.
+- **Première préparation : échouée.** Le validateur lisait `` `refs.md` ``, cité entre accents graves dans `maintenance/evolution.md`, comme une référence à un fichier du paquet. J'ai reformulé en « le fichier de références ».
+- **Seconde préparation : réussie.** `--require-browser --empreintes`.
+  - Tests : `parcours` 170 cas, `regard` 41, journal 19, `read_route` 106, `check_render` A, B et C.
+  - Validations complète et locale : PASSED.
+- **Commits** : `8ecca36` sur `lot-9e`, fusionné en `03cdd00` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15o.zip` (sha256 `9c29ceec…663d`), à la racine de DG-777 ;
+  - dans `claude/livraison/R2026-11-15o/` : `Design_Governance_V1_LOCAL_R2026-11-15o.zip` (sha256 `824460e5…9f02`) et le bundle `--branches`, vérifié.
 
 ## 5. Bilan du lot 9
 
