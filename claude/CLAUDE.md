@@ -59,7 +59,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 ## État du chantier (20 novembre 2026)
 
-- **`master` est en `R2026-11-15m`**, au commit `f9cf468`. Les lots S, 1 à 8b, 9b et 9c sont faits et livrés. Le bundle et les archives sont dans DG-777 (`claude/livraison/R2026-11-15m/` et la racine). Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-15n`**, au commit `7446fdc`. Les lots S, 1 à 8b et 9b à 9d sont faits et livrés. Le bundle et les archives sont dans DG-777 (`claude/livraison/R2026-11-15n/` et la racine). Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -70,11 +70,12 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
   - Internet gratuit autorisé ; génération d'images, outils branchés et services payants interdits ;
   - le premier objet a été le billet de concert (run 16) ; **on discute avant chaque run** (« Pas de run direct »).
 - **Lot 9b fait** (`Lot_9b_rapport.md`) : `parcours.py leviers`, diagramme parmi les convergences, « choisi par » en trace légère, D1, D2. **PILOT fait** (`Pilot_9b/`) : `l` préféré sur 2 objets sur 2, à l'aveugle ; carnet de goût ouvert (`Carnet_de_gout.md`).
-- **Lot 9c fait** (`Lot_9c_rapport.md`) : modale au second degré observée (première idée), deuxième attribut, lecture hors journal (C-1, C-2). Registre des convergences hors paquet (`Convergences_observees.md`). **Pas de run tant que Junior ne le demande pas.**
+- **Lot 9c fait** (`Lot_9c_rapport.md`) : modale au second degré observée (première idée), deuxième attribut, lecture hors journal (C-1, C-2). Registre des convergences hors paquet (`Convergences_observees.md`).
+- **Lot 9d fait** (`Lot_9d_rapport.md`) : Fontshare dans `polices`, vague typographique (vague 4) relevée par `regard`, signal « la page ne commente pas son design », calibration dès que la décision visuelle est ouverte ; B-4 clos. **Pas de run tant que Junior ne le demande pas.**
 - **Constats du lot 9 (rappel)** :
   - le diagramme comme objet principal (A-3), et le générique sous le premier écran (A-2) ;
-  - des références faibles ou non transformées (B-1 à B-6), et aucune référence en `STANDARD` (B-5) ;
-  - la voix du designer dans la page (E-1), des polices à la mode (E-2), une palette non justifiée (E-3), un accent incohérent (E-4) ;
+  - des références faibles ou non transformées (B-1 à B-3, B-6) ;
+  - une palette non justifiée (E-3), un accent incohérent (E-4) : restent à relire ;
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
   - obtenir l'accord pour la génération d'images quand personne n'est là.

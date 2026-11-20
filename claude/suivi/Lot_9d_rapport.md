@@ -31,7 +31,14 @@ Les 9 mutations rouges échouent chacune avec un échec nommé, sans plantage :
 
 ## 3. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup.
+  - Tests : `parcours` 168 cas, `regard` 41 cas (avec navigateur), journal 19, `read_route` 106, `check_render` A, B et C.
+  - Validations complète et locale : PASSED.
+- **Commits** : `8234518` sur `lot-9d`, fusionné en `7446fdc` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit, comparés un à un.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15n.zip` (sha256 `ec862fbe…003b`), à la racine de DG-777 ;
+  - dans `claude/livraison/R2026-11-15n/` : `Design_Governance_V1_LOCAL_R2026-11-15n.zip` (sha256 `67e4013d…e506`) et le bundle `--branches`, vérifié.
 
 ## 4. Ce que ce lot ne prouve pas
 
