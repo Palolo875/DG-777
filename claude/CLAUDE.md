@@ -48,7 +48,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Lecture par code de route** : `python3 scripts/read_route.py CODE`. Autres formes : `--trouver TERME`, `--mode MODE`, et `--tronc MODE --fichier tronc.txt`, qui écrit la ligne du mode puis son tronc.
 - **Budgets** :
-  - le noyau `SKILL.md` est limité à 46 000 octets ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
+  - le noyau `SKILL.md` est limité à 48 500 octets (plafond provisoire du lot 11b ; il redescend en 11c) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
   - un tronc par mode est limité à 35 000 caractères.
 - **Où vivent les gardes** :
   - `scripts/validate_structure.py` : planchers `[REQUIS]`, GLO-02, LIS-01, LAN-01, VOU-01…
