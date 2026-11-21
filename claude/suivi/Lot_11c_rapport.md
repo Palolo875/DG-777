@@ -9,7 +9,7 @@
 
 | Mesure | Avant (`s`) | Après (`t`) |
 |---|---|---|
-| Noyau `SKILL.md` | 48 173 octets (46 414 caractères) | **30 485 octets (−37 %)** |
+| Noyau `SKILL.md` | 48 173 octets (46 414 caractères) | **30 502 octets (−37 %)** |
 | Budget du noyau | 48 500 (provisoire) | **31 000** |
 | Tronc DIRECTION | 31 398 caractères | 35 177 caractères |
 | Budget du tronc | 35 000 caractères | **40 000** (voir § 3) |
@@ -25,6 +25,7 @@
 - **Le texte des lignes** est celui du document de relecture, avec **deux retouches** imposées par des gardes :
   - L2 (déclarer la direction) : « pris dans **au moins** deux dimensions du registre (composition, …) ». La garde REG-01 lit cette liste au noyau.
   - L6 (revue sur capture) : « où va l'œil **en premier** ». La garde CORE-01 protège cette formulation.
+  - L4 (ancre et calibration) : « au niveau visé **(ligne `NIVEAU`)** ». Le test P27 de `parcours` relie la calibration à la ligne `NIVEAU`.
 - **Trois obligations passent à la forme « ligne »** de 11a : diverger sur image et déclarer la direction (route `DIRECTION/DIVERGENCE`), regarder des références (route `SAVOIR/SOURCE`).
 - **Trois petits blocs d'obligation restent tels quels** : `COMP-TYPO`, `COMP-CONTROLES`, `COMP-COULEUR`.
 
@@ -40,6 +41,7 @@ Sur la copie jetable, 18 tests échouaient. Avec les lignes, il n'en restait que
 | `REG-01`, dimensions du registre | **Gardé** : la ligne L2 porte la liste. |
 | `CHG-10` et la marge de 10 % du tronc (`test_trunks_serve_gate_a_controls_only`) | **Adapté** : budget du tronc à **40 000**. J'avais proposé 36 000, mais la règle existante veut 10 % de marge (35 177 / 0,9 ≈ 39 100). Je n'ai pas assoupli la règle. |
 | `test_loaded_typography_floor_folds_but_title_details_remain` | **Gardé**, et il a trouvé un vrai défaut (ci-dessous). |
+| `parcours` P24 et P27 (calibration) | Trouvés par la première préparation complète, qui a échoué. **P27 gardé** : la ligne L4 porte « (ligne `NIVEAU`) ». **P24 adapté** : la ligne au noyau dit « d'une décision visuelle ouverte, regarde en image », et la phrase complète est vérifiée dans `DIRECTION/STANDARD`. |
 
 **Le défaut trouvé.** Quand `read_route` sert une route, il remplace chaque bloc déjà au noyau par un renvoi « Déjà dans le noyau… ». Ce renvoi faisait environ 200 caractères, **plus long qu'une ligne d'invariant**. La lecture d'une route devenait plus longue qu'en `--complet`. Le renvoi est raccourci (numéro de section, 60 caractères du début, « --complet l'affiche ») ; cela allège aussi toutes les autres lectures de route.
 
@@ -51,4 +53,4 @@ Sur la copie jetable, 18 tests échouaient. Avec les lignes, il n'en restait que
 
 - Qu'un agent en mode LITE, ITER ou STANDARD ouvrira la route quand une ligne l'exige : seul un run le dira (lot 13).
 - Que les lignes gardent toutes les nuances : le texte complet reste servi, mais seul un rendu le montrera.
-- La cible de 18 000 octets du sous-lot 11d est à revoir : il reste 30 485 octets, dont 7 383 pour l'index.
+- La cible de 18 000 octets du sous-lot 11d est à revoir : il reste 30 502 octets, dont 7 383 pour l'index.
