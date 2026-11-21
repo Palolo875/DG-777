@@ -82,7 +82,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Décision de Junior (21 novembre)** : le carnet de goût devient une fonction proposée à chaque utilisateur, personnelle et facultative (« si utile »). Le carnet de Junior reste privé.
 - **Lot 10A fait** (`suivi/Lot_10A_rapport.md`) : fuites du journal retirées, mesure obsolète remplacée, garde PRO-01 (liste `suivi/noms_interdits.txt`, passée par la préparation), journal optionnel, date réelle, suivi rangé (`INDEX.md`, `archives/`). A4 et A6 reportés au lot 12.
 - **Lot 10B fait** (`suivi/Lot_10B_rapport.md`) : `captures --version` en une image, `verifier` différentiel (2e appel 3 659 → 347 caractères), `chantier`, sommaire du tronc (règle de vitesse gardée), sobriété au noyau.
-- **Prochaine étape** : le lot 11 (noyau-index et commandes), sans run, en sous-lots, par son document de propositions. D2 (visibilité de DG-777) reste à vérifier par Junior. La mesure sobre avant le lot 11 reste une décision de Junior.
+- **Prochaine étape** : le lot 11 (noyau-index et commandes), sans run, en sous-lots, par son document de propositions. D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
