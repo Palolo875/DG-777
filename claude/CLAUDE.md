@@ -73,6 +73,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Lot 9c fait** (`Lot_9c_rapport.md`) : modale au second degré observée (première idée), deuxième attribut, lecture hors journal (C-1, C-2). Registre des convergences hors paquet (`Convergences_observees.md`).
 - **Lot 9d fait** (`Lot_9d_rapport.md`) : Fontshare dans `polices`, vague typographique (vague 4) relevée par `regard`, signal « la page ne commente pas son design », calibration dès que la décision visuelle est ouverte ; B-4 clos.
 - **Lot 9e fait** (`Lot_9e_rapport.md`) : références sans jugement signalées par `verifier`, référence de niveau d'une source éditée ; tous les autres constats du lot 9 clos. **Pas de run tant que Junior ne le demande pas.**
+- **Plan de travail** (`suivi/Plan_de_travail_publication.md`, 21 novembre) : la référence pour la suite ; il détaille la feuille de route et le lot 10.
 - **Feuille de route** (`suivi/Feuille_de_route_publication.md`) : système de niveau publication, intérieur et extérieur ; lots 10A (propreté), 10B (outils sobres), 11 (outils d'abord), 12 (documentation de publication), 13 (évaluation finale, **les seuls runs, à la fin**). Rien d'obsolète ni d'inutile, mais la règle 10 tient : le non-lu n'est pas « en trop ».
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
