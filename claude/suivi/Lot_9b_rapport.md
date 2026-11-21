@@ -67,3 +67,7 @@ Les mutations ont été faites une à une. Chacune casse la propriété ; le tes
 - **Les nouveaux outils ont servi d'eux-mêmes** : les agents `l` ont appelé `leviers`, la question du diagramme leur a été servie, et leur trace dit qui a choisi.
 - **Décision** : le lot 9b reste en l'état. **Limite** : deux paires montrent une tendance, pas une preuve.
 - **Nouveau constat principal : la convergence.** Pour chaque objet, les deux agents ont eu la même idée, quel que soit le paquet. Les différences jugées tiennent à l'exécution. C'est la base du lot 9c.
+
+## 7. Correction du 21 novembre 2026
+
+L'ordre de composition que sert `leviers` **était déjà au noyau** à la révision `k`, dans la ligne « Composition nouvelle » du bloc `CHARGE-DETAILS`. Ma mesure de P1, qui disait le contraire, était fausse. L'apport propre de `leviers` se limite aux leviers et pièges de `BIBLIOTHEQUE/READ` et à « Classique et expressif ». Le jugement du PILOT ne permet pas de dire quelle part du gain vient de quoi.

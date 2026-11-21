@@ -27,7 +27,7 @@ La question de départ : obtenir des rendus de haute qualité plus souvent, avec
 | C5 | La divergence est bien produite (directions avec probabilités, Verbalized Sampling). La sélection, elle, est faite par l'agent, sur vignette, contre une modale parfois caricaturée (runs 10 et 12) ; la modale de second degré n'a jamais été esquissée. | Notes 08 et 10 |
 | C6 | Le gabarit et les marqueurs de vague sont **déjà détectés** (`verifier`, `regard.py`). La détection n'est pas ce qui manque. | Note 14 |
 | C7 | Le noyau fait 45 250 octets pour un plafond de 46 000. On ne peut rien y ajouter sans retirer autre chose. | Note 16 |
-| C8 | Le 29 octobre, Junior a préféré le rendu **sans** système dans 3 briefs sur 4, et ce rendu sans système coûtait 1,7 fois moins de jetons. | Note 03 |
+| C8 | ~~Le 29 octobre, Junior a préféré le rendu sans système dans 3 briefs sur 4…~~ **Correction (21 novembre)** : ce point est **obsolète**. Il porte sur une révision d'octobre, antérieure aux lots S à 9e. Il ne dit rien de la version actuelle. Le constat juste est qu'**il n'existe aucune comparaison avec et sans système pour la version actuelle**. | Note 02 |
 
 ### Probable (appuyé par la recherche, non mesuré ici)
 
@@ -80,3 +80,11 @@ La question de départ : obtenir des rendus de haute qualité plus souvent, avec
    - Junior compare les deux rendus **par paires, sans savoir lequel vient de quelle condition**. Ce n'est pas un juge externe à l'aveugle : c'est Junior qui juge sans connaître la condition, donc la règle 7 tient.
    - Trois à cinq objets. La limite est déclarée : c'est un petit échantillon, qui sert à décider de la suite, pas à prouver.
 3. **Trancher D1 à D4 avant de rédiger le lot 9b**, puisque ces décisions orientent la rédaction des propositions.
+
+
+## Correction du 21 novembre 2026
+
+- **C8 est obsolète** (voir le tableau).
+- **Erreur dans les notes 12 et 13, reprise ici et dans le lot 9b.**
+  - J'avais écrit que le noyau ne donnait pas l'ordre de composition (« tension → foyer → masse → rythme »). **C'est faux.** Le bloc `CHARGE-DETAILS` du noyau le donnait déjà à la révision `k` (ligne « Composition nouvelle : ordre intention → tension → foyer → masse → rythme… »).
+  - L'apport réel de `parcours.py leviers` (lot 9b) se limite donc aux **leviers et pièges** de READ et à « Classique et expressif ». L'ordre de composition était déjà servi.

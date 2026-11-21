@@ -75,3 +75,6 @@ Lecture du 19 novembre 2026. Routes lues avec `read_route.py` :
 - Studio Klara, brief : https://kaizen-demo-klara.pages.dev/blog/the-brief-that-actually-works
 - Business of Home : https://businessofhome.com/articles/the-client-dictionary-decoding-requests-into-actionable-design-steps
 - Aalborg, niveaux d'abstraction des briefs : https://vbn.aau.dk/files/535716738/Decoding_design_briefs_The_role_of_abstraction_levels_in_textual.pdf
+
+
+**Correction du 21 novembre 2026** : l'ordre de composition **était déjà au noyau**, dans le bloc `CHARGE-DETAILS` (ligne « Composition nouvelle »). Le constat « le noyau ne donne pas l'ordre tension → foyer → masse → rythme » est faux. Seule la route FRAME complète n'a jamais été lue.

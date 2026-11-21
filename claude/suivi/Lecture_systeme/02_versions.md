@@ -26,7 +26,7 @@ Le fichier est lu en entier (83 lignes).
 - **La limite déclarée par ces mesures :** la préférence humaine peut récompenser l'effet tape-à-l'œil.
 
 ## Ce que j'en retiens
-1. **La question de fond reste la même qu'au 29 octobre,** et le dernier point de mesure est défavorable. Les runs 9 à 16 ont jugé le système contre lui-même, jamais contre un rendu sans lui.
+1. **La question de fond reste la même qu'au 29 octobre** (*correction du 21 novembre : ce point de mesure porte sur une révision d'octobre et ne vaut plus pour la version actuelle ; il n'y a simplement aucune comparaison avec et sans système pour celle-ci*). Les runs 9 à 16 ont jugé le système contre lui-même, jamais contre un rendu sans lui.
 2. **Probable :** le modèle seul est déjà fort en composants d'interface (Design Arena, source secondaire). La skill doit donc battre un modèle de base déjà très bon. Cela pourrait expliquer la préférence de trois sur quatre pour le rendu sans le système. C'est à vérifier, pas à affirmer.
 3. **La bonne méthode de comparaison est connue, et le paquet en a le contrat :** des paires à l'aveugle, même brief, avec et sans le système, jugées par Junior sans savoir quelle version est laquelle, et assez de paires pour que ce soit plus qu'une impression. Quatre briefs, c'est très peu.
 4. **Le statut `PILOT` permettrait d'essayer le kit** (contraintes, spécimens, variantes, comparaison finale) sans l'intégrer, si on le décide.
