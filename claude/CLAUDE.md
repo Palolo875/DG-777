@@ -38,7 +38,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
    ```bash
    python3 scripts/preparer_livraison.py --require-browser --empreintes
    ```
-6. Monter la révision avec `sed` dans quatre fichiers : `maintenance/versions.md`, `RELEASE_NOTES.md`, `README.md` et `design/savoir/connexions.md`.
+6. Monter la révision avec `sed` dans quatre fichiers : `maintenance/versions.md`, `RELEASE_NOTES.md`, `README.md` et `design/savoir/connexions.md`. **La date affichée est la date réelle de livraison**, pas celle de la série `R2026-11-15`.
 7. Commiter, puis fusionner : `git merge --no-ff` dans `master`.
 8. Vérifier que l'archive GitHub est identique au commit, fichier par fichier.
 9. Rassembler la sortie : les deux zips suffixés de la révision, et `git bundle create … --branches`.
@@ -59,20 +59,22 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 ## État du chantier (21 novembre 2026)
 
+- **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
+
 - **`master` est en `R2026-11-15o`**, au commit `03cdd00`. Les lots S, 1 à 9e sont faits et livrés ; **le lot 9 est clos**. Le bundle et les archives sont dans DG-777 (`claude/livraison/R2026-11-15o/` et la racine). Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
-  - le registre est `suivi/Registre_des_runs.md` et le rapport `suivi/Lot_9_Run_rapport.md`, avec les verdicts de Junior ;
+  - le registre est `suivi/Registre_des_runs.md` et le rapport `suivi/archives/Lot_9_Run_rapport.md`, avec les verdicts de Junior ;
   - le run 15 a été fait à la main par Claude (avec génération dirigée).
 - **En cours : la série « capacité esthétique »** :
   - un run à la fois, un agent neuf, sur un petit objet entièrement en code ;
   - Internet gratuit autorisé ; génération d'images, outils branchés et services payants interdits ;
   - le premier objet a été le billet de concert (run 16) ; **on discute avant chaque run** (« Pas de run direct »).
-- **Lot 9b fait** (`Lot_9b_rapport.md`) : `parcours.py leviers`, diagramme parmi les convergences, « choisi par » en trace légère, D1, D2. **PILOT fait** (`Pilot_9b/`) : `l` préféré sur 2 objets sur 2, à l'aveugle ; carnet de goût ouvert (`Carnet_de_gout.md`).
-- **Lot 9c fait** (`Lot_9c_rapport.md`) : modale au second degré observée (première idée), deuxième attribut, lecture hors journal (C-1, C-2). Registre des convergences hors paquet (`Convergences_observees.md`).
-- **Lot 9d fait** (`Lot_9d_rapport.md`) : Fontshare dans `polices`, vague typographique (vague 4) relevée par `regard`, signal « la page ne commente pas son design », calibration dès que la décision visuelle est ouverte ; B-4 clos.
-- **Lot 9e fait** (`Lot_9e_rapport.md`) : références sans jugement signalées par `verifier`, référence de niveau d'une source éditée ; tous les autres constats du lot 9 clos. **Pas de run tant que Junior ne le demande pas.**
+- **Lot 9b fait** (`archives/Lot_9b_rapport.md`) : `parcours.py leviers`, diagramme parmi les convergences, « choisi par » en trace légère, D1, D2. **PILOT fait** (`Pilot_9b/`) : `l` préféré sur 2 objets sur 2, à l'aveugle ; carnet de goût ouvert (`Carnet_de_gout.md`).
+- **Lot 9c fait** (`archives/Lot_9c_rapport.md`) : modale au second degré observée (première idée), deuxième attribut, lecture hors journal (C-1, C-2). Registre des convergences hors paquet (`Convergences_observees.md`).
+- **Lot 9d fait** (`archives/Lot_9d_rapport.md`) : Fontshare dans `polices`, vague typographique (vague 4) relevée par `regard`, signal « la page ne commente pas son design », calibration dès que la décision visuelle est ouverte ; B-4 clos.
+- **Lot 9e fait** (`archives/Lot_9e_rapport.md`) : références sans jugement signalées par `verifier`, référence de niveau d'une source éditée ; tous les autres constats du lot 9 clos. **Pas de run tant que Junior ne le demande pas.**
 - **Où on en est (21 novembre)** : lot 9 clos, `master` en `o`. Phase de cadrage terminée. **Deux documents de référence seulement** :
   - `suivi/Plan_de_travail_publication.md` dit **quoi faire et dans quel ordre** (10A, 10B, 11, 12, 13) ;
   - `suivi/Pistes_innovantes.md` dit **comment le faire mieux** (noyau-index, contexte frais, regarder peu et bien, modale nommée, goût par l'exemple, budgets visibles ; quatre profils d'environnement E1 à E4, sous-agents en bonus seulement).

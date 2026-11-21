@@ -1,0 +1,29 @@
+# Suivi — index (21 novembre 2026)
+
+Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos est dans `archives/`, sans être supprimé.
+
+## Documents vivants
+
+| Document | Rôle |
+|---|---|
+| `../CLAUDE.md` | Règles de travail et état du chantier ; **à lire en premier** |
+| `Plan_de_travail_publication.md` | **Quoi faire et dans quel ordre** : lots 10A, 10B, 11, 12, 13 |
+| `Pistes_innovantes.md` | **Comment le faire mieux** ; quatre profils d'environnement |
+| `Cartographie/` | Carte mesurée du système (`o`) : schéma et analyse |
+| `Lot_10A_rapport.md` | Lot en cours ou dernier livré |
+| `Plan_corrections_Design_Governance.md` | Plan des corrections, lot par lot (mis à jour à chaque lot) |
+| `Registre_couverture_audit_neuf.md` | Registre des constats et de leur traitement, par révision |
+| `Registre_des_runs.md` | Tous les runs : brief, agent, modèle, effort, coût |
+| `Pilot_9b/` | PILOT du lot 9b : protocole, rendus jugés, traces, **script de mesure du coût** (`cout_des_runs.py`) |
+| `Carnet_de_gout.md` | Jugements de Junior, à l'aveugle ; **privé** |
+| `Convergences_observees.md` | Idées produites par plusieurs agents sur un même brief |
+| `noms_interdits.txt` | Liste de la garde PRO-01 (noms tirés des runs), lue par la préparation |
+
+## Archives (`archives/`)
+
+- Audits et plans d'audit, lots S à 8b, lots 9 à 9e (propositions et rapports).
+- Runs 9 à 16, recherche libre du run 16, Top 20 des références.
+- Lecture du système (notes 01 à 17).
+- Feuille de route et propositions du lot 10, remplacées par le plan de travail.
+
+**Une erreur connue dans les archives** : les notes de lecture 12, 13 et 17 et le lot 9b contenaient deux erreurs, la comparaison du 29 octobre prise pour actuelle et l'ordre de composition dit absent du noyau. Elles sont corrigées dans les fichiers eux-mêmes (sections « Correction du 21 novembre »).
