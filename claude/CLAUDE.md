@@ -48,8 +48,8 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Lecture par code de route** : `python3 scripts/read_route.py CODE`. Autres formes : `--trouver TERME`, `--mode MODE`, et `--tronc MODE --fichier tronc.txt`, qui écrit la ligne du mode puis son tronc.
 - **Budgets** :
-  - le noyau `SKILL.md` est limité à 48 500 octets (plafond provisoire du lot 11b ; il redescend en 11c) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
-  - un tronc par mode est limité à 35 000 caractères.
+  - le noyau `SKILL.md` est limité à 31 000 octets (lot 11c ; 30 502 aujourd'hui) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
+  - un tronc par mode est limité à 40 000 caractères (lot 11c ; DIRECTION en lit 35 177).
 - **Où vivent les gardes** :
   - `scripts/validate_structure.py` : planchers `[REQUIS]`, GLO-02, LIS-01, LAN-01, VOU-01…
   - `scripts/validate_reading_map.py` : conditions de façade, en liste close ;
@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-15s`**, au commit `8a222f6`. Les lots S, 1 à 9e, 10A, 10B, 11a et 11b sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `s` (dernière) restent, plus `claude/livraison/R2026-11-15s/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-15t`**, au commit `3097627`. Les lots S, 1 à 9e, 10A, 10B, 11a, 11b et 11c sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `t` (dernière) restent, plus `claude/livraison/R2026-11-15t/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -84,7 +84,8 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Lot 10B fait** (`suivi/Lot_10B_rapport.md`) : `captures --version` en une image, `verifier` différentiel (2e appel 3 659 → 347 caractères), `chantier`, sommaire du tronc (règle de vitesse gardée), sobriété au noyau.
 - **Lot 11a fait** (`suivi/Lot_11a_rapport.md`) : troisième forme de plancher (`("ligne", route)`), aucun contenu déplacé.
 - **Lot 11b fait** (`suivi/Lot_11b_rapport.md`) : la table des signaux du noyau indexe les 85 routes (garde IDX-01), plafond du noyau provisoirement à 48 500.
-- **Prochaine étape** : le sous-lot 11c (blocs de procédure en lignes d'invariant, noyau sous 25 000 octets ; Junior relit les lignes), puis 11d, par `suivi/Lot_11_Propositions.md` (options A approuvées). D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
+- **Lot 11c fait** (`suivi/Lot_11c_rapport.md`) : 13 blocs de procédure en différé, 12 lignes d'invariant au noyau ; noyau 30 502 octets. Junior a laissé le choix des lignes (« À toi le choix »).
+- **Prochaine étape** : le sous-lot 11d (« Sans outils », garde « aucune consigne ne suppose un sous-agent », réécriture courte des blocs gardés ; cible à revoir), par `suivi/Lot_11_Propositions.md` (options A approuvées). D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;

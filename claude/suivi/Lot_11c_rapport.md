@@ -47,7 +47,16 @@ Sur la copie jetable, 18 tests échouaient. Avec les lignes, il n'en restait que
 
 ## 4. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie **au second passage**.
+  - Le premier a échoué sur `parcours` P24 et P27 (voir § 3). Je n'avais pas relancé cette suite seule avant la préparation.
+  - Tests : régressions d'audit 168, budget 19, `parcours` 176, `read_route` 106, `regard` 41, journal 19, `check_render` A, B et C.
+  - Validations de structure, de carte de lecture, complète et locale : PASSED. Garde PRO-01 active.
+- **Commits** : `8cf458d` sur `lot-11c`, fusionné en `3097627` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15t.zip` (sha256 `f25d69de…8ce6`), à côté de la `k` ;
+  - `claude/livraison/R2026-11-15t/` : archive Local (sha256 `3ae3c9e8…0982`) et bundle vérifié.
+  - La `s` est retirée de DG-777. Elle reste dans l'historique et dans le bundle.
 
 ## 5. Ce que ce sous-lot ne prouve pas
 
