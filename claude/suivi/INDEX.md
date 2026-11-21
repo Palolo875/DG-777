@@ -10,7 +10,7 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 | `Plan_de_travail_publication.md` | **Quoi faire et dans quel ordre** : lots 10A, 10B, 11, 12, 13 |
 | `Pistes_innovantes.md` | **Comment le faire mieux** ; quatre profils d'environnement |
 | `Cartographie/` | Carte mesurée du système (`o`) : schéma et analyse |
-| `Lot_10A_rapport.md` | Lot en cours ou dernier livré |
+| `Lot_10A_rapport.md`, `Lot_10B_Propositions.md`, `Lot_10B_rapport.md` | Lots 10A et 10B, livrés |
 | `Plan_corrections_Design_Governance.md` | Plan des corrections, lot par lot (mis à jour à chaque lot) |
 | `Registre_couverture_audit_neuf.md` | Registre des constats et de leur traitement, par révision |
 | `Registre_des_runs.md` | Tous les runs : brief, agent, modèle, effort, coût |

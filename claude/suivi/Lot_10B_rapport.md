@@ -42,7 +42,16 @@ La copie intacte passe les 176 cas avec navigateur.
 
 ## 5. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup.
+  - Garde PRO-01 active.
+  - Tests : `parcours` 176, régressions d'audit 159, `read_route` 106, `regard` 41, journal 19, `check_render` A, B et C.
+  - Validations complète et locale : PASSED.
+- **Commits** : `6f4f86b` sur `lot-10b`, fusionné en `dbcfd7f` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15q.zip` (sha256 `69db3b15…554f`), à côté de la `k` ;
+  - `claude/livraison/R2026-11-15q/` : archive Local (sha256 `7d840f70…5910`) et bundle vérifié.
+  - La `p` est retirée de DG-777. Elle reste dans l'historique et dans le bundle.
 
 ## 6. Ce que ce lot ne prouve pas
 
