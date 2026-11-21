@@ -1,3 +1,5 @@
+> **Remplacé** par `Plan_de_travail_publication.md` (lots 10A et 10B) et `Pistes_innovantes.md`. Gardé pour mémoire ; sa mesure du coût (section 0) reste valable.
+
 # Lot 10 — Propositions : meilleur, plus rapide, moins coûteux, sans perte de qualité
 
 Rédigé le 21 novembre 2026. Base : `R2026-11-15o` (`master` `03cdd00`). Aucun run pour cette rédaction.

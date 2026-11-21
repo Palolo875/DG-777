@@ -1,3 +1,5 @@
+> **Remplacé** par `Plan_de_travail_publication.md` (21 novembre). Gardé pour mémoire.
+
 # Feuille de route — un système de niveau publication
 
 Rédigé le 21 novembre 2026. Base : `R2026-11-15o`.

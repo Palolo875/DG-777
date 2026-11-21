@@ -57,7 +57,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Ajouter une règle** : suivre la section « Ajouter ou modifier une règle » de `maintenance/README.md`.
 - **Journal de mobilisation** : `DG_JOURNAL=run.jsonl` fait noter ce que les outils ont servi, et `scripts/journal_mobilisation.py` en tire une fiche.
 
-## État du chantier (20 novembre 2026)
+## État du chantier (21 novembre 2026)
 
 - **`master` est en `R2026-11-15o`**, au commit `03cdd00`. Les lots S, 1 à 9e sont faits et livrés ; **le lot 9 est clos**. Le bundle et les archives sont dans DG-777 (`claude/livraison/R2026-11-15o/` et la racine). Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
@@ -73,8 +73,12 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Lot 9c fait** (`Lot_9c_rapport.md`) : modale au second degré observée (première idée), deuxième attribut, lecture hors journal (C-1, C-2). Registre des convergences hors paquet (`Convergences_observees.md`).
 - **Lot 9d fait** (`Lot_9d_rapport.md`) : Fontshare dans `polices`, vague typographique (vague 4) relevée par `regard`, signal « la page ne commente pas son design », calibration dès que la décision visuelle est ouverte ; B-4 clos.
 - **Lot 9e fait** (`Lot_9e_rapport.md`) : références sans jugement signalées par `verifier`, référence de niveau d'une source éditée ; tous les autres constats du lot 9 clos. **Pas de run tant que Junior ne le demande pas.**
-- **Plan de travail** (`suivi/Plan_de_travail_publication.md`, 21 novembre) : la référence pour la suite ; il détaille la feuille de route et le lot 10.
-- **Feuille de route** (`suivi/Feuille_de_route_publication.md`) : système de niveau publication, intérieur et extérieur ; lots 10A (propreté), 10B (outils sobres), 11 (outils d'abord), 12 (documentation de publication), 13 (évaluation finale, **les seuls runs, à la fin**). Rien d'obsolète ni d'inutile, mais la règle 10 tient : le non-lu n'est pas « en trop ».
+- **Où on en est (21 novembre)** : lot 9 clos, `master` en `o`. Phase de cadrage terminée. **Deux documents de référence seulement** :
+  - `suivi/Plan_de_travail_publication.md` dit **quoi faire et dans quel ordre** (10A, 10B, 11, 12, 13) ;
+  - `suivi/Pistes_innovantes.md` dit **comment le faire mieux** (noyau-index, contexte frais, regarder peu et bien, modale nommée, goût par l'exemple, budgets visibles ; quatre profils d'environnement E1 à E4, sous-agents en bonus seulement).
+  - La feuille de route et les propositions du lot 10 sont remplacées.
+- **Décision de Junior (21 novembre)** : le carnet de goût devient une fonction proposée à chaque utilisateur, personnelle et facultative (« si utile »). Le carnet de Junior reste privé.
+- **Prochaine étape concrète** : le lot 10A (propreté), sans run. Il attend D1 (ligne de veille) et D3 (archives intermédiaires) ; D2 (visibilité de DG-777) est à vérifier par Junior.
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
