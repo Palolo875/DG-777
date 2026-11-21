@@ -123,3 +123,61 @@ Les outils affichent un compteur discret : images lues, appels de `verifier`, ca
 - Chroma, *Context Rot* (2025) : https://www.trychroma.com/research/context-rot
 - Jiang et al., *Artificial Hivemind*, NeurIPS 2025 ; Schaeffer et al., arXiv 2609.33936 (réévaluation)
 - SelfReflect, arXiv 2505.20295 ; PRISM, arXiv 2601.11747
+
+---
+
+## Révision du 21 novembre : un système qui s'adapte à son environnement
+
+**Critique de Junior, juste.** P2, P3 et P6 reposaient sur des sous-agents. Or le système doit marcher :
+- pour **un agent seul** ;
+- dans **un autre environnement**, y compris **sans exécution de code** ;
+- pour **une personne sans agent**.
+
+Les sous-agents ne doivent être qu'un accélérateur.
+
+### Règle proposée
+
+**Chaque fonction a un chemin de base qui marche partout. Les moyens plus riches sont des accélérateurs optionnels.**
+
+Ce n'est pas une idée nouvelle pour le système : il a déjà le profil de capacités (`CAPABILITY-PROFILE`) et le tableau « Mode agent seul et preuve dégradée » (`gouvernance/travail.md`). **Mais le noyau ne dit rien du cas sans outils** (vérifié : aucune phrase « sans navigateur » ou « sans exécution » au noyau).
+
+### Quatre profils d'environnement
+
+| Profil | Exemple | Ce qui est possible |
+|---|---|---|
+| **E1 — Une personne sans agent** | Un designer qui suit la méthode | Lire les guides, l'index, les planches ; faire et juger à la main |
+| **E2 — Un agent sans exécution** | Une conversation, avec ou sans fichiers lisibles | Lire le noyau, et peut-être les routes ; écrire le code ; **pas** de capture ni de script |
+| **E3 — Un agent seul avec exécution** | Claude Code, Codex, ou moi dans cette session | Tout l'outillage : scripts, navigateur, captures, Internet selon l'environnement |
+| **E4 — Un agent qui peut déléguer** | Sous-agents ou appels parallèles | E3, plus le travail en parallèle et les contextes neufs |
+
+L'agent dit son profil sur la ligne `RUN` de la trace : une capacité déclarée, jamais supposée.
+
+### Les pistes revues, du profil E1 au profil E4
+
+| Piste et principe | E1 personne | E2 sans exécution | E3 agent seul avec outils | E4 délégation (bonus) |
+|---|---|---|---|---|
+| **P1 Noyau-index** : tout l'essentiel visible, le détail à la demande | L'index sert de table des matières | Le noyau seul suffit à faire juste, l'index dit quoi lire si les fichiers sont lisibles | Idem, et les commandes servent les lignes utiles | Idem |
+| **P2 Contexte frais** : l'état du travail vit dans un fichier, pas dans la mémoire de la conversation | Une fiche de reprise à remplir | Un bloc « dossier » réécrit en fin de chaque étape, à reprendre si la conversation repart | Un fichier `dossier.json` écrit par les commandes ; les outils écrivent dans des fichiers et n'affichent qu'un résumé ; la compaction de la conversation perd moins | Relais vers un agent neuf qui ne lit que le dossier |
+| **P3 Regarder peu et bien** : une image par décision, au bon format | Une planche imprimée | Pas de capture : ce que l'agent n'a pas vu est déclaré `NOT-VERIFIED`, et il pose à la personne une question de vérification précise | Une planche en 1× au lieu de plusieurs captures ; zoom recadré sur un détail ; mesures en texte par les outils | Œil délégué : un sous-agent lit les images et rend 300 mots |
+| **P4 Nommer la modale sans l'estimer seul** | Le registre des convergences et des exemples de genre | Le registre des convergences servi en texte : les idées déjà vues par type d'objet, avec date ; la première idée écrite est déclarée modale | Idem, plus une recherche d'images du genre (piste en attente) avec `references` | Tirages parallèles courts pour mesurer la modale |
+| **P5 Goût par l'exemple** | La planche de spécimens | Description courte des spécimens dans la route | Planche de spécimens servie au moment du choix | Idem |
+| **P7 Budgets visibles** | — | Une ligne au noyau : peu d'itérations, chacune doit changer quelque chose | Compteurs affichés par les outils | Idem |
+
+**P6 (évaluation sobre)** n'est pas une fonction du produit : c'est **notre banc d'essai**. Il peut utiliser des sous-agents, puisque c'est Junior qui organise les runs. Mais l'évaluation finale doit tester **au moins deux profils du produit** : E3 (agent seul avec outils) et E2 (sans exécution). Ainsi, la version publiée n'est pas validée seulement dans le cas le plus favorable.
+
+### Ce que ça change au prototype 10X
+
+1. **P1 d'abord**, avec une section « Sans outils » au noyau : ce qui reste obligatoire, comment déclarer ce qui n'a pas été vu, quelle question poser à la personne.
+2. **P2 en version de base** : `dossier.json` écrit et relu par les commandes, et des sorties d'outils courtes (sortie complète dans un fichier). Le relais vers un agent neuf reste en option.
+3. **P3 en version de base** : planche unique, zoom recadré ; l'œil délégué reste en option.
+4. **P4 en version de base** : le registre des convergences devient un savoir servi en texte, daté, hors des noms de briefs de Junior. Les tirages parallèles restent en option.
+5. **Gardes sans run** :
+   - le noyau seul couvre toutes les obligations (test du profil E2) ;
+   - chaque commande a un équivalent en texte cité au noyau ou dans l'index ;
+   - aucune consigne du noyau ne suppose un sous-agent.
+
+### Ce qui reste incertain
+
+- **Un agent sans exécution produit-il un rendu jugeable sans jamais le voir ?** Probablement moins bon. Le système doit le **dire** plutôt que le cacher.
+- **Le registre des convergences** (P4, version de base) **vieillit vite**. Il porte une date et une échéance, comme la veille.
+- **Tester E2 demande des runs dans un autre environnement** (une conversation sans exécution). Je ne peux pas tous les simuler ici. Ce sera un choix à faire au lot 13.
