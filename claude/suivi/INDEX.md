@@ -11,7 +11,7 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 | `Pistes_innovantes.md` | **Comment le faire mieux** ; quatre profils d'environnement |
 | `Cartographie/` | Carte mesurée du système (`o`) : schéma et analyse |
 | `Lot_10A_rapport.md`, `Lot_10B_Propositions.md`, `Lot_10B_rapport.md` | Lots 10A et 10B, livrés |
-| `Lot_11_Propositions.md`, `Lot_11a_rapport.md` | Lot 11 (noyau-index) : propositions, sous-lot 11a livré |
+| `Lot_11_Propositions.md`, `Lot_11a_rapport.md`, `Lot_11b_rapport.md` | Lot 11 (noyau-index) : propositions, sous-lots 11a et 11b livrés |
 | `Plan_corrections_Design_Governance.md` | Plan des corrections, lot par lot (mis à jour à chaque lot) |
 | `Registre_couverture_audit_neuf.md` | Registre des constats et de leur traitement, par révision |
 | `Registre_des_runs.md` | Tous les runs : brief, agent, modèle, effort, coût |

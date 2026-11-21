@@ -62,7 +62,18 @@
 
 ## 4. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup.
+  - Garde PRO-01 active ; noyau 48 173 / 48 500 octets.
+  - Tests : régressions d'audit 168 (163 + 5), budget 19, `parcours` 176, `read_route` 106, `regard` 41, journal 19, `check_render` A, B et C.
+  - Validations de structure, de carte de lecture, complète et locale : PASSED.
+- **Commits** : `90d1aa6` sur `lot-11b`, fusionné en `8a222f6` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15s.zip` (sha256 `2719962c…16f9`), à côté de la `k` ;
+  - `claude/livraison/R2026-11-15s/` : archive Local (sha256 `3f9cd807…77b0`) et bundle vérifié.
+  - La `r` est retirée de DG-777. Elle reste dans l'historique et dans le bundle.
+
+**Correction en passant** : l'en-tête du validateur disait encore « plancher (noyau ou tronc) » après 11a ; il dit maintenant « noyau, tronc ou ligne ».
 
 ## 5. Ce que ce sous-lot ne prouve pas
 
