@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-15q`**, au commit `dbcfd7f`. Les lots S, 1 à 9e, 10A et 10B sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `q` (dernière) restent, plus `claude/livraison/R2026-11-15q/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-15r`**, au commit `0b8ff92`. Les lots S, 1 à 9e, 10A, 10B et 11a sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `r` (dernière) restent, plus `claude/livraison/R2026-11-15r/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -82,7 +82,8 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Décision de Junior (21 novembre)** : le carnet de goût devient une fonction proposée à chaque utilisateur, personnelle et facultative (« si utile »). Le carnet de Junior reste privé.
 - **Lot 10A fait** (`suivi/Lot_10A_rapport.md`) : fuites du journal retirées, mesure obsolète remplacée, garde PRO-01 (liste `suivi/noms_interdits.txt`, passée par la préparation), journal optionnel, date réelle, suivi rangé (`INDEX.md`, `archives/`). A4 et A6 reportés au lot 12.
 - **Lot 10B fait** (`suivi/Lot_10B_rapport.md`) : `captures --version` en une image, `verifier` différentiel (2e appel 3 659 → 347 caractères), `chantier`, sommaire du tronc (règle de vitesse gardée), sobriété au noyau.
-- **Prochaine étape** : le lot 11 (noyau-index et commandes), sans run, en sous-lots, par son document de propositions. D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
+- **Lot 11a fait** (`suivi/Lot_11a_rapport.md`) : troisième forme de plancher (`("ligne", route)`), aucun contenu déplacé.
+- **Prochaine étape** : le sous-lot 11b (index complet et compressé des 85 routes), puis 11c et 11d, par `suivi/Lot_11_Propositions.md` (options A approuvées). D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;

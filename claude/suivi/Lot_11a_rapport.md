@@ -32,7 +32,20 @@ C'est la condition des sous-lots 11c et 11d. Une obligation pourra quitter le no
 
 ## 3. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup.
+  - Garde PRO-01 active ; noyau inchangé (45 876 / 46 000 octets).
+  - Tests : régressions d'audit 163 (159 + 4), `parcours` 176, `read_route` 106, `regard` 41, journal 19, `check_render` A, B et C.
+  - Validations complète et locale : PASSED.
+- **Commits** : `c0aba57` sur `lot-11a`, fusionné en `0b8ff92` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15r.zip` (sha256 `7640594e…66c9`), à côté de la `k` ;
+  - `claude/livraison/R2026-11-15r/` : archive Local (sha256 `aac987a0…8b82`) et bundle vérifié.
+  - La `q` est retirée de DG-777. Elle reste dans l'historique et dans le bundle.
+
+## Ce que ce sous-lot ne prouve pas
+
+- Rien ne change encore pour un agent : aucune obligation n'utilise la forme « ligne ». Elle servira en 11c.
 
 ## 4. Suite
 
