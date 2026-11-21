@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-15o`**, au commit `03cdd00`. Les lots S, 1 à 9e sont faits et livrés ; **le lot 9 est clos**. Le bundle et les archives sont dans DG-777 (`claude/livraison/R2026-11-15o/` et la racine). Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-15p`**, au commit `b541344`. Les lots S, 1 à 9e et 10A sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `p` (dernière) restent, plus `claude/livraison/R2026-11-15p/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -80,7 +80,8 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
   - `suivi/Pistes_innovantes.md` dit **comment le faire mieux** (noyau-index, contexte frais, regarder peu et bien, modale nommée, goût par l'exemple, budgets visibles ; quatre profils d'environnement E1 à E4, sous-agents en bonus seulement).
   - La feuille de route et les propositions du lot 10 sont remplacées.
 - **Décision de Junior (21 novembre)** : le carnet de goût devient une fonction proposée à chaque utilisateur, personnelle et facultative (« si utile »). Le carnet de Junior reste privé.
-- **Prochaine étape concrète** : le lot 10A (propreté), sans run. Il attend D1 (ligne de veille) et D3 (archives intermédiaires) ; D2 (visibilité de DG-777) est à vérifier par Junior.
+- **Lot 10A fait** (`suivi/Lot_10A_rapport.md`) : fuites du journal retirées, mesure obsolète remplacée, garde PRO-01 (liste `suivi/noms_interdits.txt`, passée par la préparation), journal optionnel, date réelle, suivi rangé (`INDEX.md`, `archives/`). A4 et A6 reportés au lot 12.
+- **Prochaine étape** : le lot 10B (outils plus sobres), sans run, par son document de propositions. D2 (visibilité de DG-777) reste à vérifier par Junior.
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;

@@ -41,4 +41,13 @@ Les retirer casserait des liens et des commandes documentées. La séparation se
 
 ## 4. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup.
+  - Garde PRO-01 **active** (liste du suivi).
+  - Tests : régressions d'audit 159, `parcours` 170, `regard` 41, `read_route` 106, journal 19, `check_render` A, B et C.
+  - Validations complète et locale : PASSED.
+- **Commits** : `2cff357` sur `lot-10a`, fusionné en `b541344` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 151 fichiers sont identiques au commit.
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15p.zip` (sha256 `90e6b35b…9540`), à la racine de DG-777, à côté de la `k` ;
+  - dans `claude/livraison/R2026-11-15p/` : archive Local (sha256 `12829f88…55c1`) et bundle `--branches`, vérifié.
+  - La `o` est retirée de DG-777 (D3 : seules `k` et la dernière livrée restent). Elle reste dans l'historique git et dans le bundle.
