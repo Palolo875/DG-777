@@ -75,7 +75,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Lot 9c fait** (`archives/Lot_9c_rapport.md`) : modale au second degré observée (première idée), deuxième attribut, lecture hors journal (C-1, C-2). Registre des convergences hors paquet (`Convergences_observees.md`).
 - **Lot 9d fait** (`archives/Lot_9d_rapport.md`) : Fontshare dans `polices`, vague typographique (vague 4) relevée par `regard`, signal « la page ne commente pas son design », calibration dès que la décision visuelle est ouverte ; B-4 clos.
 - **Lot 9e fait** (`archives/Lot_9e_rapport.md`) : références sans jugement signalées par `verifier`, référence de niveau d'une source éditée ; tous les autres constats du lot 9 clos. **Pas de run tant que Junior ne le demande pas.**
-- **Où on en est (21 novembre)** : lot 9 clos, `master` en `o`. Phase de cadrage terminée. **Deux documents de référence seulement** :
+- **Documents de référence (cadrage du 21 novembre)** :
   - `suivi/Plan_de_travail_publication.md` dit **quoi faire et dans quel ordre** (10A, 10B, 11, 12, 13) ;
   - `suivi/Pistes_innovantes.md` dit **comment le faire mieux** (noyau-index, contexte frais, regarder peu et bien, modale nommée, goût par l'exemple, budgets visibles ; quatre profils d'environnement E1 à E4, sous-agents en bonus seulement).
   - La feuille de route et les propositions du lot 10 sont remplacées.
