@@ -38,10 +38,13 @@ Sur la capture de la nouvelle carte, deux lignes débordaient de leur encadré. 
 | DOC-03 | L'écart n'est plus relevé | Rouge : `test_page_retouchee_refusee` |
 | DOC-03 | Un titre sans sujet ne bloque plus la génération | Rouge : `test_titre_sans_sujet_arrete_la_generation` (après correction d'un plantage en échec nommé) |
 | DOC-03 | Seules 3 commandes de `parcours` sont générées | Rouge : `test_chaque_section_et_commande`, `test_page_reelle_identique` |
+| DOC-03 | Une erreur de génération (code porté par deux titres) n'est plus rattrapée | Rouge : `test_code_ambigu_nomme_sans_planter` |
 | Débordement | La garde ne relève plus rien | Rouge : `test_ligne_trop_large_relevee` |
 | Débordement | Place des encadrés portée à 400 px | Rouge : `test_ligne_trop_large_relevee` |
 
 Un test existant comptait 6 SVG de supports ; il en compte 8.
+
+**Trouvé par la première préparation complète.** Le contrôle de déplacement (cas « doublon » : le même code sous deux titres) a fait planter la génération de la référence dans la validation de structure. DOC-03 rattrape maintenant l'erreur et la nomme (« référence non générée »), comme les autres gardes ; un test et sa mutation le protègent.
 
 ## 5. Préparation et livraison
 
