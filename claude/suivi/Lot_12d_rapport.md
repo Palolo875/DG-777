@@ -39,7 +39,15 @@
 
 ## 4. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup.
+  - Tests : régressions d'audit 193 (188 + 5), budget 19, `parcours` 176, `read_route` 106, `regard` 41, journal 19, préparation 10, `check_render` A, B et C ; quatre cartes sans défaut bloquant ; contrôle de déplacement PASSED.
+  - Validations de structure, de carte de lecture, des supports, complète et locale : PASSED. Garde PRO-01 active.
+- **Commits** : `bad0d58` sur `lot-12d`, fusionné en `04688c2` sur `master` (`--no-ff`).
+- **Archive GitHub** : les **164** fichiers sont identiques au commit (158 + les six fichiers du projet).
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15x.zip` (sha256 `b48305d0…42d8`), à côté de la `k` ;
+  - `claude/livraison/R2026-11-15x/` : archive Local (sha256 `ded1b639…e87a`) et bundle vérifié.
+  - La `w` est retirée de DG-777. Elle reste dans l'historique et dans le bundle.
 
 ## 5. À noter pour la suite
 
