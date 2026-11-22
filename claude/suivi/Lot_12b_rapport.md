@@ -48,7 +48,15 @@ Un test existant comptait 6 SVG de supports ; il en compte 8.
 
 ## 5. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie **au second passage** (le premier a trouvé le plantage de DOC-03, § 4).
+  - Tests : régressions d'audit 188 (180 + 8), budget 19, `parcours` 176, `read_route` 106, `regard` 41, journal 19, `check_render` A, B et C ; rendu des **quatre** cartes sans défaut bloquant ; contrôle de déplacement PASSED.
+  - Validations de structure, de carte de lecture, des supports, complète et locale : PASSED. Garde PRO-01 active.
+- **Commits** : `9f48940` sur `lot-12b`, fusionné en `06375f6` sur `master` (`--no-ff`).
+- **Archive GitHub** : les **158** fichiers sont identiques au commit (151 + la référence, son générateur et les cinq fichiers de la carte).
+- **Sortie** :
+  - `Design_Governance_V1_GITHUB_R2026-11-15w.zip` (sha256 `9a7e861a…02c2`), à côté de la `k` ;
+  - `claude/livraison/R2026-11-15w/` : archive Local (sha256 `31b6a555…2bce`) et bundle vérifié.
+  - La `v` est retirée de DG-777. Elle reste dans l'historique et dans le bundle.
 
 ## 6. Ce que ce sous-lot ne prouve pas
 

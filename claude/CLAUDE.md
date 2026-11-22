@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-15v`**, au commit `0ec8c83`. Les lots S, 1 à 9e, 10A, 10B, 11 (11a à 11d) et 12a sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `v` (dernière) restent, plus `claude/livraison/R2026-11-15v/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-15w`**, au commit `06375f6`. Les lots S, 1 à 9e, 10A, 10B, 11 (11a à 11d), 12a et 12b sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `w` (dernière) restent, plus `claude/livraison/R2026-11-15w/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -86,8 +86,8 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Lot 11b fait** (`suivi/Lot_11b_rapport.md`) : la table des signaux du noyau indexe les 85 routes (garde IDX-01), plafond du noyau provisoirement à 48 500.
 - **Lot 11c fait** (`suivi/Lot_11c_rapport.md`) : 13 blocs de procédure en différé, 12 lignes d'invariant au noyau ; noyau 30 502 octets. Junior a laissé le choix des lignes (« À toi le choix »).
 - **Lot 11d fait** (`suivi/Lot_11d_rapport.md`) : passage « Sans outils », garde SUB-01, pas de réécriture des blocs gardés (décision : D3 A). **Lot 11 clos** (bilan au rapport 11d).
-- **Lot 12** : propositions dans `suivi/Lot_12_Propositions.md`, « D'accord » de Junior (options A, et mes recommandations D4 à D7 : MIT et CC BY 4.0, français avec `README.en.md`, nom gardé avec sous-titre, `V1.1` publique ; à lui rappeler avant 12d). **12a fait** (`suivi/Lot_12a_rapport.md`) : DOC-01, DOC-02 (trois clics), README « Comment l'agent lit », guide sans outils.
-- **Prochaine étape** : 12b (référence générée, garde DOC-03 ; carte « Comment l'agent lit »), puis 12c (archive « skill »), 12d (fichiers du projet). D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
+- **Lot 12** : propositions dans `suivi/Lot_12_Propositions.md`, « D'accord » de Junior (options A, et mes recommandations D4 à D7 : MIT et CC BY 4.0, français avec `README.en.md`, nom gardé avec sous-titre, `V1.1` publique ; à lui rappeler avant 12d). **12a fait** (`suivi/Lot_12a_rapport.md`) : DOC-01, DOC-02 (trois clics), README « Comment l'agent lit », guide sans outils. **12b fait** (`suivi/Lot_12b_rapport.md`) : référence générée (`scripts/reference.py`, DOC-03), carte `supports/lecture.*`, garde de débordement des cartes.
+- **Prochaine étape** : 12c (archive « skill » sans l'atelier), puis 12d (fichiers du projet, après rappel de D4 à D7). D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
