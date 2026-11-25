@@ -40,3 +40,9 @@ Le système fait suivre la procédure ; ce qui échappe est le jugement visuel (
 - **C** : quatre signaux de finition dans `verifier` : texte trop près du bord de la fenêtre ; contraste des éléments graphiques porteurs d'information (WCAG 1.4.11) ; contraste sur chaque image de la planche de mouvement ; commandes personnalisées manipulées au clavier. Mesurer la longueur de la fiche avant et après.
 - **D** : une question de matière dans l'atelier (« observée ou dessinée ? »).
 - Constat : la finition est le point fort du système ; les critiques de Junior portaient sur la composition et l'expression.
+
+## Assets, composants, techniques (discussion du 25 novembre), pistes notées
+
+- **E** : la matière observée avant d'être codée : recettes de matière (grain et papier, émail et verre, lumière et ombre, métal) avec leurs pièges, et une planche photo réelle contre version codée à même échelle.
+- **F** : plus de recettes, choisies d'après les besoins réels des runs (police variable animée, formulaire de réponse par courriel, ajout à l'agenda, mise en scène d'un objet) ; une méthode, pas un style.
+- Constats : sourcing sûr (photo libre créditée, polices et icônes avec licence) ; quand une recette existe, l'agent s'en sert (20x : 3 appels) ; sinon il code de mémoire.
