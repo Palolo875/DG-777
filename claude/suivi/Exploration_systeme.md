@@ -99,3 +99,48 @@ Lu dans les résumés des résultats de recherche ; **non vérifié en détail**
 5. **Vérifier la mobilisation** : un signal si un run DIRECTION n'a lu aucune fiche de structure.
 
 Sources (lues dans les résumés de recherche) : [skill-reach, progressive disclosure](https://google.github.io/skill-reach/concepts/progressive-disclosure/) ; [Preventing Agent Laziness in Skill References](https://wenbo97.github.io/prompt-context-patterns/catalog/techniques/anti-laziness) ; [Agent Skill best practices](https://geminicli.com/docs/cli/skills-best-practices/) ; [Mine, Sample, Render](https://arxiv.org/pdf/2610.21185) ; [WebGen-V Bench](https://arxiv.org/html/2510.15306v1) ; [MM-WebAgent](https://arxiv.org/pdf/2604.15309) ; [LLMs as Layout Designers](https://arxiv.org/pdf/2509.16891) ; [UI-Bench](https://arxiv.org/pdf/2508.20410) ; [How to fix the AI-generated look](https://dev.to/alanwest/how-to-fix-the-ai-generated-look-in-your-frontend-1ahh).
+
+## 3. Partie 2 — Composants et micro-interfaces
+
+**Interne (lu)**
+- **`BIBLIOTHEQUE/COMPONENTS`** décrit des **couches et un contrat de composant partagé** : jetons, grammaire de marque, primitives, objets, scènes, gabarits ; intention, slots, jetons consommés, variantes, états, responsive, frontières de composition. C'est de la **gouvernance**, utile à un système de design partagé, muette sur l'aspect d'un bon bouton, d'une bonne carte ou d'un bon champ.
+- **`BIBLIOTHEQUE/MICRO`** décrit sept micro-interfaces (réglages, profil, santé d'une requête, rail d'état, itinéraire, registre d'usage…) par leur **responsabilité et leur vérification** : bonne sur le fond (« un graphique écrit sa conclusion », « la couleur suit le sens de la mesure »), sans procédé visuel.
+- **Le savoir visuel des composants** vit ailleurs : la table des gestes de `SAVOIR/STATE` (rayons, surface, alignement optique, partie ordinaire…) et la recette `controles`. Cette table est **concrète** (formule du rayon intérieur, liseré de 1 px, figures tabulaires), mais elle n'est servie **qu'en réaction**, par fragments, quand `verifier` émet un signal. Jamais comme guide de construction avant le premier build.
+
+**Externe** : les guides de praticiens sont des **listes de détails concrets, avec des valeurs**. Sources : Web Interface Guidelines de Vercel et de Rauno Freiberg, aide-mémoire interfaces.dev et BoringUI. Présents chez eux, absents du système :
+- **ombres en couches** (lumière ambiante et directe, au moins deux couches) ;
+- **bords nets semi-transparents** combinés à l'ombre ;
+- **bords et ombres teintés** vers la teinte d'un fond non neutre ;
+- **états qui augmentent le contraste** (survol, appui, focus plus contrastés que le repos ; chaque combinaison distincte) ;
+- **contour intérieur de 1 px** sur les images (8 % de noir en clair, 8 % de blanc en sombre) ;
+- **marge réduite du côté de l'icône** dans un bouton ;
+- **trait d'icône accordé à la graisse du texte voisin** ;
+- **coins en superellipse** en amélioration progressive ;
+- **cibles d'au moins 24 px**, 44 px au toucher.
+
+Déjà dans le système : rayons emboîtés, alignement optique, focus visible, libellés, erreurs près du champ.
+
+**Conclusion (probable)** : les composants sont basiques parce que le système les traite en **contrat** (ce qu'ils doivent garantir) et en **correction** (ce que `verifier` relève après coup), pas en **construction** (comment les dessiner bien du premier coup).
+
+## 4. Partie 3 — Finition
+
+- **`SAVOIR/STATE`** est la partie la plus proche des guides de praticiens : symptôme, geste concret, condition, réinspection. Sa qualité est bonne.
+- **Ses deux faiblesses**
+  - **Elle arrive tard** : la passe de finition et les signaux de `verifier`, après le premier build.
+  - **Il lui manque les détails de la liste ci-dessus** : ombres en couches, teinte des bords, états, contour d'image, icônes.
+- **Six planches de principes** existent (`design/principes/*.png` : accent de foyer, chiffres, fonds voisins, grand titre, masse visuelle, rayons). Ce sont les seuls exemples visuels du système. Aucun run ne les a ouvertes.
+
+## 5. Partie 5 (avancée) — Techniques de composition
+
+- **Interne** : `SAVOIR/TECH` (13 ko) traite de la hiérarchie de jugement, de l'amélioration progressive, des médiums, de la recherche de méthode, des transitions et du mobile. **Aucune technique pour sortir du rectangle.**
+- **Externe** : les techniques sont documentées et simples :
+  - superposer des éléments sur une même grille (CSS Grid avec chevauchement et `z-index`) ;
+  - découper par `clip-path` et `mask-image` ;
+  - faire épouser une forme au texte (CSS Shapes) ;
+  - rompre la grille par contenants, couches, vide ou gouttières (maçonnerie) ;
+  - révéler partiellement par une fenêtre découpée.
+
+  Un article (« Breaking the Layout Monoculture ») traite précisément de la monoculture des mises en page.
+- **Conclusion** : la composition basique a deux causes. Le savoir de composition est une taxonomie (partie 1), et **le savoir-faire technique pour construire autre chose qu'une boîte manque** (partie 5).
+
+Sources (lues dans les extraits) : [Vercel, Web Interface Guidelines](https://vercel.com/design/guidelines) ; [interfaces.dev, cheat sheet](https://interfaces.dev/cheat-sheet) ; [BoringUI, Interface Cheat Sheet](https://boringui.dev/docs/interface-cheat-sheet/) ; [Rauno Freiberg, Web Interface Guidelines](https://interfaces.rauno.me/) ; [Chrome, natural interactions](https://developer.chrome.com/docs/modern-web-guidance/guides/user-experience/natural-interactions) ; [Codrops, cutout collage with CSS Grid and clip-path](https://tympanus.net/codrops/2020/02/05/crafting-a-cutout-collage-layout-with-css-grid-and-clip-path/) ; [Mandy Michael, 3D layout with CSS Grid](https://javascript.plainenglish.io/creating-3d-layout-with-css-using-grid-perspective-65cd03dfc56c) ; [Breaking the Layout Monoculture](https://design.cnbb.pub/research/breaking-the-layout-monoculture/) ; [Escaping Gridlock](https://usabilitygeek.com/when-how-break-grid-layout/) ; [web.dev, CSS Shapes](https://web.dev/articles/shapes-getting-started).
