@@ -34,5 +34,7 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 | `Lot_15_Propositions.md`, `Lot_15a_rapport.md`, `Lot_15b_rapport.md` | Lot 15 « faire » : clos ; V1.3.0 publiée (`R2026-11-25e`) |
 | `Run22/` | Run 22 : invitation, V1.3.0 ; convergence, références de catégorie, esquisses inégales |
 | `Lot_16_Propositions.md`, `Lot_16_rapport.md` | Lot 16 « esquisses à armes égales » : fait ; V1.4.0 publiée (`R2026-11-25f`) |
+| `Run23/`, `Run24/` | Runs en V1.4.0 : atelier vélo (brief de Claude), page de contact d'un studio d'architecture (brief de Junior) |
+| `Reverse_1_runs_23_24.md` | Rétro-ingénierie 1 : des rendus 22 à 24 à leurs causes (le tirage, levier le plus fort) |
 | `Lot_outil_rapport.md` | Préparation deux fois plus rapide (parallèle, export Local, mode rapide) |
 | `Pilot_final/`, `Lot_13a_rapport.md` | Lot 13 (évaluation finale) : étape 1 jugée (protocole et résultats), correctif V1.1.1 |
