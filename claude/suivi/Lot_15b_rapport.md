@@ -32,7 +32,15 @@
 
 ## 4. Préparation et livraison
 
-_à compléter_
+- **Préparation complète** : réussie au premier passage, en **479 s**. Tests : `parcours` 196, audit 198, `check_render` 265, `regard` 41, `read_route` 106… ; reproductibilité vérifiée.
+- **Un faux pas à la livraison** : mon `git add` a refusé le dossier ignoré `dist`, et le commit n'a pas eu lieu. La comparaison de l'archive l'a montré (fichiers différents de l'ancien `master`). Après le commit, l'archive est identique.
+- **Commits** : `83b4a79` sur `lot-15b`, fusionné en `54fa7a0` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25e.zip` (sha256 `5baceb2b…ccfd`) ; `claude/livraison/R2026-11-25e/` : archive Local (sha256 `fb9c4b04…cfdb`) et bundle vérifié. La `25d` est retirée de DG-777.
+
+## 4 bis. Discussion après livraison : l'optimisation
+
+Junior : ne pas optimiser à tout prix ; références, recherches, captures et tours d'atelier servent la qualité. **Décision : rien ne change pour l'instant.** Piste notée : mesurer le seul gaspillage pur (route relue, page réécrite pour une retouche, commande relancée sans raison) sur le journal du Run 21, si le coût devient un frein.
 
 ## 5. Ce que ce sous-lot ne prouve pas
 

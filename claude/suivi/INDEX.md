@@ -31,6 +31,6 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 **Une erreur connue dans les archives** : les notes de lecture 12, 13 et 17 et le lot 9b contenaient deux erreurs, la comparaison du 29 octobre prise pour actuelle et l'ordre de composition dit absent du noyau. Elles sont corrigées dans les fichiers eux-mêmes (sections « Correction du 21 novembre »).
 | `Pistes_25_novembre.md` | Pistes notées après le run 21 (A à M, Q1, R21), aucune intégrée |
 | `Lot_14_Propositions.md`, `Lot_14a_rapport.md`, `Lot_14b_textes.md`, `Lot_14b_rapport.md`, `Lot_14c_rapport.md` | Lot 14 « voir, et oser » : clos ; V1.2.0 publiée |
-| `Lot_15_Propositions.md`, `Lot_15a_rapport.md` | Lot 15 « faire » : options A décidées ; 15a livré (`R2026-11-25d`), 15b à faire |
+| `Lot_15_Propositions.md`, `Lot_15a_rapport.md`, `Lot_15b_rapport.md` | Lot 15 « faire » : clos ; V1.3.0 publiée (`R2026-11-25e`) |
 | `Lot_outil_rapport.md` | Préparation deux fois plus rapide (parallèle, export Local, mode rapide) |
 | `Pilot_final/`, `Lot_13a_rapport.md` | Lot 13 (évaluation finale) : étape 1 jugée (protocole et résultats), correctif V1.1.1 |
