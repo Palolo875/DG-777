@@ -29,3 +29,17 @@ Chaque entrée note un jugement de Junior entre deux rendus présentés à l'ave
 **Constantes avec le PILOT** : Junior apprécie la fonction (formulaire, cas limites, états) et la retenue éditoriale ; il pénalise la densité et la multiplication des couleurs.
 
 **Réserve** : Junior avait vu les rendus `l` au PILOT ; il les compare à « X » et « Y ».
+
+## 25 novembre 2026 — références de Junior (16 images, trois lots)
+
+- **Ce qu'il aime, en ses mots** : « le côté soigné, fini, abouti, le visuel global » de ces rendus.
+- **Ce que sont ses références** : uniquement des interfaces de produit (applications mobiles, tableaux de bord, composants, accueils de service), toutes de présentation soignée. Décomposition : `Reverse_2/References_Junior_lot1.md` à `lot3.md`.
+- **Ce qui revient** :
+  - une famille et peu de tailles ;
+  - une base neutre et un accent ;
+  - profondeur par la luminance ;
+  - un objet héros, souvent géométrique ou métaphorique ;
+  - un détail qui désigne, une annotation ;
+  - lumière et matière concentrées sur une zone ;
+  - données cohérentes et travaillées ;
+  - parties ordinaires impeccables.
