@@ -24,10 +24,10 @@
 
 | Mutation | Résultat |
 |---|---|
-| Le signal de bord n'est plus émis | À compléter |
-| Le signal de contraste non textuel n'est plus émis | À compléter |
-| L'inertie au clavier n'est plus relevée | À compléter |
-| Le contraste pendant l'entrée n'est plus mesuré | À compléter |
+| Le signal de bord n'est plus émis | Rouge : P141 |
+| Le signal de contraste non textuel n'est plus émis | Rouge : P142 |
+| L'inertie au clavier n'est plus relevée | Rouge : P143 |
+| Le contraste pendant l'entrée n'est plus mesuré | Rouge : P144 |
 
 ## 3. Préparation et livraison
 
