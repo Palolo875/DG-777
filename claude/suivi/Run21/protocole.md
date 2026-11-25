@@ -51,3 +51,9 @@ Le système fait suivre la procédure ; ce qui échappe est le jugement visuel (
 
 - **G** : signaux de qualité de mouvement dans `verifier` (propriétés coûteuses animées, courbe linéaire à l'entrée, durée hors repères, images longues, décalage de mise en page).
 - **H** (prioritaire selon Claude) : juger le mouvement dans l'évaluation, avec une courte vidéo du moment orchestré jointe à la planche ; aujourd'hui, toutes les captures de jugement sont en mouvement réduit, donc le mouvement n'a jamais été jugé.
+
+## Variété et convergence (discussion du 25 novembre), pistes notées
+
+- **I** : la divergence par le réel : sans contenu réel, inventorier d'abord les faits propres au sujet (lieu exact, nom, usage, matière) et tirer les pistes de cet inventaire plutôt que du genre.
+- **J** : remplacer ou compléter l'estimation chiffrée de rareté (fausse : 7 à 8 % pour des idées produites 3 fois sur 3) par une question vérifiable ; à peser contre l'effet des probabilités sur la diversité.
+- **K** : mesurer la variété d'une série de rendus (palette, polices, structure du premier écran), pour le mainteneur.
