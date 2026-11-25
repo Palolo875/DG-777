@@ -33,11 +33,11 @@ Noyau inchangé : 31 699 octets sur 33 000.
 
 | Mutation (dans la recette) | Résultat |
 |---|---|
-| Grain mis à l'échelle de l'élément (`20% 20%`) | _à compléter_ |
-| Taille non calée sur la graisse la plus forte | _à compléter_ |
-| Corps du message non encodé | _à compléter_ |
-| Lignes de l'agenda non pliées | _à compléter_ |
-| Pas de recadrage mobile | _à compléter_ |
+| Grain mis à l'échelle de l'élément (`20% 20%`) | Rouge : P136 |
+| Taille non calée sur la graisse la plus forte | Rouge : P137 et P138 (débordement à 1440 et à 390 px) |
+| Corps du message non encodé | Rouge : P140 |
+| Lignes de l'agenda non pliées | Rouge : P141 (ligne de 221 octets) |
+| Pas de recadrage mobile | Rouge : P142 |
 
 ## 3. Préparation et livraison
 
