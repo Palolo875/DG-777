@@ -38,3 +38,7 @@ Un run montre une tendance, il ne prouve rien. Aucun point de comparaison sans s
   - la source de A (affiches de gare) est nommée dans la trace, sans recherche relevée au journal.
 - **Trace** : modale ~55 %, rang 1, défendue (« la photo rassure en une seconde ») ; A ~7 %, rang 6, issue du tirage, source nommée ; B ~5 %, rang 7 ; C ~10 %, rang 5.
 - **Coût** : 151 tours, cache lu 32,6 M, 23 images, 21 minutes. Moins que le run 22 (174 tours, 38,4 M) et proche du run 19x (141, 33,5 M).
+
+## Jugement de Junior
+
+« Je partage ton avis » : rendu solide et professionnel, idée propre au sujet et exécution nette ; il lui manque la chaleur et la matière de l'atelier (le geste de l'esquisse C repris, sa matière perdue) ; tableau absent du premier écran mobile ; frise « Arrivées » faible. Constats pour le système, à vérifier : la fusion de deux esquisses garde le geste et perd la matière ; la survie de l'idée au premier écran mobile n'a pas bloqué.
