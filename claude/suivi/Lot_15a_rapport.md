@@ -41,7 +41,14 @@ Noyau inchangé : 31 699 octets sur 33 000.
 
 ## 3. Préparation et livraison
 
-_à compléter_
+- **Préparation complète** : réussie au troisième passage, en **473 s**.
+  - Le premier passage n'a pas tourné : j'avais appelé `/usr/bin/time`, absent de la machine.
+  - Le deuxième s'est arrêté en 14 s sur la garde PRO-01 : j'avais mis « grès de Loire », nom tiré d'un run, dans le texte d'essai de l'agenda ; remplacé par un texte neutre.
+- **Le mode `--rapide` n'avait pas vu ce nom.** La liste des noms interdits n'est transmise que par la préparation complète (variable `DG_NOMS_INTERDITS`). Correction possible, non faite sans décision : la transmettre aussi en mode rapide.
+- Tests : `parcours` 195, `check_render` 265, `regard` 41, `read_route` 106… ; reproductibilité vérifiée.
+- **Commits** : `98a31c6` sur `lot-15a`, fusionné en `7fd7b1d` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25d.zip` (sha256 `8d326ac6…796b`) ; `claude/livraison/R2026-11-25d/` : archive Local (sha256 `88b50e4b…c11d`) et bundle vérifié. La `25c` est retirée de DG-777.
 
 ## 4. Ce que ce sous-lot ne prouve pas
 

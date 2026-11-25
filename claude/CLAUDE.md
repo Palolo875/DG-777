@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-25c`, publiée comme V1.2.0**, au commit `2b52bf8`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a, 14 (a, b, c) et « outil » sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `25c` (dernière) restent, plus `claude/livraison/R2026-11-25c/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-25d`** (version publique V1.2.0 ; V1.3.0 prévue à la fin du lot 15), au commit `7fd7b1d`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a, 14 (a, b, c), « outil » et 15a sont faits et livrés ; 15b (idée tirée d'un fait de deuxième rang, rareté par rang, plaidoyer pour la modale) est décidé, à faire. Dans DG-777, seules les archives `k` (référence) et `25d` (dernière) restent, plus `claude/livraison/R2026-11-25d/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
