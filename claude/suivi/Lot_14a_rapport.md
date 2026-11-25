@@ -1,6 +1,6 @@
 # Lot 14a — Rapport : voir
 
-- **Révision** : `R2026-11-15z`, V1.1.2 (à confirmer à la livraison).
+- **Révision** : `R2026-11-15z`, livrée le 25 novembre 2026. La version publique reste **V1.1.1** pendant 14a à 14c ; la **V1.2.0** sera publiée à la fin du lot 14, avec un seul journal des changements.
 - **Branche** : `lot-14a`.
 - **Décision** : « D'accord, on lance. » sur `Lot_14_Propositions.md` : options A partout ; 14a d'abord.
 - **Runs** : aucun.
@@ -30,9 +30,9 @@ Noyau : 31 127 → 31 358 octets (sur 31 500).
 
 | Mutation | Résultat |
 |---|---|
-| La planche ignore l'esquisse | À compléter |
-| `captures` ne transmet pas l'esquisse | À compléter |
-| La consigne mobile disparaît de la fiche | À compléter |
+| La planche ignore l'esquisse | Rouge : P19 (sans navigateur) et P138 (navigateur) |
+| `captures` ne transmet pas l'esquisse | Rouge : P138 |
+| La consigne mobile disparaît de la fiche | Rouge : P20 |
 | Phrases du noyau retirées | CORE-01 (même mécanisme que 13a) |
 
 ## 3. Préparation et livraison
