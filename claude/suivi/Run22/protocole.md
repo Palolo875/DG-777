@@ -32,3 +32,12 @@ Junior juge seul. Pas d'aveugle pour ce run (il n'y a qu'un rendu) : il voit le 
 
 - Le run s'est arrêté sur la limite d'usage de cinq heures du compte, après le choix sur la planche (« A, Pièce trempée ») et pendant la construction de la version finale.
 - Il a été repris avec son contexte intact, par un message neutre (« Reprends là où tu t'étais arrêté… termine la demande »). Écart aux conditions de 19x : une interruption, sans consigne nouvelle.
+
+## Résultats (relevés par Claude ; le jugement est celui de Junior)
+
+- **Idée gardée** : « Pièce trempée » : le carton est un grès trempé dans l'émail ; le haut, émail céladon brillant, porte l'envie (titre, artiste, soirée) ; le pied en grès brut porte la pratique (adresse, réponse) ; une ligne de trempage à trois coulures entre les deux.
+- **Convergence** : c'est, à mon relevé, **la même idée que 17k, 17l et 19x** (émail céladon qui s'arrête sur le grès nu ; l'envie sur l'émail, la pratique sur la terre). Quatre runs sur quatre, à confirmer par Junior.
+- **Ce que la trace déclare** : modale « la pièce » (~45 %, rang 1 : crème, photo de vase, serif italique), défendue (« voir la pièce donne envie ») ; première idée astucieuse « titre émaillé qui coule » (~20 %) ; gardée **A, pièce trempée, ~5 %, rang 3, issue du tirage**. L'agent classe donc comme rare (rang 3, 5 %) l'idée que tous les runs ont produite : **le rang déclaré se trompe comme la probabilité**. C'est la limite écrite dans le rapport 15b (« les rangs que donne l'agent sont une déclaration »), observée dès le premier run.
+- **Ce qui a marché** : modale défendue en une ligne et esquissée ; serif d'édition gardée (EB Garamond) après une variante sans empattement jugée à la vue ; matière réglée d'après des photos réelles (Art Institute of Chicago), recette `matiere` servie ; atelier symétrique (retrait, intensification, voix typographique) sur planches ; agenda `.ics` correct (UTC, CRLF) ; réponse par courriel préremplie ; contenus d'exemple marqués.
+- **Recettes** : seule `matiere` a été lue ; l'agenda et la réponse sont codés de mémoire, correctement.
+- **Coût** (`cout_des_runs.py`) : 174 tours (19x : 141, +23 %) ; cache lu 38,4 M (19x : 33,5 M, +15 %) ; cache écrit 1,27 M (19x : 0,61 M), doublé en partie par l'interruption et la reprise ; 24 images (19x : 22) ; routes lues : 73 k caractères (19x : 6,6 k).
