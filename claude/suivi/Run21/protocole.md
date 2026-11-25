@@ -46,3 +46,8 @@ Le système fait suivre la procédure ; ce qui échappe est le jugement visuel (
 - **E** : la matière observée avant d'être codée : recettes de matière (grain et papier, émail et verre, lumière et ombre, métal) avec leurs pièges, et une planche photo réelle contre version codée à même échelle.
 - **F** : plus de recettes, choisies d'après les besoins réels des runs (police variable animée, formulaire de réponse par courriel, ajout à l'agenda, mise en scène d'un objet) ; une méthode, pas un style.
 - Constats : sourcing sûr (photo libre créditée, polices et icônes avec licence) ; quand une recette existe, l'agent s'en sert (20x : 3 appels) ; sinon il code de mémoire.
+
+## Motion design (discussion du 25 novembre), pistes notées
+
+- **G** : signaux de qualité de mouvement dans `verifier` (propriétés coûteuses animées, courbe linéaire à l'entrée, durée hors repères, images longues, décalage de mise en page).
+- **H** (prioritaire selon Claude) : juger le mouvement dans l'évaluation, avec une courte vidéo du moment orchestré jointe à la planche ; aujourd'hui, toutes les captures de jugement sont en mouvement réduit, donc le mouvement n'a jamais été jugé.
