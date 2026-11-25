@@ -27,3 +27,8 @@ Junior juge seul. Pas d'aveugle pour ce run (il n'y a qu'un rendu) : il voit le 
 - **Convergence** : si l'idée émail/grès revient, le deuxième rang n'a pas suffi sur ce brief ; on en cherche la cause dans la transcription avant tout autre run.
 - **Une idée différente** doit encore appartenir au sujet : une idée arbitraire n'est pas un succès.
 - **Limite** : un run montre une tendance, il ne prouve rien.
+
+## Incident
+
+- Le run s'est arrêté sur la limite d'usage de cinq heures du compte, après le choix sur la planche (« A, Pièce trempée ») et pendant la construction de la version finale.
+- Il a été repris avec son contexte intact, par un message neutre (« Reprends là où tu t'étais arrêté… termine la demande »). Écart aux conditions de 19x : une interruption, sans consigne nouvelle.
