@@ -50,3 +50,52 @@ Ordre proposé, du plus lié à la plainte au moins lié :
 | 8 | Direction et idée | `DIRECTION/*`, `CFT-01` | Déjà servie : idée correcte, rendu basique |
 
 Après l'exploration : une décision d'ensemble sur la mobilisation. Plusieurs voies possibles : lecture obligatoire de certaines routes en DIRECTION, tronc élargi, outil qui sert le savoir au bon moment. Rien n'est intégré sans décision.
+
+## 2. Double recherche (25 novembre, « À toi le choix »)
+
+### 2.1 Interne : le contenu des routes de composition est-il assez concret ?
+
+**Lu** : `design/formes/catalogue.md`, sections `BIBLIOTHEQUE/GRID` et `BIBLIOTHEQUE/SCENE`.
+
+- **Forme des fiches** : une définition (« Unités répétables : cellules, blocs… »), « Choisir lorsque », « Éviter lorsque », une « Preuve » abstraite (« les cellules créent rythme et priorité »).
+- **Ce qui manque** : aucun schéma, aucune proportion, aucun squelette de code, aucun exemple, aucun piège d'exécution. Comment se construit une grille radiale ou axiale en page web ? La fiche ne le dit pas.
+- **Portée** : le catalogue le reconnaît lui-même : « Les scènes, objets et micro-unités de ce catalogue viennent surtout du produit logiciel et du B2B. »
+
+**Conclusion (probable)** : ces fiches sont une **taxonomie de jugement**, pas un **savoir de construction**. Même lues, elles aideraient à nommer un choix, peu à l'exécuter. À l'inverse, les recettes (procédé et code) sont utilisées et tiennent quand l'agent les lit.
+
+### 2.2 Externe : ce que disent les pratiques et la recherche
+
+Lu dans les résumés des résultats de recherche ; **non vérifié en détail**.
+
+- **Mobilisation**
+  - Les guides de compétences d'agents recommandent de **dire quand lire** chaque fichier de référence, plutôt que de laisser l'agent le déduire. Un catalogue de techniques traite précisément de la « paresse » des agents, qui sautent les références et improvisent.
+  - Autre conseil : **faire exécuter un script** plutôt que lire un fichier.
+  - C'est ce que montrent nos journaux : ce qu'un outil sert est utilisé ; ce qui dépend du jugement de l'agent ne l'est pas.
+- **Diversité**
+  - Un article (« Mine, Sample, Render », arXiv) constate que les pages web générées par les modèles **convergent vers un même aspect et une même structure**.
+  - Le même article montre qu'un **schéma de structure imposé à la génération** augmente la diversité visuelle et structurelle, par rapport à une consigne seule. C'est l'équivalent de notre tirage, étendu à la structure.
+- **Qualité de mise en page** : plusieurs travaux améliorent la mise en page en **récupérant des exemples pertinents**, au lieu de définitions :
+  - APD-agents (récupération d'exemples pour des écrans d'application) ;
+  - LayoutCoT (génération augmentée par récupération, attentive à la mise en page) ;
+  - MM-WebAgent (révision sur capture, ce que fait déjà notre atelier).
+- **Empreintes de génération** : police Inter, dégradés violet-bleu, cartes très arrondies à ombre douce, héro centré. Le système les traite déjà, par la convergence et l'habillage de gabarit.
+
+### 2.3 Ce qui en sort (pistes, rien de décidé)
+
+1. **Changer la forme du savoir de composition.** Chaque scène et chaque grille devient une **fiche de construction**, sur le modèle des recettes :
+   - un schéma (une petite image ou un squelette rendu) ;
+   - des proportions ;
+   - un squelette de code ;
+   - un exemple d'usage ;
+   - ses pièges ;
+   - « choisir lorsque », gardé.
+
+   Les recherches sur la récupération d'exemples vont dans ce sens.
+2. **Servir par l'outil, à une étape obligatoire.**
+   - `tirage` tire aussi une structure (scène, grille) pour l'une des esquisses, comme le schéma imposé de l'article sur la diversité. C'est notre levier le plus fort.
+   - `chantier` sert les fiches tirées.
+3. **Dire quand lire, dans le noyau.** Remplacer « lis X si le signal apparaît » par une étape : « avant les esquisses, lis les fiches de structure servies par `chantier` ».
+4. **Faire choisir par code et le tracer** : scène, grille et objet dans la ligne « modal, trame et parti », relevés par `trace`.
+5. **Vérifier la mobilisation** : un signal si un run DIRECTION n'a lu aucune fiche de structure.
+
+Sources (lues dans les résumés de recherche) : [skill-reach, progressive disclosure](https://google.github.io/skill-reach/concepts/progressive-disclosure/) ; [Preventing Agent Laziness in Skill References](https://wenbo97.github.io/prompt-context-patterns/catalog/techniques/anti-laziness) ; [Agent Skill best practices](https://geminicli.com/docs/cli/skills-best-practices/) ; [Mine, Sample, Render](https://arxiv.org/pdf/2610.21185) ; [WebGen-V Bench](https://arxiv.org/html/2510.15306v1) ; [MM-WebAgent](https://arxiv.org/pdf/2604.15309) ; [LLMs as Layout Designers](https://arxiv.org/pdf/2509.16891) ; [UI-Bench](https://arxiv.org/pdf/2508.20410) ; [How to fix the AI-generated look](https://dev.to/alanwest/how-to-fix-the-ai-generated-look-in-your-frontend-1ahh).
