@@ -33,7 +33,10 @@
 
 ## 4. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup, en **891 s** (14 min 51 s). Tous les tests passent (`parcours` 181, audit 193, `read_route` 106…), quatre cartes sans défaut bloquant.
+- **Commits** : `08943ee` sur `lot-14b`, fusionné en `47b4420` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25a.zip` (sha256 `6cb3f44e…fe03`) ; `claude/livraison/R2026-11-25a/` : archive Local (sha256 `2d3562e1…7483`) et bundle vérifié. La `z` est retirée de DG-777.
 
 ## 5. Ce que ce sous-lot ne prouve pas
 

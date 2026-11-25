@@ -11,7 +11,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 ## Règles de travail (elles priment)
 
 1. **Rien n'est intégré sans discussion et décision.** Ses idées sont des propositions à discuter.
-2. **La version publique est V1.1.1** (V1.1 décidée en D7 le 22 novembre, correctif du 25 novembre ; garde VER-01 : manifeste, titre du README, citation, journal des changements). Les révisions internes portent des identifiants neutres : `R2026-11-15a`, b, c…
+2. **La version publique est V1.1.1** (V1.1 décidée en D7 le 22 novembre, correctif du 25 novembre ; garde VER-01 : manifeste, titre du README, citation, journal des changements). Les révisions internes portent des identifiants neutres : série `R2026-11-15a` à `z` close, puis **série `R2026-11-25a`, b, c…** (accord de Junior).
 3. **L'historique reste hors du paquet** : récits de runs, anciens constats, anciens alias. Le suivi vit dans `.claude/suivi/`.
 4. **Vérifier dans les fichiers avant de proposer.** Ne jamais se fier à la mémoire, ni à une vue dérivée.
 5. **Avant toute livraison** : relire la présentation, faire la validation complète avec navigateur, régénérer les archives.
@@ -34,11 +34,11 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 2. Écrire le document de propositions dans `.claude/suivi/` : mesure, puis proposition, avec des options et une recommandation.
 3. Attendre la décision.
 4. Intégrer sur une branche. Chaque garde nouvelle a un test avec une mutation rouge : on casse la propriété et le test doit échouer.
-5. Lancer la préparation complète, qui prend environ 12 minutes :
+5. Lancer la préparation complète, qui prend environ 15 minutes (891 s mesurées le 25 novembre) :
    ```bash
    python3 scripts/preparer_livraison.py --require-browser --empreintes
    ```
-6. Monter la révision avec `sed` dans quatre fichiers : `maintenance/versions.md`, `RELEASE_NOTES.md`, `README.md` (motif « révision interne \`R…\` ») et `design/savoir/connexions.md`. **La date affichée est la date réelle de livraison**, pas celle de la série `R2026-11-15`.
+6. Monter la révision (série `R2026-11-25…`) avec `sed` dans quatre fichiers : `maintenance/versions.md`, `RELEASE_NOTES.md`, `README.md` (motif « révision interne \`R…\` ») et `design/savoir/connexions.md`. **La date affichée est la date réelle de livraison**, pas celle de la série `R2026-11-15`.
 7. Commiter, puis fusionner : `git merge --no-ff` dans `master`.
 8. Vérifier que l'archive GitHub est identique au commit, fichier par fichier.
 9. Rassembler la sortie : les deux zips suffixés de la révision, et `git bundle create … --branches`.
@@ -48,7 +48,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Lecture par code de route** : `python3 scripts/read_route.py CODE`. Autres formes : `--trouver TERME`, `--mode MODE`, et `--tronc MODE --fichier tronc.txt`, qui écrit la ligne du mode puis son tronc.
 - **Budgets** :
-  - le noyau `SKILL.md` est limité à 31 500 octets (31 358 aujourd'hui) ; **décision du 25 novembre : 33 000 à partir de 14b** ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
+  - le noyau `SKILL.md` est limité à **33 000 octets** (décision du 25 novembre ; 31 699 aujourd'hui) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
   - un tronc par mode est limité à 40 000 caractères (lot 11c ; DIRECTION en lit 35 177).
 - **Où vivent les gardes** :
   - `scripts/validate_structure.py` : planchers `[REQUIS]`, GLO-02, LIS-01, LAN-01, VOU-01…
@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-15z` (version publique V1.1.1)**, au commit `7226231`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a et 14a sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `z` (dernière) restent, plus `claude/livraison/R2026-11-15z/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-25a` (version publique V1.1.1)**, au commit `47b4420`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a, 14a et 14b sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `25a` (dernière) restent, plus `claude/livraison/R2026-11-25a/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -90,7 +90,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **12c abandonné** (mesure : aucun fichier d'atelier ouvert en 4 runs ; une ligne du README suffit). **12d fait** (`suivi/Lot_12d_rapport.md`) : D4 à D7 confirmées une par une ; licences, journal des changements, citation, contribution, `README.en.md`, VER-01. **Lot 12 clos.**
 - **Lot 13 en cours** (décision du 25 novembre : option B, Junior juge seul, « attention à mes limites ») : **étape 1** = V1.1.0 sur les deux objets du PILOT (runs 19x, 20x), même prompt mot pour mot, mode libre, comparée à 17l et 18l en paires à l'aveugle (A/B, C/D ; correspondance tirée avant, `suivi/Pilot_final/protocole.md`). **Résultats** : coût −29 % de tours, −32 % de cache lu ; qualité 1–1 (widget : V1.1.0 ; invitation : `l`) ; jugement au carnet de goût. **13a fait** (`suivi/Lot_13a_rapport.md`, décision « Corrections d'abord. Pas de run direct. ») : V1.1.1, atelier dans tous les modes. **Étape 2** (sans système et V1.1.1 sur un objet neuf, en DIRECTION) : **pas de run sans décision de Junior**. Titulaire de la licence écrit « Palolo875 et les contributeurs » : à confirmer par Junior. D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
 - **Discussion du système du 25 novembre** (après le run 21, `suivi/Run21/`) : 18 pistes notées, **aucune intégrée**, résumées dans `suivi/Pistes_25_novembre.md` (voir, composition, hiérarchie, finition, assets, recettes, mouvement, évaluation, variété, brief vague).
-- **Lot 14 « voir, et oser »** (`suivi/Lot_14_Propositions.md`, « D'accord, on lance ») : **14a fait** (`suivi/Lot_14a_rapport.md`) ; **14b** : textes dans `suivi/Lot_14b_textes.md`, budget du noyau à 33 000 (Junior) ; 14c ensuite ; **V1.2.0 publiée à la fin du lot 14** (la version publique reste V1.1.1 d'ici là). Après la série `R2026-11-15z`, nouvelle série d'identifiants à décider (`R2026-11-25a` proposé). Puis : discuter de l'optimisation de la préparation complète (demande de Junior), lot 15 « faire », campagne de runs sur décision.
+- **Lot 14 « voir, et oser »** (`suivi/Lot_14_Propositions.md`, « D'accord, on lance ») : **14a fait** (`suivi/Lot_14a_rapport.md`) ; **14b fait** (`suivi/Lot_14b_rapport.md`) ; 14c ensuite ; **V1.2.0 publiée à la fin du lot 14** (la version publique reste V1.1.1 d'ici là). Puis : discuter de l'optimisation de la préparation complète (demande de Junior), lot 15 « faire », campagne de runs sur décision.
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
