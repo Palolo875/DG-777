@@ -57,3 +57,9 @@ Le système fait suivre la procédure ; ce qui échappe est le jugement visuel (
 - **I** : la divergence par le réel : sans contenu réel, inventorier d'abord les faits propres au sujet (lieu exact, nom, usage, matière) et tirer les pistes de cet inventaire plutôt que du genre.
 - **J** : remplacer ou compléter l'estimation chiffrée de rareté (fausse : 7 à 8 % pour des idées produites 3 fois sur 3) par une question vérifiable ; à peser contre l'effet des probabilités sur la diversité.
 - **K** : mesurer la variété d'une série de rendus (palette, polices, structure du premier écran), pour le mainteneur.
+
+## Brief vague (discussion du 25 novembre), pistes notées
+
+- **L** : un run sur un brief d'une ligne (jamais testé).
+- **M** : inventaire guidé visible quand le sujet est pauvre (lieu, usage, public, matière en une ligne de trace).
+- Synthèse de toutes les pistes : `suivi/Pistes_25_novembre.md`.
