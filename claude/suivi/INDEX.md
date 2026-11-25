@@ -38,6 +38,7 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 | `Reverse_1_runs_23_24.md` | Rétro-ingénierie 1 : des rendus 22 à 24 à leurs causes (le tirage, levier le plus fort) |
 | `Reverse_2/` | Rétro-ingénierie 2 : décisions mesurées des références réelles contre nos rendus (retenue) ; références de Junior décomposées (lots 1 à 3) ; script et données |
 | `Lot_17_Propositions.md` | Lot 17 « le fini » : synthèse de la rétro-ingénierie, propositions en attente de décision |
-| `Exploration_systeme.md` | Exploration du système partie par partie (demande de Junior) ; premier constat : le savoir de composition n'est jamais lu |
+| `Exploration_systeme.md` | Exploration du système partie par partie : finie ; « le système dirige bien, construit mal » ; plan d'action |
+| `Lot_18_Propositions.md` | Lot 18 « brancher le savoir » : propositions en attente de décision |
 | `Lot_outil_rapport.md` | Préparation deux fois plus rapide (parallèle, export Local, mode rapide) |
 | `Pilot_final/`, `Lot_13a_rapport.md` | Lot 13 (évaluation finale) : étape 1 jugée (protocole et résultats), correctif V1.1.1 |
