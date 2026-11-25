@@ -34,7 +34,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 2. Écrire le document de propositions dans `.claude/suivi/` : mesure, puis proposition, avec des options et une recommandation.
 3. Attendre la décision.
 4. Intégrer sur une branche. Chaque garde nouvelle a un test avec une mutation rouge : on casse la propriété et le test doit échouer.
-5. Lancer la préparation complète, qui prend environ 15 minutes (891 s mesurées le 25 novembre) :
+5. Pendant le travail : `python3 scripts/validate_all.py --rapide` (≈ 90 s, sans navigateur ni build). Avant toute livraison, la préparation complète, qui prend environ 8 minutes (459–469 s mesurées le 25 novembre ; **monter la révision avant**, étape 6) :
    ```bash
    python3 scripts/preparer_livraison.py --require-browser --empreintes
    ```
@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-25a` (version publique V1.1.1)**, au commit `47b4420`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a, 14a et 14b sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `25a` (dernière) restent, plus `claude/livraison/R2026-11-25a/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-25b` (version publique V1.1.1)**, au commit `a0a03d9`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a, 14a, 14b et « outil » sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `25b` (dernière) restent, plus `claude/livraison/R2026-11-25b/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -90,7 +90,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **12c abandonné** (mesure : aucun fichier d'atelier ouvert en 4 runs ; une ligne du README suffit). **12d fait** (`suivi/Lot_12d_rapport.md`) : D4 à D7 confirmées une par une ; licences, journal des changements, citation, contribution, `README.en.md`, VER-01. **Lot 12 clos.**
 - **Lot 13 en cours** (décision du 25 novembre : option B, Junior juge seul, « attention à mes limites ») : **étape 1** = V1.1.0 sur les deux objets du PILOT (runs 19x, 20x), même prompt mot pour mot, mode libre, comparée à 17l et 18l en paires à l'aveugle (A/B, C/D ; correspondance tirée avant, `suivi/Pilot_final/protocole.md`). **Résultats** : coût −29 % de tours, −32 % de cache lu ; qualité 1–1 (widget : V1.1.0 ; invitation : `l`) ; jugement au carnet de goût. **13a fait** (`suivi/Lot_13a_rapport.md`, décision « Corrections d'abord. Pas de run direct. ») : V1.1.1, atelier dans tous les modes. **Étape 2** (sans système et V1.1.1 sur un objet neuf, en DIRECTION) : **pas de run sans décision de Junior**. Titulaire de la licence écrit « Palolo875 et les contributeurs » : à confirmer par Junior. D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
 - **Discussion du système du 25 novembre** (après le run 21, `suivi/Run21/`) : 18 pistes notées, **aucune intégrée**, résumées dans `suivi/Pistes_25_novembre.md` (voir, composition, hiérarchie, finition, assets, recettes, mouvement, évaluation, variété, brief vague).
-- **Lot 14 « voir, et oser »** (`suivi/Lot_14_Propositions.md`, « D'accord, on lance ») : **14a fait** (`suivi/Lot_14a_rapport.md`) ; **14b fait** (`suivi/Lot_14b_rapport.md`) ; 14c ensuite ; **V1.2.0 publiée à la fin du lot 14** (la version publique reste V1.1.1 d'ici là). Puis : discuter de l'optimisation de la préparation complète (demande de Junior), lot 15 « faire », campagne de runs sur décision.
+- **Lot 14 « voir, et oser »** (`suivi/Lot_14_Propositions.md`, « D'accord, on lance ») : **14a fait** (`suivi/Lot_14a_rapport.md`) ; **14b fait** (`suivi/Lot_14b_rapport.md`) ; **lot outil fait** (`suivi/Lot_outil_rapport.md`, préparation 891 → 459 s) ; **14c ensuite** ; **V1.2.0 publiée à la fin du lot 14** (la version publique reste V1.1.1 d'ici là). Puis : lot 15 « faire », campagne de runs sur décision.
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;

@@ -23,7 +23,7 @@ Préparation complète du 25 novembre (`R2026-11-25a`) : **891 s**. Étape par �
 
 | Mesure | Avant | Après |
 |---|---|---|
-| Préparation complète | 891 s | **459 s (−48 %)** |
+| Préparation complète | 891 s | **459 s et 469 s (−48 %)**, deux mesures |
 | Vérification pendant le travail | 891 s (seul mode) | **91 s** (`--rapide`) |
 
 ## 4. Tests et mutations rouges
@@ -37,7 +37,10 @@ Préparation complète du 25 novembre (`R2026-11-25a`) : **891 s**. Étape par �
 
 ## 5. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : réussie deux fois (459 s, puis 469 s après la montée de révision oubliée au premier passage). Tous les tests passent ; « LOCAL IDENTITY PASSED — 157 fichiers identiques à la source, README à part ».
+- **Commits** : `2407a12` sur `lot-outil`, fusionné en `a0a03d9` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25b.zip` (sha256 `051e96e2…74af3`) ; `claude/livraison/R2026-11-25b/` : archive Local (sha256 `67560bd7…bf94`) et bundle vérifié. La `25a` est retirée de DG-777.
 
 ## 6. Ce qui reste possible (P4, non fait)
 
