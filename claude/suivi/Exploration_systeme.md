@@ -197,3 +197,56 @@ S'y ajoutent des réglages (« dials ») et une taxonomie de registre.
 **Deux problèmes distincts** :
 1. **La mobilisation, partout.** Même le meilleur savoir (couleur) n'arrive pas.
 2. **La forme du savoir, par endroits.** Composition, composants et techniques sont abstraits ou orientés gouvernance là où il faudrait de la construction.
+
+## 9. Parties 6 à 8 (lecture rapide)
+
+**Typographie (`SAVOIR/TYPE`, `TYPE-VOIX`)** : **très bonne, et servie.**
+- Elle est dans le tronc, et `TYPE-VOIX` est lu à chaque run.
+- Le contenu est concret :
+  - repères de lecture (16 px, interligne de 1,4 à 1,6, 45 à 80 signes) ;
+  - réglage des grands textes (interligne et approche) ;
+  - équilibre des titres ;
+  - méthode de choix de voix par construction (contraste, largeur, axe, empattements, hauteur d'x), comparée sur le vrai titre.
+- **Résultat** : c'est la partie où nos rendus sont les meilleurs.
+- **Manque** : une **échelle restreinte** (peu de tailles, des paliers nets) comme décision de système. C'est l'écart mesuré dans la rétro-ingénierie 2.
+
+**Mouvement** : une ligne de `SAVOIR/STATE`, la recette `moment-orchestre`, la recette `police-variable`, `parcours.py mouvement`.
+- **Contenu** : des principes justes (un seul moment orchestré, mouvement lié à un changement d'état, alternative réduite) et une vérification image par image.
+- **Ce qui manque** : le savoir d'exécution. Courbes et durées par rôle, échelonnement, ressorts, transitions de vue, animations liées au défilement, micro-interactions de survol et d'appui (les guides de praticiens : l'appui réduit l'échelle, le survol ajoute une ombre).
+- **Orientation** : le système penche vers la prudence (« si le mouvement n'apporte rien, supprimer »). Nos rendus bougent peu et sobrement : correct, jamais remarquable.
+
+**Direction et idée (`DIRECTION/*`, `CFT-01`, tirage)** : servie à chaque run, et efficace sur l'idée.
+- Le tirage est le levier le plus fort ; esquisses à armes égales, défense de la modale, atelier symétrique.
+- **Limite** : les idées se résolvent souvent en « document imprimé du monde du sujet ». La piste du tirage « l'objet imprimé de son monde » et le défaut éditorial s'entretiennent.
+
+## 10. Synthèse de l'exploration
+
+**Le constat, en une phrase** : le système dirige bien (idée, typographie, couleur, vérité) mais construit mal. Le savoir qui ferait un rendu de grande qualité est soit **absent sous forme de construction** (composition, composants, techniques, mouvement), soit **présent mais jamais servi** (couleur détaillée, finition complète, style, planches).
+
+**Ce qui marche, à garder** :
+- l'idée par le tirage ;
+- la typographie (dans le tronc, et servie par un outil de méthode) ;
+- les règles de vérité ;
+- les signaux de `verifier` ;
+- les recettes quand elles sont lues.
+
+**Plan d'action (à rédiger en propositions sur décision de Junior)** :
+
+1. **Brancher le savoir existant** (mobilisation), selon les six principes discutés : servir par l'outil à une étape obligatoire, servir l'extrait, faire choisir par code et le tracer, relier les routes en chaîne, mettre la structure et le style dans le tirage, vérifier la mobilisation. En premier :
+   - le détail de couleur ;
+   - la table complète des gestes de finition, **avant** le premier build ;
+   - les profils de style ;
+   - les six planches.
+2. **Écrire la couche de construction qui manque** :
+   - fiches de composition (schéma, proportions, squelette de code, pièges) pour les scènes et les grilles ;
+   - techniques pour sortir de la boîte (superposition, découpe, masque, grille rompue) ;
+   - liste de détails de composants avec valeurs (ombres en couches, bords teintés, états, icônes, contour d'image) ;
+   - savoir d'exécution du mouvement ;
+   - échelle typographique restreinte.
+
+   Toutes en recettes vérifiées dans le navigateur.
+3. **Garder du lot 17** : retenue mesurable (seuil des tailles, couleurs de texte, comparaison aux références), objet géométrique, détail de données, lumière et verre.
+4. **Revoir le protocole de test** : décider si la génération d'images dirigée et marquée est permise dans un run, pour mesurer le plafond qu'impose son absence.
+5. **Éprouver** : un run sur une interface de produit et un run éditorial, jugés sur « soigné, fini, abouti, le visuel global ».
+
+**Ordre proposé** : 1 (brancher), puis 2 (construire), parce que brancher coûte peu et dira vite ce qui manque vraiment ; 3 s'intègre à 2 ; 4 se décide avant le run ; 5 à la fin.
