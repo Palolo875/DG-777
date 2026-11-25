@@ -28,3 +28,15 @@
 ## Question 1 discutée (25 novembre 2026), mise de côté par Junior
 
 Le système fait suivre la procédure ; ce qui échappe est le jugement visuel (l'agent juge son propre travail). Pistes notées, non intégrées : (1) comparer chaque version à l'esquisse choisie, à même échelle, bureau et mobile ; (2) plaider pour la modale avant de l'écarter ; (3) le goût par l'exemple (paires jugées).
+
+## Composition, hiérarchie, mise en scène (discussion du 25 novembre), mises de côté par Junior
+
+- **A** : des gestes concrets de composition et de mise en scène (cas d'usage, contre-cas, planches avant/après) dans la section de composition.
+- **B** : des signaux de hiérarchie dans `verifier` (niveaux de tailles et graisses, écart d'échelle, éléments concurrents, pile centrée), au bureau et au premier écran mobile.
+- Constat : aucun des agents 19x, 20x, 21y n'a ouvert `SAVOIR/FRAME/COMPOSITION`, `CFT-03` ni `SCENE`.
+
+## Qualité, exécution, finition (discussion du 25 novembre), pistes proposées
+
+- **C** : quatre signaux de finition dans `verifier` : texte trop près du bord de la fenêtre ; contraste des éléments graphiques porteurs d'information (WCAG 1.4.11) ; contraste sur chaque image de la planche de mouvement ; commandes personnalisées manipulées au clavier. Mesurer la longueur de la fiche avant et après.
+- **D** : une question de matière dans l'atelier (« observée ou dessinée ? »).
+- Constat : la finition est le point fort du système ; les critiques de Junior portaient sur la composition et l'expression.
