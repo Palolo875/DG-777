@@ -144,3 +144,56 @@ Déjà dans le système : rayons emboîtés, alignement optique, focus visible, 
 - **Conclusion** : la composition basique a deux causes. Le savoir de composition est une taxonomie (partie 1), et **le savoir-faire technique pour construire autre chose qu'une boîte manque** (partie 5).
 
 Sources (lues dans les extraits) : [Vercel, Web Interface Guidelines](https://vercel.com/design/guidelines) ; [interfaces.dev, cheat sheet](https://interfaces.dev/cheat-sheet) ; [BoringUI, Interface Cheat Sheet](https://boringui.dev/docs/interface-cheat-sheet/) ; [Rauno Freiberg, Web Interface Guidelines](https://interfaces.rauno.me/) ; [Chrome, natural interactions](https://developer.chrome.com/docs/modern-web-guidance/guides/user-experience/natural-interactions) ; [Codrops, cutout collage with CSS Grid and clip-path](https://tympanus.net/codrops/2020/02/05/crafting-a-cutout-collage-layout-with-css-grid-and-clip-path/) ; [Mandy Michael, 3D layout with CSS Grid](https://javascript.plainenglish.io/creating-3d-layout-with-css-using-grid-perspective-65cd03dfc56c) ; [Breaking the Layout Monoculture](https://design.cnbb.pub/research/breaking-the-layout-monoculture/) ; [Escaping Gridlock](https://usabilitygeek.com/when-how-break-grid-layout/) ; [web.dev, CSS Shapes](https://web.dev/articles/shapes-getting-started).
+
+## 6. Partie 4 — Couleur et image
+
+**Couleur (`SAVOIR/CRAFT/CFT-05`)** : **la partie la plus solide lue jusqu'ici.** Elle est concrète et chiffrée :
+- la valeur avant la teinte (en OKLCH, des écarts de L donnés pour 3:1 et 4,5:1) ;
+- des neutres teintés d'une chroma de 0,005 à 0,02 ;
+- des fonds voisins distingués par la luminosité, avec une planche ;
+- l'accent de marque distinct de l'accent de foyer, avec une planche ;
+- en sombre, « l'élévation par pas de luminosité des surfaces plutôt que par des lueurs » : **la profondeur par la luminance des références de Junior y est déjà**, contrairement à ce qu'écrit le lot 17 ;
+- la variable visuelle accordée à la donnée (polarité, grandeur, ordre).
+
+**Mais le détail n'est jamais lu** : seule la ligne du noyau (palette par rôles) arrive au run. Correction à porter au lot 17 : la « profondeur par la luminance » n'est pas à créer ; il faut la faire servir.
+
+**Image (`SAVOIR/SOURCE`)** :
+- **Contenu riche** : test d'utilité de l'ancre, recherche orientée décision, collections ouvertes, routes par rôle, curer et intégrer, diriger une génération, construire une atmosphère.
+- **Les runs ont un frein qui ne vient pas du système, mais de nos conditions de test** : génération d'images interdite, banques ouvertes qui refusent ou ne donnent rien (Commons en 429 au run 23), interdiction justifiée de présenter une fausse photo. **Les références de Junior vivent d'images** : illustrations, 3D, photos, logos réels. Nos runs plafonnent donc en partie à cause du protocole.
+
+**À décider** : ouvrir, dans un prochain run, la génération dirigée et marquée (le système la prévoit : « Diriger une génération »), pour mesurer ce plafond ? C'est une piste déjà notée : « obtenir l'accord pour la génération d'images quand personne n'est là ».
+
+## 7. Partie 5 — Style
+
+**`SAVOIR/STYLE`** propose huit profils, avec intention et marqueurs :
+- `RAW_BRUTALISM` ;
+- `EDITORIAL_PRECISION` ;
+- `PICTORIAL_UTILITY` (l'image ou l'illustration qui explique) ;
+- `QUIET_SYSTEM` ;
+- `MAXIMAL_EXPRESSION` ;
+- `DIGITAL_MEMORY` ;
+- `TACTILE_VOLUME` (volume doux, ombres calibrées) ;
+- `COLLAGE_ASSEMBLY` (fragments, découpes).
+
+S'y ajoutent des réglages (« dials ») et une taxonomie de registre.
+
+- **Les runs restent dans `EDITORIAL_PRECISION` ou `QUIET_SYSTEM`** (le profil « éditorial imprimé » observé), sans jamais lire la route.
+- **Plusieurs références de Junior relèvent de profils jamais pris** : `TACTILE_VOLUME` (applications aux volumes doux), `PICTORIAL_UTILITY` (carte pliée, téléviseur), `COLLAGE_ASSEMBLY` (collage de tableaux).
+- **La règle tient le profil à distance** : « Aucun profil n'est choisi par défaut », « retenu seulement s'il modifie une décision ». L'agent n'en retient jamais. Son défaut, c'est l'éditorial.
+- **Forme** : une ligne de tableau par profil. Plus concret que les scènes (des marqueurs sont donnés), mais sans exemple ni procédé.
+
+## 8. Bilan provisoire (parties 1 à 5)
+
+| Partie | Qualité du contenu | Mobilisation |
+|---|---|---|
+| Composition | Taxonomie abstraite | Jamais lue |
+| Composants | Contrats et gouvernance, pas de construction | Jamais lue |
+| Finition | Bonne, concrète ; il manque des détails | Servie après coup, par fragments |
+| Techniques | Rien pour construire autre chose qu'une boîte | Jamais lue |
+| Couleur | **Très bonne**, chiffrée, avec planches | Seule la ligne du noyau arrive |
+| Image | Riche | Bloquée par le protocole (pas de génération, banques en échec) |
+| Style | Huit profils, réglages ; peu d'exemples | Jamais lue ; défaut éditorial |
+
+**Deux problèmes distincts** :
+1. **La mobilisation, partout.** Même le meilleur savoir (couleur) n'arrive pas.
+2. **La forme du savoir, par endroits.** Composition, composants et techniques sont abstraits ou orientés gouvernance là où il faudrait de la construction.
