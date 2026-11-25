@@ -37,7 +37,10 @@ Noyau : 31 127 → 31 358 octets (sur 31 500).
 
 ## 3. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup. `parcours` 180 cas, régressions d'audit 193, `read_route` 106, `regard` 41, `check_render` A, B et C ; quatre cartes sans défaut bloquant.
+- **Commits** : `dc1f7c0` sur `lot-14a`, fusionné en `7226231` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-15z.zip` (sha256 `0b964c0c…d1d3`) ; `claude/livraison/R2026-11-15z/` : archive Local (sha256 `e64d0206…b1c0e`) et bundle vérifié. La `y` est retirée de DG-777.
 
 ## 4. Ce que ce sous-lot ne prouve pas
 
