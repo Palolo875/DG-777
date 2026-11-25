@@ -21,3 +21,20 @@
 ## Limite
 
 Un run montre une tendance, il ne prouve rien. Aucun point de comparaison sans système sur ce brief.
+
+## Résultats (relevés par Claude ; le jugement est celui de Junior)
+
+- **Idée gardée** : « Départs » : la page est une affiche jaune des départs de gare ; chaque réparation a son heure de départ et son prix ; un billet calcule l'heure et le total à partir de cases cochées (geste repris de l'esquisse C). Titre : « Déposé le matin, reparti le soir. »
+- **Planche** (`livrable/planche-esquisses.png`) : quatre esquisses, toutes poussées.
+  - **Modale** : vraie photo libre d'un mécanicien, cartes de services.
+  - **A, Départs** : tableau jaune.
+  - **B, Pierre blonde** : enseigne « CYCLES » peinte sur fond de pierre.
+  - **C, Fiche** : étiquette kraft à cocher, tampon « Prêt ce soir 17 h ».
+  - **Lecture de Claude** : nettement plus égales qu'au run 22 ; C est une vraie concurrente. Code des esquisses : 3,1 à 4,0 ko, contre 1,6 à 2,6 au run 22.
+  - **Signal de page plate** : non déclenché.
+- **Références** :
+  - calibration d'abord (sites d'ateliers vélo, 20 h 24) ;
+  - puis recherches par piste avant la planche : façade en pierre calcaire de Bordeaux, étiquette de réparation, liste de prix à la craie (20 h 28–29), dont une partie hors du domaine ;
+  - la source de A (affiches de gare) est nommée dans la trace, sans recherche relevée au journal.
+- **Trace** : modale ~55 %, rang 1, défendue (« la photo rassure en une seconde ») ; A ~7 %, rang 6, issue du tirage, source nommée ; B ~5 %, rang 7 ; C ~10 %, rang 5.
+- **Coût** : 151 tours, cache lu 32,6 M, 23 images, 21 minutes. Moins que le run 22 (174 tours, 38,4 M) et proche du run 19x (141, 33,5 M).
