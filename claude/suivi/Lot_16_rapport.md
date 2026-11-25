@@ -34,7 +34,10 @@ Manifeste, titres des README, notes et fiche de version, citation (1.4.0), carte
 
 ## 4. Préparation et livraison
 
-_à compléter_
+- **Préparation complète** : réussie au premier passage, en **447 s**. Tests : `parcours` 196, `regard` 42, `check_render` 265, `read_route` 106… ; reproductibilité vérifiée.
+- **Commits** : `18ccb96` sur `lot-16`, fusionné en `324d722` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25f.zip` (sha256 `1fc93948…f224`) ; `claude/livraison/R2026-11-25f/` : archive Local (sha256 `041dd419…c12c`) et bundle vérifié. La `25e` est retirée de DG-777.
 
 ## 5. Ce que ce lot ne prouve pas
 
