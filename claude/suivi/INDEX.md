@@ -32,5 +32,7 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 | `Pistes_25_novembre.md` | Pistes notées après le run 21 (A à M, Q1, R21), aucune intégrée |
 | `Lot_14_Propositions.md`, `Lot_14a_rapport.md`, `Lot_14b_textes.md`, `Lot_14b_rapport.md`, `Lot_14c_rapport.md` | Lot 14 « voir, et oser » : clos ; V1.2.0 publiée |
 | `Lot_15_Propositions.md`, `Lot_15a_rapport.md`, `Lot_15b_rapport.md` | Lot 15 « faire » : clos ; V1.3.0 publiée (`R2026-11-25e`) |
+| `Run22/` | Run 22 : invitation, V1.3.0 ; convergence, références de catégorie, esquisses inégales |
+| `Lot_16_Propositions.md` | Lot 16 « esquisses à armes égales » : propositions, en attente de décision |
 | `Lot_outil_rapport.md` | Préparation deux fois plus rapide (parallèle, export Local, mode rapide) |
 | `Pilot_final/`, `Lot_13a_rapport.md` | Lot 13 (évaluation finale) : étape 1 jugée (protocole et résultats), correctif V1.1.1 |
