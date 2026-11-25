@@ -22,3 +22,8 @@ Toutes **notées, aucune intégrée** (décision de Junior : « on note de côt�
 | K | Variété | Mesure de variété d'une série de rendus (mainteneur) | Indices de marques récurrentes | Moyen | — |
 | L | Brief vague | Un run sur un brief d'une ligne | Jamais testé | Un run | — |
 | M | Brief vague | Inventaire guidé visible quand le sujet est pauvre | Risque de cliché de genre | Faible | Oui |
+| N | Expression | Atelier symétrique : retrait et intensification, toujours, comparés | Pertes d'expression = éléments retirés à l'atelier | Faible | Oui |
+| O | Expression | Niveau d'expression déclaré (sobre, affirmée, expressive) | Même retenue pour une galerie et un widget | Faible | Oui |
+| P | Expression | Test de reconnaissance outillé (sans nom, vu en petit) | Singularité en question seulement | Faible | Oui |
+
+Repris dans `Lot_14_Propositions.md` (« voir, et oser ») : Q1-1, R21-1, R21-2, N, O, C, H, plus une ambition au-delà du plancher (Q).

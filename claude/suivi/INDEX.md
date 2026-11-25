@@ -30,4 +30,5 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 
 **Une erreur connue dans les archives** : les notes de lecture 12, 13 et 17 et le lot 9b contenaient deux erreurs, la comparaison du 29 octobre prise pour actuelle et l'ordre de composition dit absent du noyau. Elles sont corrigées dans les fichiers eux-mêmes (sections « Correction du 21 novembre »).
 | `Pistes_25_novembre.md` | Pistes notées après le run 21 (A à M, Q1, R21), aucune intégrée |
+| `Lot_14_Propositions.md` | Lot 14 « voir, et oser » : propositions (14a, 14b, 14c) |
 | `Pilot_final/`, `Lot_13a_rapport.md` | Lot 13 (évaluation finale) : étape 1 jugée (protocole et résultats), correctif V1.1.1 |
