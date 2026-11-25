@@ -18,3 +18,9 @@
 - **Coût** : 153 tours, sortie 198 k, cache lu 32,4 M, contexte max 297 k, 26 images, 90 appels d'outils, 17 min.
 - **Livrables** : `Run21/livrable/` (copie). Noms du brief ajoutés à `noms_interdits.txt`.
 - **Jugement de Junior** : à venir.
+
+## Avis de Claude (25 novembre 2026), à garder en tête (décision de Junior)
+
+- Réussi : idée juste pour le public (le caractère jugé sur une page de texte), finition professionnelle, retenue, curseur de graisse, honnêteté sur le remplaçant.
+- Faible : (1) au bureau, l'idée « livre » se lit moins que dans l'esquisse (cadre sombre retiré par le test de retrait) ; (2) à 390 px, le premier écran est presque la modale, l'idée n'arrive qu'en défilant ; (3) page de droite chargée ; (4) notes de marge collées au bord à 1440 px.
+- Hypothèses pour le système, **non intégrées** : le test de retrait protège ce qui porte l'idée ; une lecture sans le texte aussi sur le premier écran mobile.
