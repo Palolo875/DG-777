@@ -41,3 +41,11 @@ Junior juge seul. Pas d'aveugle pour ce run (il n'y a qu'un rendu) : il voit le 
 - **Ce qui a marché** : modale défendue en une ligne et esquissée ; serif d'édition gardée (EB Garamond) après une variante sans empattement jugée à la vue ; matière réglée d'après des photos réelles (Art Institute of Chicago), recette `matiere` servie ; atelier symétrique (retrait, intensification, voix typographique) sur planches ; agenda `.ics` correct (UTC, CRLF) ; réponse par courriel préremplie ; contenus d'exemple marqués.
 - **Recettes** : seule `matiere` a été lue ; l'agenda et la réponse sont codés de mémoire, correctement.
 - **Coût** (`cout_des_runs.py`) : 174 tours (19x : 141, +23 %) ; cache lu 38,4 M (19x : 33,5 M, +15 %) ; cache écrit 1,27 M (19x : 0,61 M), doublé en partie par l'interruption et la reprise ; 24 images (19x : 22) ; routes lues : 73 k caractères (19x : 6,6 k).
+
+## Jugement de Junior et lecture de la planche
+
+- **Junior** : la convergence peut venir des recherches et références, « quasi les mêmes » d'un run à l'autre ; les autres esquisses de la planche sont moins fortes.
+- **Vérifié dans les journaux** : références et requêtes se recoupent (carton « Frames » de Fonts In Use en 17k et 22e ; « Merveilles » de Sèvres en 17k, 19x et 22e ; galerie Lefebvre en 17k et 22e ; requêtes « galerie céramique… grès émaillé… »). Au run 22, elles sont cherchées avant la planche, depuis la catégorie. Causalité probable, non prouvée.
+- **Lecture de la planche par Claude** : A nettement la plus forte. Modale générique, avec la photo d'une jarre ancienne de musée qu'on prendrait pour une œuvre exposée. B presque vide, à peine commencée. C, vraie idée (le temps), exécutée comme un tableau de bord.
+- **Constat principal** : les esquisses ne sont pas au même niveau d'investissement. A a reçu matière, voix et références ; B et C sont restées à plat. Le duel est inégal, et la planche confirme le premier choix au lieu de l'éprouver.
+- **Piste notée, non décidée** : chaque esquisse reçoit sa propre référence et son geste poussé avant la planche ; références cherchées après les directions, une par piste, dont une hors du domaine. Le « deuxième rang » (15b) reste une incitation, sans qu'on en attende la diversité.
