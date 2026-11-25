@@ -29,7 +29,10 @@ Ancienne portée remise dans la ligne du noyau : CORE-01 refuse le noyau ; rouge
 
 ## 4. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : `--require-browser --empreintes`, réussie du premier coup. Tous les tests passent (régressions d'audit 193, `parcours` 176, `read_route` 106…) ; quatre cartes sans défaut bloquant.
+- **Commits** : `58a565d` sur `lot-13a`, fusionné en `8f32436` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-15y.zip` (sha256 `bac660e2…c75d`) ; `claude/livraison/R2026-11-15y/` : archive Local (sha256 `512a8d99…3a24`) et bundle vérifié. La `x` est retirée de DG-777 (historique et bundle la gardent).
 
 ## 5. Ce que cette correction ne prouve pas
 

@@ -11,7 +11,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 ## Règles de travail (elles priment)
 
 1. **Rien n'est intégré sans discussion et décision.** Ses idées sont des propositions à discuter.
-2. **La version publique est V1.1.0** (décision D7 du 22 novembre ; garde VER-01 : manifeste, titre du README, citation, journal des changements). Les révisions internes portent des identifiants neutres : `R2026-11-15a`, b, c…
+2. **La version publique est V1.1.1** (V1.1 décidée en D7 le 22 novembre, correctif du 25 novembre ; garde VER-01 : manifeste, titre du README, citation, journal des changements). Les révisions internes portent des identifiants neutres : `R2026-11-15a`, b, c…
 3. **L'historique reste hors du paquet** : récits de runs, anciens constats, anciens alias. Le suivi vit dans `.claude/suivi/`.
 4. **Vérifier dans les fichiers avant de proposer.** Ne jamais se fier à la mémoire, ni à une vue dérivée.
 5. **Avant toute livraison** : relire la présentation, faire la validation complète avec navigateur, régénérer les archives.
@@ -48,7 +48,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Lecture par code de route** : `python3 scripts/read_route.py CODE`. Autres formes : `--trouver TERME`, `--mode MODE`, et `--tronc MODE --fichier tronc.txt`, qui écrit la ligne du mode puis son tronc.
 - **Budgets** :
-  - le noyau `SKILL.md` est limité à 31 500 octets (31 057 aujourd'hui) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
+  - le noyau `SKILL.md` est limité à 31 500 octets (31 127 aujourd'hui) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
   - un tronc par mode est limité à 40 000 caractères (lot 11c ; DIRECTION en lit 35 177).
 - **Où vivent les gardes** :
   - `scripts/validate_structure.py` : planchers `[REQUIS]`, GLO-02, LIS-01, LAN-01, VOU-01…
@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-15x`, publiée comme V1.1.0**, au commit `04688c2`. Les lots S, 1 à 9e, 10A, 10B, 11 et 12 sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `x` (dernière) restent, plus `claude/livraison/R2026-11-15x/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-15y`, publiée comme V1.1.1**, au commit `8f32436`. Les lots S, 1 à 9e, 10A, 10B, 11, 12 et 13a sont faits et livrés. Dans DG-777, seules les archives `k` (référence) et `y` (dernière) restent, plus `claude/livraison/R2026-11-15y/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
@@ -88,7 +88,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 - **Lot 11d fait** (`suivi/Lot_11d_rapport.md`) : passage « Sans outils », garde SUB-01, pas de réécriture des blocs gardés (décision : D3 A). **Lot 11 clos** (bilan au rapport 11d).
 - **Lot 12** : propositions dans `suivi/Lot_12_Propositions.md`, « D'accord » de Junior (options A, et mes recommandations D4 à D7 : MIT et CC BY 4.0, français avec `README.en.md`, nom gardé avec sous-titre, `V1.1` publique ; à lui rappeler avant 12d). **12a fait** (`suivi/Lot_12a_rapport.md`) : DOC-01, DOC-02 (trois clics), README « Comment l'agent lit », guide sans outils. **12b fait** (`suivi/Lot_12b_rapport.md`) : référence générée (`scripts/reference.py`, DOC-03), carte `supports/lecture.*`, garde de débordement des cartes.
 - **12c abandonné** (mesure : aucun fichier d'atelier ouvert en 4 runs ; une ligne du README suffit). **12d fait** (`suivi/Lot_12d_rapport.md`) : D4 à D7 confirmées une par une ; licences, journal des changements, citation, contribution, `README.en.md`, VER-01. **Lot 12 clos.**
-- **Lot 13 en cours** (décision du 25 novembre : option B, Junior juge seul, « attention à mes limites ») : **étape 1** = V1.1.0 sur les deux objets du PILOT (runs 19x, 20x), même prompt mot pour mot, mode libre, comparée à 17l et 18l en paires à l'aveugle (A/B, C/D ; correspondance tirée avant, `suivi/Pilot_final/protocole.md`). **Étape 2** (sans système et V1.1.0 sur un objet neuf, en DIRECTION) seulement sans régression et sur décision de Junior. Titulaire de la licence écrit « Palolo875 et les contributeurs » : à confirmer par Junior. D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
+- **Lot 13 en cours** (décision du 25 novembre : option B, Junior juge seul, « attention à mes limites ») : **étape 1** = V1.1.0 sur les deux objets du PILOT (runs 19x, 20x), même prompt mot pour mot, mode libre, comparée à 17l et 18l en paires à l'aveugle (A/B, C/D ; correspondance tirée avant, `suivi/Pilot_final/protocole.md`). **Résultats** : coût −29 % de tours, −32 % de cache lu ; qualité 1–1 (widget : V1.1.0 ; invitation : `l`) ; jugement au carnet de goût. **13a fait** (`suivi/Lot_13a_rapport.md`, décision « Corrections d'abord. Pas de run direct. ») : V1.1.1, atelier dans tous les modes. **Étape 2** (sans système et V1.1.1 sur un objet neuf, en DIRECTION) : **pas de run sans décision de Junior**. Titulaire de la licence écrit « Palolo875 et les contributeurs » : à confirmer par Junior. D2 (visibilité de DG-777) : mise de côté par Junior. **Pas de run** avant le lot 13 (décision du 21 novembre).
 - **Suivi sans lot** : A-2 (générique sous le premier écran) au carnet de goût ; A-4 (briefs qui vivent de l'image) dépend de la décision sur la génération d'images.
 - **Pistes à proposer, à ne pas intégrer** :
   - observer la modale par une recherche d'images, et calibrer le niveau avec une liste de sources par objet ;
