@@ -24,3 +24,7 @@
 - Réussi : idée juste pour le public (le caractère jugé sur une page de texte), finition professionnelle, retenue, curseur de graisse, honnêteté sur le remplaçant.
 - Faible : (1) au bureau, l'idée « livre » se lit moins que dans l'esquisse (cadre sombre retiré par le test de retrait) ; (2) à 390 px, le premier écran est presque la modale, l'idée n'arrive qu'en défilant ; (3) page de droite chargée ; (4) notes de marge collées au bord à 1440 px.
 - Hypothèses pour le système, **non intégrées** : le test de retrait protège ce qui porte l'idée ; une lecture sans le texte aussi sur le premier écran mobile.
+
+## Question 1 discutée (25 novembre 2026), mise de côté par Junior
+
+Le système fait suivre la procédure ; ce qui échappe est le jugement visuel (l'agent juge son propre travail). Pistes notées, non intégrées : (1) comparer chaque version à l'esquisse choisie, à même échelle, bureau et mobile ; (2) plaider pour la modale avant de l'écarter ; (3) le goût par l'exemple (paires jugées).
