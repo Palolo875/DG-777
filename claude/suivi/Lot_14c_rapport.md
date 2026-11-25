@@ -31,11 +31,17 @@
 
 ## 3. Préparation et livraison
 
-À compléter.
+- **Préparation complète** : réussie au second passage, en **469 s**. Le premier s'est arrêté en 12 s sur LIS-01 : j'avais allongé au-delà de 500 signes la cellule de `verifier` dans `scripts/README.md` ; resserrée. Le mode `--rapide` l'avait vu aussi, mais je l'avais enchaîné sans attendre son résultat.
+- Tests : `parcours` 185, audit 196, `read_route` 106… ; quatre cartes sans défaut bloquant ; reproductibilité vérifiée.
+- **Commits** : `419befb` sur `lot-14c`, fusionné en `2b52bf8` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25c.zip` (sha256 `689a5353…8203`) ; `claude/livraison/R2026-11-25c/` : archive Local (sha256 `2fd4df32…c533`) et bundle vérifié. La `25b` est retirée de DG-777.
 
 ## 4. Fin du lot 14 : V1.2.0
 
-À compléter.
+- **Version publique V1.2.0** : manifeste, titre du README (et version anglaise), fiche et notes de version, guide 3, citation (1.2.0, 25 novembre 2026), cartes régénérées ; garde VER-01 verte.
+- **Journal des changements** : entrée V1.2.0 (« Voir », « Oser », quatre signaux, préparation plus rapide, budget du noyau à 33 000).
+- Noyau : 31 699 octets sur 33 000.
 
 ## 5. Ce que ce sous-lot ne prouve pas
 
