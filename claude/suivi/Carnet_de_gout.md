@@ -43,3 +43,8 @@ Chaque entrée note un jugement de Junior entre deux rendus présentés à l'ave
   - lumière et matière concentrées sur une zone ;
   - données cohérentes et travaillées ;
   - parties ordinaires impeccables.
+
+## 26 novembre 2026 — run 25 (atelier vélo, V1.5.0)
+
+- **Verdict** : « généré, IA, gadget, pas un vrai site pro, pas au niveau des références ».
+- **Lecture de Claude** : l'idée devient un objet-concept littéral (étiquette suspendue, tableau des départs, cadran). Les marques d'imprimé (chasse fixe, kraft, tampon, numéros) et le texte malicieux font démonstration. Les références de Junior, elles, sont des produits finis : conventions de la catégorie parfaitement tenues, images réelles, singularité portée par la marque et le détail, pas par un gadget.

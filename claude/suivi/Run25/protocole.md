@@ -26,3 +26,7 @@
   - Typographie : Zilla Slab et IBM Plex Mono. Couleurs : bleu de travail, kraft, rouge tampon.
 - **Par rapport au run 23** : l'étiquette kraft, que le run 23 avait esquissée puis fondue sans sa matière, est cette fois la direction gardée, avec sa matière. La frise est mieux habitée.
 - **Coût** : 202 tours (23 : 151, +34 %) ; cache lu 53,1 M (23 : 32,6 M, +63 %) ; 21 images ; 27 minutes (23 : 21). La hausse dépasse l'estimation du lot 18 (5 à 10 %) : les étapes ajoutent 67 000 caractères au contexte, et l'agent a fait plus de travail (quatre passes de `verifier`, atelier).
+
+## Jugement de Junior
+
+« Je partage ton avis. Ça fait généré et IA, et gadget, pas un vrai site pro […] et pas au niveau des références. »
