@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1010" viewBox="0 0 1400 1010" font-family="DejaVu Sans, Arial, sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#777"/></marker></defs>
+<rect width="1400" height="1010" fill="#fbfaf7"/>
+<text x="40" y="44" font-size="26" font-weight="700" fill="#111">Design Governance R2026-11-15o — cartographie du système</text>
+<text x="40" y="70" font-size="14" fill="#555">151 fichiers livrés · 85 routes · 36 blocs de noyau · 13 sous-commandes de parcours · 111 gardes · ≈785 cas de test · usage mesuré sur 12 runs (9–18)</text>
+<rect x="40" y="95" width="600" height="150" rx="10" fill="#fff3d6" stroke="#d9a53a" stroke-width="1.5"/>
+<text x="54" y="121" font-size="17" font-weight="700" fill="#1b1b1b">① Noyau — SKILL.md (lu à chaque demande)</text>
+<text x="54" y="145" font-size="13.5" fill="#333">45 810 / 46 000 octets · 6 962 mots · 62 codes · 36 blocs</text>
+<text x="54" y="165" font-size="13.5" fill="#333">Procédure de direction 49 % · chargement et réponse 23 %</text>
+<text x="54" y="185" font-size="13.5" fill="#333">Savoir de goût 13 % · atelier et finition 9 % · gouvernance 5 %</text>
+<text x="54" y="205" font-size="13.5" fill="#333">→ environ 12 à 15 k tokens, pour ≈ 5 k recommandés (Agent Skills)</text>
+<rect x="680" y="95" width="680" height="150" rx="10" fill="#fff3d6" stroke="#d9a53a" stroke-width="1.5"/>
+<text x="694" y="121" font-size="17" font-weight="700" fill="#1b1b1b">② Modes et troncs (lus selon le mode classé)</text>
+<text x="694" y="145" font-size="13.5" fill="#333">LITE 8 k car. · ITER 5,6 k · STANDARD 7 k · SYSTÈME 7,8 k</text>
+<text x="694" y="165" font-size="13.5" fill="#333">DIRECTION 31,4 k car. sur 35 k : 8 routes, dont 7 de procédure</text>
+<text x="694" y="185" font-size="13.5" fill="#333">  (RUN, CREATIVE-BOOT, VISUAL_TARGET, FIRST-OBJECT, FIRST-RENDER,</text>
+<text x="694" y="205" font-size="13.5" fill="#333">   GATE-A, SEQUENCE) et une seule de savoir (TYPE)</text>
+<text x="694" y="225" font-size="13.5" fill="#333">→ lecture fixe d'un run DIRECTION ≈ 77 k caractères avant le travail</text>
+<line x1="340" y1="245" x2="340" y2="285" stroke="#777" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="1020" y1="245" x2="1020" y2="285" stroke="#777" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="40" y="290" width="315" height="175" rx="10" fill="#e7f0ff" stroke="#5b8bd6" stroke-width="1.5"/>
+<text x="54" y="316" font-size="17" font-weight="700" fill="#1b1b1b">DIRECTION</text>
+<text x="54" y="340" font-size="13.5" fill="#333">20 routes · 108 k car.</text>
+<text x="54" y="360" font-size="13.5" fill="#333">cadrer, diriger, premier objet,</text>
+<text x="54" y="380" font-size="13.5" fill="#333">boucle ; centre du graphe</text>
+<text x="54" y="400" font-size="13.5" fill="#333"></text>
+<text x="54" y="420" font-size="13.5" fill="#333">lues : 6 sur 20</text>
+<rect x="375" y="290" width="315" height="175" rx="10" fill="#ffe9ea" stroke="#d36b74" stroke-width="1.5"/>
+<text x="389" y="316" font-size="17" font-weight="700" fill="#1b1b1b">SAVOIR</text>
+<text x="389" y="340" font-size="13.5" fill="#333">17 routes · 180 k car. (le plus gros)</text>
+<text x="389" y="360" font-size="13.5" fill="#333">composition, type, couleur, styles,</text>
+<text x="389" y="380" font-size="13.5" fill="#333">sources, techniques, qualité créative</text>
+<text x="389" y="400" font-size="13.5" fill="#333"></text>
+<text x="389" y="420" font-size="13.5" fill="#333">lues : 6 sur 17 · FRAME, CRAFT, STYLE : 0</text>
+<rect x="710" y="290" width="315" height="175" rx="10" fill="#eaf7ee" stroke="#5aa872" stroke-width="1.5"/>
+<text x="724" y="316" font-size="17" font-weight="700" fill="#1b1b1b">BIBLIOTHEQUE</text>
+<text x="724" y="340" font-size="13.5" fill="#333">19 routes · 86 k car.</text>
+<text x="724" y="360" font-size="13.5" fill="#333">supports, grilles, scènes, objets,</text>
+<text x="724" y="380" font-size="13.5" fill="#333">sections, composants</text>
+<text x="724" y="400" font-size="13.5" fill="#333"></text>
+<text x="724" y="420" font-size="13.5" fill="#333">lues : 3 sur 19 (SEQUENCE 8×) · READ : 0</text>
+<rect x="1045" y="290" width="315" height="175" rx="10" fill="#f0ecfa" stroke="#8a74c7" stroke-width="1.5"/>
+<text x="1059" y="316" font-size="17" font-weight="700" fill="#1b1b1b">ACTION</text>
+<text x="1059" y="340" font-size="13.5" fill="#333">29 routes · 125 k car.</text>
+<text x="1059" y="360" font-size="13.5" fill="#333">gates A/B/C, statuts, preuve,</text>
+<text x="1059" y="380" font-size="13.5" fill="#333">clôture, RUN_CARD</text>
+<text x="1059" y="400" font-size="13.5" fill="#333"></text>
+<text x="1059" y="420" font-size="13.5" fill="#333">lues : 6 sur 29 · GATE-B, STATUS : 0</text>
+<text x="40" y="490" font-size="14" fill="#333"><tspan font-weight="700">Usage des 85 routes sur 12 runs :</tspan> 21 lues au moins une fois · 13 proposées mais jamais lues · 51 jamais touchées (60 %).</text>
+<text x="40" y="512" font-size="14" fill="#333"><tspan font-weight="700">Les nœuds les plus cités sont de procédure</tspan> : DIRECTION/START (18 entrants), VISUAL_TARGET (16), CLOSE-PACKAGE (14), STATUS (13). Le savoir de goût est en feuilles.</text>
+<rect x="40" y="540" width="660" height="210" rx="10" fill="#e9f6f6" stroke="#3f9a9a" stroke-width="1.5"/>
+<text x="54" y="566" font-size="17" font-weight="700" fill="#1b1b1b">③ Outils — le canal qui sert vraiment (≈ 5,6 k lignes)</text>
+<text x="54" y="590" font-size="13.5" fill="#333">parcours.py (2 676 l., 13 sous-commandes) : verifier 8 runs sur 8,</text>
+<text x="54" y="610" font-size="13.5" fill="#333">  tirage 8 sur 8, leviers utilisé dès la révision l, polices, références,</text>
+<text x="54" y="630" font-size="13.5" fill="#333">  trace, captures, critique, identité…</text>
+<text x="54" y="650" font-size="13.5" fill="#333">check_render.py (1 396 l.) · regard.py (906 l.) · planche.py (123 l.)</text>
+<text x="54" y="670" font-size="13.5" fill="#333">read_route.py (1 197 l.) · journal_mobilisation.py (372 l.)</text>
+<text x="54" y="690" font-size="13.5" fill="#333">Ils lisent le savoir à son lieu et le servent au moment utile :</text>
+<text x="54" y="710" font-size="13.5" fill="#333">  gestes de STATE, leviers de READ, pistes, marqueurs de vague.</text>
+<rect x="740" y="540" width="620" height="210" rx="10" fill="#f3f3f3" stroke="#8b8b8b" stroke-width="1.5"/>
+<text x="754" y="566" font-size="17" font-weight="700" fill="#1b1b1b">④ Contrôle de soi (≈ 9,4 k lignes, plus que les outils)</text>
+<text x="754" y="590" font-size="13.5" fill="#333">Validateurs : structure, carte de lecture, paquet, RUN_CARD, contrats</text>
+<text x="754" y="610" font-size="13.5" fill="#333">  → 111 codes de garde (LIS-01, VAG-01, GLO-02, VOU-01…)</text>
+<text x="754" y="630" font-size="13.5" fill="#333">Tests : ≈ 785 cas (check_render 265, parcours 170, audit 155,</text>
+<text x="754" y="650" font-size="13.5" fill="#333">  read_route 106, regard 41…) ; mutation rouge à chaque garde</text>
+<text x="754" y="670" font-size="13.5" fill="#333">Préparation complète ≈ 12 min, archives reproductibles</text>
+<text x="754" y="690" font-size="13.5" fill="#333">Ils vérifient le texte et les outils, jamais la qualité d'un rendu.</text>
+<line x1="370" y1="515" x2="370" y2="540" stroke="#777" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="40" y="785" width="430" height="175" rx="10" fill="#fafafa" stroke="#bdbdbd" stroke-width="1.5"/>
+<text x="54" y="811" font-size="17" font-weight="700" fill="#1b1b1b">⑤ Gouvernance (45 fichiers sur 151)</text>
+<text x="54" y="835" font-size="13.5" fill="#333">schémas JSON, exemples, fixtures, validateurs</text>
+<text x="54" y="855" font-size="13.5" fill="#333">≈ 30 valeurs de statut (7 états, 6 issues,</text>
+<text x="54" y="875" font-size="13.5" fill="#333">  6 verdicts, 4 axes × 5, 4 statuts de direction)</text>
+<text x="54" y="895" font-size="13.5" fill="#333">Utile en trace complète ; aucun run ne l'a lue.</text>
+<rect x="500" y="785" width="430" height="175" rx="10" fill="#fafafa" stroke="#bdbdbd" stroke-width="1.5"/>
+<text x="514" y="811" font-size="17" font-weight="700" fill="#1b1b1b">⑥ Pour les personnes</text>
+<text x="514" y="835" font-size="13.5" fill="#333">README · 3 guides (utiliser, comprendre,</text>
+<text x="514" y="855" font-size="13.5" fill="#333">  maîtriser) · glossaire · 3 cartes HTML/SVG</text>
+<text x="514" y="875" font-size="13.5" fill="#333">maintenance : versions, évolution, recette</text>
+<text x="514" y="895" font-size="13.5" fill="#333">Français uniquement ; pas de licence.</text>
+<rect x="960" y="785" width="400" height="175" rx="10" fill="#fafafa" stroke="#bdbdbd" stroke-width="1.5"/>
+<text x="974" y="811" font-size="17" font-weight="700" fill="#1b1b1b">⑦ Hors paquet (suivi)</text>
+<text x="974" y="835" font-size="13.5" fill="#333">rapports de lots, registre des runs,</text>
+<text x="974" y="855" font-size="13.5" fill="#333">carnet de goût, convergences observées,</text>
+<text x="974" y="875" font-size="13.5" fill="#333">PILOT 9b, lecture du système (17 notes)</text>
+<text x="974" y="895" font-size="13.5" fill="#333">→ la mémoire de l'évaluation vit ici.</text>
+</svg>

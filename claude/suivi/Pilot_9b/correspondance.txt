@@ -1,0 +1,3 @@
+objet1-vernissage: X=k Y=l
+objet2-marees: X=l Y=k
+sel: b86592c0a4659408
