@@ -54,3 +54,30 @@
 - **Que les rendus deviennent professionnels** : seul le regard de Junior sur un run le dira.
 - **Que l'agent appelle les recettes** : il appelle celle de la grille tirée, nommée par le tirage. Les autres dépendent des renvois dans les routes servies par les étapes.
 - **Le seuil de 6 tailles** peut relever des pages riches et justes : c'est une question, pas un verdict.
+
+## 5. Sous-lots 20d et 20e — mouvement, données, lumière (V1.8.0)
+
+- **Décision** : « Enchaîne ».
+- **Révision** : `R2026-11-25k`, branche `lot-20de`.
+
+| Sous-lot | Changement |
+|---|---|
+| **20d** `mouvement-interface` | Durées par rôle (retour 120 ms, apparition 220 ms, déplacement 320 ms, sortie 160 ms) et deux courbes. Survol et appui changent l'ombre ou la couleur, pas la place de la cible. Échelonnement borné (cinq éléments, 40 ms). Transition de vue avec repli. Rien sous mouvement réduit. La ligne « Mouvement » de `SAVOIR/STATE` y renvoie. |
+| **20e** `donnees-detail` | Chiffre principal et écart en puce ; une seule valeur distinguée, avec sa bulle et son annotation ; parts au reste hachuré qui recoupent le total ; courbe miniature. La recette `graphique` y renvoie. |
+| **20e** `lumiere-verre` | Une seule zone : lumière radiale, verre dépoli avec bord clair et repli presque opaque, halo derrière la seule action principale, image effacée vers le texte par un masque. « Construire une atmosphère » y renvoie. |
+| **20e** `matiere` | L'ordre d'un fond de matière : formes, flou, texture, puis fondu vers la zone de lecture. |
+
+- **Écart à la proposition** : `objet-geometrique` reste de côté, comme recommandé (après le verdict « gadget »).
+- **Recettes** : vingt-cinq en tout.
+- **Étape CONSTRUCTION** : 38 259 caractères (marge 1 741).
+- **Noyau** : inchangé.
+- **Tests** : `parcours`, 217 cas ; chaque recette vérifiée dans le navigateur à 1440 et 390 px. Le mouvement est aussi vérifié sous mouvement réduit, avec la cible immobile à l'appui et le panneau ouvert dans les deux cas.
+- **Mutations rouges** :
+
+| Mutation | Résultat |
+|---|---|
+| Échelonnement non borné (120 ms par élément) | Rouge : P161 |
+| Une part qui ne recoupe plus le total | Rouge : P159 |
+| Verre sans flou | Rouge : P160 |
+
+- **Police des cartes** : régénérée encore une fois (« V1.8.0 »), avec l'outillage figé.
