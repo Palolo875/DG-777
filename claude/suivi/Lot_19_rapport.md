@@ -51,3 +51,19 @@
 - **Le risque inverse** : le retour au fade, si la modale gagne trop souvent. Le garde-fou est la question « se distingue-t-elle sans cesser d'être un vrai produit ? ».
 - **Sans images réelles**, un site de commerce reste incomplet ; les emplacements conçus le disent honnêtement.
 - **Le coût du lot 18** (+63 % de lecture du cache au run 25) n'est pas traité ici.
+
+## 5. Correctif 19b — tous les rendus, pas seulement les sites (V1.6.1)
+
+- **Remarque de Junior** : « Vrai site, c'est trop spécifique : il faut que la qualité touche tous les rendus, pas juste des sites. » Décision : « Oui ».
+- **Changé** :
+  - la règle du noyau vise « le rendu […] dans son médium (page, application, composant, affiche, identité, invitation…) » ; « une métaphore qui déguise tout l'objet (document simulé, objet imité) est un gadget » ;
+  - le « test du vrai site » devient le **test du produit fini** (fiche de `verifier`, atelier) : « passe-t-il pour un produit fini de son genre, livré par un bon studio ? » ;
+  - « page » devient « rendu » ou « objet » dans la ligne « Marques de démonstration », la phrase d'idée, la règle d'écriture et la règle des pistes ;
+  - phrase protégée CORE-01 et test des pistes mis à jour.
+- **Limite** : les signaux automatiques ne lisent que du HTML ; pour une affiche ou une identité, le test se pose sur capture.
+- **Mutation rouge** : la phrase sur le gadget retirée du noyau → CORE-01.
+- **Noyau** : 32 923 octets sur 33 000 (marge 77).
+- **Préparation** : 463 s.
+- **Commits** : `a852abe` sur `lot-19b`, fusionné en `313bb58`.
+- **Archive GitHub** : 164 fichiers identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25i.zip` (sha256 `2860c76e…2704`) ; dans `claude/livraison/R2026-11-25i/` : archive Local (sha256 `ae7854e2…de64c`) et bundle vérifié. La `25h` est retirée.
