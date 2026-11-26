@@ -11,7 +11,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 ## Règles de travail (elles priment)
 
 1. **Rien n'est intégré sans discussion et décision.** Ses idées sont des propositions à discuter.
-2. **La version publique est V1.4.0** (V1.1 décidée en D7 le 22 novembre ; V1.1.1 correctif, V1.2.0 fin du lot 14, V1.3.0 fin du lot 15 et V1.4.0 lot 16, le 25 novembre ; garde VER-01 : manifeste, titre du README, citation, journal des changements). Les révisions internes portent des identifiants neutres : série `R2026-11-15a` à `z` close, puis **série `R2026-11-25a`, b, c…** (accord de Junior).
+2. **La version publique est V1.5.0** (V1.1 décidée en D7 le 22 novembre ; V1.1.1 correctif, V1.2.0 fin du lot 14, V1.3.0 fin du lot 15 et V1.4.0 lot 16, le 25 novembre ; V1.5.0 lot 18, le 26 novembre ; garde VER-01 : manifeste, titre du README, citation, journal des changements). Les révisions internes portent des identifiants neutres : série `R2026-11-15a` à `z` close, puis **série `R2026-11-25a`, b, c…** (accord de Junior).
 3. **L'historique reste hors du paquet** : récits de runs, anciens constats, anciens alias. Le suivi vit dans `.claude/suivi/`.
 4. **Vérifier dans les fichiers avant de proposer.** Ne jamais se fier à la mémoire, ni à une vue dérivée.
 5. **Avant toute livraison** : relire la présentation, faire la validation complète avec navigateur, régénérer les archives.
@@ -48,7 +48,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Lecture par code de route** : `python3 scripts/read_route.py CODE`. Autres formes : `--trouver TERME`, `--mode MODE`, et `--tronc MODE --fichier tronc.txt`, qui écrit la ligne du mode puis son tronc.
 - **Budgets** :
-  - le noyau `SKILL.md` est limité à **33 000 octets** (décision du 25 novembre ; 31 699 aujourd'hui) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
+  - le noyau `SKILL.md` est limité à **33 000 octets** (décision du 25 novembre ; 32 307 aujourd'hui) ; il est compilé par `scripts/build_core.py`, dont le registre s'appelle `NOYAU` ;
   - un tronc par mode est limité à 40 000 caractères (lot 11c ; DIRECTION en lit 35 177).
 - **Où vivent les gardes** :
   - `scripts/validate_structure.py` : planchers `[REQUIS]`, GLO-02, LIS-01, LAN-01, VOU-01…
@@ -61,7 +61,7 @@ Ce fichier et le dossier `.claude/` restent hors du paquet : la validation les i
 
 - **Le suivi a un index** : `suivi/INDEX.md` (documents vivants ; le reste est dans `suivi/archives/`).
 
-- **`master` est en `R2026-11-25f`, publiée comme V1.4.0**, au commit `324d722`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a, 14 (a, b, c), « outil », 15 (a, b) et 16 (esquisses à armes égales) sont faits et livrés. Optimisation du coût des runs : rien sans mesure, et jamais au détriment de ce qui sert la qualité (décision de Junior, 25 novembre). Dans DG-777, seules les archives `k` (référence) et `25f` (dernière) restent, plus `claude/livraison/R2026-11-25f/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
+- **`master` est en `R2026-11-25g`, publiée comme V1.5.0**, au commit `60ab692`. Les lots S, 1 à 9e, 10A, 10B, 11, 12, 13a, 14 (a, b, c), « outil », 15 (a, b), 16 (esquisses à armes égales) et 18 (brancher le savoir : étapes ESQUISSES et CONSTRUCTION) sont faits et livrés. Lot 17 (le fini) : en attente, à fondre dans le lot de construction. Optimisation du coût des runs : rien sans mesure, et jamais au détriment de ce qui sert la qualité (décision de Junior, 25 novembre). Dans DG-777, seules les archives `k` (référence) et `25g` (dernière) restent, plus `claude/livraison/R2026-11-25g/`. Le plan et le registre, dans `.claude/suivi/`, les détaillent.
 - **Le suivi vit aussi sur GitHub** : `palolo875/DG-777`, branche `claude/chat-session-bfv0no`, dossier `claude/` (décompressé, sans zip). Il est hors du paquet.
 - **Lot 9, les runs de contrôle** :
   - les runs 9 à 16 sont faits ;
