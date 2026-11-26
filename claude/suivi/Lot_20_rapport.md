@@ -44,7 +44,10 @@
 ## 3. Préparation et livraison
 
 - **Police des cartes** : « V1.7.0 » demandait un chiffre absent du sous-ensemble de la police des cartes (garde de fraîcheur des supports). Police régénérée avec les versions figées de `supports/fonts/requirements.txt`, installées dans un environnement à part, puis cartes régénérées.
-- _à compléter_
+- **Préparation complète** : réussie en **553 s**, plus longue que d'habitude (onze recettes de plus vérifiées dans le navigateur). Tests : `parcours` 214, `read_route` 107, `regard` 42, `check_render` 265… ; reproductibilité vérifiée.
+- **Commits** : `e8b2a65` sur `lot-20`, fusionné en `a0be5b3` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25j.zip` (sha256 `65ab182f…1359`) ; dans `claude/livraison/R2026-11-25j/` : archive Local (sha256 `d86da9a5…8127`) et bundle vérifié. La `25i` est retirée de DG-777.
 
 ## 4. Ce que le lot ne prouve pas
 
