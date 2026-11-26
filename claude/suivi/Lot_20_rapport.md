@@ -81,3 +81,8 @@
 | Verre sans flou | Rouge : P160 |
 
 - **Police des cartes** : régénérée encore une fois (« V1.8.0 »), avec l'outillage figé.
+- **Préparation complète** : réussie en **555 s**.
+- **Commits** : `40c3b2d` sur `lot-20de`, fusionné en `d2e981d` sur `master` (`--no-ff`).
+- **Archive GitHub** : les 164 fichiers sont identiques au commit.
+- **Sortie** : `Design_Governance_V1_GITHUB_R2026-11-25k.zip` (sha256 `79bfd119…457c`) ; dans `claude/livraison/R2026-11-25k/` : archive Local (sha256 `2b1653e3…8dbf`) et bundle vérifié. La `25j` est retirée de DG-777.
+- **Lot 20 clos.**

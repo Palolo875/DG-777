@@ -42,6 +42,6 @@ Ce dossier est **hors du paquet**. Il tient le travail en cours. Ce qui est clos
 | `Lot_18_Propositions.md`, `Lot_18_rapport.md` | Lot 18 « brancher le savoir » : fait ; V1.5.0 publiée (`R2026-11-25g`, 26 novembre) |
 | `Run25/` | Run 25 : atelier vélo, V1.5.0 ; étapes lues, structure tirée servie ; verdict de Junior : « généré, IA, gadget, pas un vrai site pro » |
 | `Lot_19_Propositions.md`, `Lot_19_rapport.md` | Lot 19 « le niveau pro d'abord » : fait, avec le correctif 19b ; V1.6.1 publiée (`R2026-11-25i`) |
-| `Lot_20_Propositions.md`, `Lot_20_rapport.md` | Lot 20 « construire au niveau pro » : a, b, c faits, V1.7.0 (`R2026-11-25j`) ; d et e à faire |
+| `Lot_20_Propositions.md`, `Lot_20_rapport.md` | Lot 20 « construire au niveau pro » : clos ; V1.8.0 (`R2026-11-25k`) |
 | `Lot_outil_rapport.md` | Préparation deux fois plus rapide (parallèle, export Local, mode rapide) |
 | `Pilot_final/`, `Lot_13a_rapport.md` | Lot 13 (évaluation finale) : étape 1 jugée (protocole et résultats), correctif V1.1.1 |
